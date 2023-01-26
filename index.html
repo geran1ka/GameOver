@@ -103,6 +103,56 @@
           <p><cite>Аркадий Абашкин, создатель игровой территории GAME OVER</cite></p>
         </blockquote>
       </section>
+      <section>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <fieldset>
+            <h2>Забронировать</h2>
+            <fieldset>
+              <label><input type="radio" name="halls" value="80s_vibes">80's vibes</label>
+              <label><input type="radio" name="halls" value="star_wars">star wars</label>
+              <label><input type="radio" name="halls" value="wild_west">wild west</label>
+              <label><input type="radio" name="halls" value="neon_style">neon style</label>
+            </fieldset>
+  
+            <fieldset>
+              <legend>Собери набор развлечений</legend>
+              <fieldset>
+                <legend>Приставка:</legend>
+                <label><input type="radio" name="gameconsole" value="play_station">PlayStation</label>
+                <label><input type="radio" name="gameconsole" value="sega_mega_drive">Sega Mega Drive</label>
+                <label><input type="radio" name="gameconsole" value="x-box_one_s">X-box One S</label>
+                <label><input type="radio" name="gameconsole" value="dendy">Dendy</label>
+              </fieldset>
+  
+              <fieldset>
+                <legend>Настольные игры:</legend>
+                <label><input type="checkbox" name="boardgame" value="jenga">Jenga</label>
+                <label><input type="checkbox" name="boardgame" value="monopoly">Monopoly</label>
+                <label><input type="checkbox" name="boardgame" value="manichkin">Маничкин</label>
+                <label><input type="checkbox" name="boardgame" value="alias">Alias</label>
+              </fieldset>
+  
+              <fieldset>
+                <legend>Дополнительно:</legend>
+                <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
+                <label><input type="checkbox" name="additionally" value="vr">VR</label>
+              </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>Выбери дату и время</legend>
+              <label for="data">Дата* <input type="date" name="date" id="data" required></label>
+              <label for="time">Время* <input type="time" name="time" id="time" required></label>
+              <label for="count">Количество человек* <input type="number" name="count" id="count" required></label>
+              <label for="name">Имя* <input type="text" name="name" id="name" required></label>
+              <label for="surname">Фамилия* <input type="text" name="surname" id="surname" required></label>
+              <label for="tel">Номер телефона* <input type="tel" name="tel" id="tel" required></label>
+              <label><input type="checkbox" name="age" value="18">Я старше 18 лет</label>
+            </fieldset>
+            <button type="submit" formtarget="_blank">Забронировать</button>
+            <label><input type="checkbox" name="personal_data" value="true" required>Согласен на обработку данных</label>
+            </fieldset>
+        </form>
+      </section>
     </main>
     
     <footer id="contacts"> 
