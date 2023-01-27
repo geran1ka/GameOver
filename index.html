@@ -107,15 +107,24 @@
         <form action="https://jsonplaceholder.typicode.com/posts" method="post">
           <fieldset>
             <h2>Забронировать</h2>
+
             <fieldset>
-              <label><input type="radio" name="halls" value="80s_vibes">80's vibes</label>
-              <label><input type="radio" name="halls" value="star_wars">star wars</label>
-              <label><input type="radio" name="halls" value="wild_west">wild west</label>
-              <label><input type="radio" name="halls" value="neon_style">neon style</label>
+              <input type="radio" name="halls" value="80s_vibes" id="80s_vibes">
+              <label for="80s_vibes">80's vibes</label>
+
+              <input type="radio" name="halls" value="star_wars" id="star_wars">
+              <label for="star_wars">star wars</labelf>
+
+              <input type="radio" name="halls" value="wild_west" id="wild_west">
+              <label for="wild_west">wild west</label>
+
+              <input type="radio" name="halls" value="neon_style" id="neon_style">
+              <label for="neon_style">neon style</label>
             </fieldset>
   
             <fieldset>
               <legend>Собери набор развлечений</legend>
+
               <fieldset>
                 <legend>Приставка:</legend>
                 <label><input type="radio" name="gameconsole" value="play_station">PlayStation</label>
@@ -140,13 +149,27 @@
             </fieldset>
             <fieldset>
               <legend>Выбери дату и время</legend>
-              <label for="data">Дата* <input type="date" name="date" id="data" required></label>
-              <label for="time">Время* <input type="time" name="time" id="time" required></label>
-              <label for="count">Количество человек* <input type="number" name="count" id="count" required></label>
-              <label for="name">Имя* <input type="text" name="name" id="name" required></label>
-              <label for="surname">Фамилия* <input type="text" name="surname" id="surname" required></label>
-              <label for="tel">Номер телефона* <input type="tel" name="tel" id="tel" required></label>
-              <label><input type="checkbox" name="age" value="18">Я старше 18 лет</label>
+
+              <label for="data">Дата* </label>
+              <input type="date" name="date" id="data" required>
+
+              <label for="time">Время* </label>
+              <input type="time" name="time" id="time" required>
+
+              <label for="count">Количество человек* </label>
+              <input type="number" name="count" id="count" required>
+
+              <label for="name">Имя* </label>
+              <input type="text" name="name" id="name" required>
+
+              <label for="surname">Фамилия* </label>
+              <input type="text" name="surname" id="surname" required>
+
+              <label for="tel">Номер телефона* </label>
+              <input type="tel" name="tel" id="tel" required>
+
+              <input type="checkbox" name="age" value="18">
+              <label>Я старше 18 лет</label>
             </fieldset>
             <button type="submit" formtarget="_blank">Забронировать</button>
             <label><input type="checkbox" name="personal_data" value="true" required>Согласен на обработку данных</label>
