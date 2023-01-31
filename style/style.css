@@ -7,7 +7,7 @@ body {
   color: #FFFFFF;
 }
 
-blockquote > p:first-child {
+.quote__text {
   text-transform: uppercase;
 }
 
