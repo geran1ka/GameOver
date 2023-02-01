@@ -7,6 +7,12 @@ body {
   color: #FFFFFF;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .quote__text {
   text-transform: uppercase;
 }
