@@ -4,7 +4,6 @@
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 24px;
-
 }
 
 .faq__item:last-child {
@@ -26,10 +25,8 @@
   float: right;
   width: 24px;
   height: 24px;
-  
   background-repeat: no-repeat;
   background-size: 24px;
-  
 }
 
 .faq__item:nth-child(odd)::after {
