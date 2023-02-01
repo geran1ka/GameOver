@@ -26,10 +26,14 @@
   float: right;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/open-purple.svg");
+  
   background-repeat: no-repeat;
   background-size: 24px;
   
+}
+
+.faq__item:nth-child(odd)::after {
+  background-image: url("../icon/open-purple.svg");
 }
 
 .faq__item:nth-child(even)::after {
