@@ -75,27 +75,114 @@
           </ul>
         </section>
     
-        <section id="halls">
-          <h2>Наши залы</h2>
+        <section class="section" id="halls">
+          <h2 class="halls__title">Наши залы</h2>
                 
-          <ol>
-            <li>
-              <a href="vibes.html">80's vibes</a>
+          <ol class="halls__list">
+            <li class="halls__item">
+              <a class="halls__link" href="vibes.html">80's vibes</a>
+              <img class="halls__img" src="img/80s-vibes.jpg" alt="">
             </li>
-            <li>
-              <a href="starwars.html">Star wars</a>
+            <li class="halls__item">
+              <a class="halls__link" href="starwars.html">Star wars</a>
+              <img class="halls__img" src="img/star-wars.jpg" alt="">
             </li>
-            <li>
-              <a href="wildwest.html">Wild west</a>
+            <li class="halls__item">
+              <a class="halls__link" href="wildwest.html">Wild west</a>
+              <img class="halls__img" src="img/wild-west.jpg" alt="">
             </li>
-            <li>
-              <a href="neon.html">Neon style</a>
+            <li class="halls__item">
+              <a class="halls__link" href="neon.html">Neon style</a>
+              <img class="halls__img" src="img/neon-style.jpg" alt="">
             </li>
           </ol>
         </section>
+
+        <section class="section">
+          <h2 class="halls__title">ЗАБРОНИРОВАТЬ</h2>
+  
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="booking">
+            <fieldset>
+              <fieldset>
+                <legend>Выбери зал</legend>
+                <input type="radio" name="halls" value="80s_vibes" id="80s-vibes">
+                <label for="80s-vibes">80's vibes</label>
+  
+                <input type="radio" name="halls" value="star_wars" id="star-wars">
+                <label for="star-wars">star wars</label>
+  
+                <input type="radio" name="halls" value="wild_west" id="wild-west">
+                <label for="wild-west">wild west</label>
+  
+                <input type="radio" name="halls" value="neon_style" id="neon-style">
+                <label for="neon-style">neon style</label>
+              </fieldset>
     
-        <section id="aboutUs">
-          <h2>О нас</h2>
+              <fieldset>
+                <legend>Собери набор развлечений</legend>
+  
+                <fieldset>
+                  <legend>Приставка:</legend>
+                  <label><input type="radio" name="gameconsole" value="play_station">PlayStation</label>
+                  <label><input type="radio" name="gameconsole" value="sega_mega_drive">Sega Mega Drive</label>
+                  <label><input type="radio" name="gameconsole" value="x-box_one_s">X-box One S</label>
+                  <label><input type="radio" name="gameconsole" value="dendy">Dendy</label>
+                </fieldset>
+    
+                <fieldset>
+                  <legend>Настольные игры:</legend>
+                  <label><input type="checkbox" name="boardgame" value="jenga">Jenga</label>
+                  <label><input type="checkbox" name="boardgame" value="monopoly">Monopoly</label>
+                  <label><input type="checkbox" name="boardgame" value="manichkin">Маничкин</label>
+                  <label><input type="checkbox" name="boardgame" value="alias">Alias</label>
+                </fieldset>
+    
+                <fieldset>
+                  <legend>Дополнительно:</legend>
+                  <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
+                  <label><input type="checkbox" name="additionally" value="vr">VR</label>
+                </fieldset>
+              </fieldset>
+              <fieldset>
+                <legend >Выбери дату и время</legend>
+  
+                <div class="time">
+                  <div class="time">
+                    <label for="data">Дата</label>
+                    <input type="date" name="date" id="data" required>
+                    <label for="time">Время</label>
+                    <input type="time" name="time" id="time" required>
+                  </div>
+  
+                  <label for="count">Сколько человек</label>
+                  <input type="number" name="count" id="count" required>
+                </div>
+  
+                <div class="time">
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" id="name" required>
+    
+                  <label for="surname">Фамилия</label>
+                  <input type="text" name="surname" id="surname" required>
+                </div>
+  
+                <div>
+                  <label for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel" required>
+    
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" required>
+                  </div>
+              </fieldset>
+  
+              <button type="submit" formtarget="_blank">Забронировать</button>
+            </fieldset>
+          </form>
+        </section>
+
+
+        <section class="section" id="aboutUs">
+          <h2 class="halls__title">О нас</h2>
     
           <p>Для наших гостей мы создали <i>контептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
           <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
@@ -145,87 +232,6 @@
           </ul>
         </section>
           
-        <section>
-          <h2>ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
-  
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="booking">
-            <fieldset>
-              <fieldset>
-                <legend>Выбери зал</legend>
-                <input type="radio" name="halls" value="80s_vibes" id="80s-vibes">
-                <label for="80s-vibes">80's vibes</label>
-  
-                <input type="radio" name="halls" value="star_wars" id="star-wars">
-                <label for="star-wars">star wars</label>
-  
-                <input type="radio" name="halls" value="wild_west" id="wild-west">
-                <label for="wild-west">wild west</label>
-  
-                <input type="radio" name="halls" value="neon_style" id="neon-style">
-                <label for="neon-style">neon style</label>
-              </fieldset>
-    
-              <fieldset>
-                <legend>Собери набор развлечений</legend>
-  
-                <fieldset>
-                  <legend>Приставка:</legend>
-                  <label><input type="radio" name="gameconsole" value="play_station">PlayStation</label>
-                  <label><input type="radio" name="gameconsole" value="sega_mega_drive">Sega Mega Drive</label>
-                  <label><input type="radio" name="gameconsole" value="x-box_one_s">X-box One S</label>
-                  <label><input type="radio" name="gameconsole" value="dendy">Dendy</label>
-                </fieldset>
-    
-                <fieldset>
-                  <legend>Настольные игры:</legend>
-                  <label><input type="checkbox" name="boardgame" value="jenga">Jenga</label>
-                  <label><input type="checkbox" name="boardgame" value="monopoly">Monopoly</label>
-                  <label><input type="checkbox" name="boardgame" value="manichkin">Маничкин</label>
-                  <label><input type="checkbox" name="boardgame" value="alias">Alias</label>
-                </fieldset>
-    
-                <fieldset>
-                  <legend>Дополнительно:</legend>
-                  <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
-                  <label><input type="checkbox" name="additionally" value="vr">VR</label>
-                </fieldset>
-              </fieldset>
-              <fieldset>
-                <legend>Выбери дату и время</legend>
-  
-                <div>
-                  <div>
-                    <label for="data">Дата</label>
-                    <input type="date" name="date" id="data" required>
-                    <label for="time">Время</label>
-                    <input type="time" name="time" id="time" required>
-                  </div>
-  
-                  <label for="count">Сколько человек</label>
-                  <input type="number" name="count" id="count" required>
-                </div>
-  
-                <div>
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" required>
-    
-                  <label for="surname">Фамилия</label>
-                  <input type="text" name="surname" id="surname" required>
-                </div>
-  
-                <div>
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" required>
-    
-                  <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email" required>
-                  </div>
-              </fieldset>
-  
-              <button type="submit" formtarget="_blank">Забронировать</button>
-            </fieldset>
-          </form>
-        </section>
       </main>
       
       <footer id="contacts"> 
