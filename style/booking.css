@@ -1,0 +1,8 @@
+.booking__subtitle {
+  margin-bottom: 50px;
+}
+
+/*изменить класс*/
+.booking__time {
+  display: inline;
+}

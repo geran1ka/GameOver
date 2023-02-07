@@ -1,3 +1,6 @@
+.faq__subtitle {
+  margin-bottom: 40px;
+}
 
 .faq__item {
   padding: 30px 70px;
@@ -23,10 +26,10 @@
 .faq__item::after {
   content: "";
   float: right;
-  width: 24px;
-  height: 24px;
+  width: 46px;
+  height: 46px;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 46px;
 }
 
 .faq__item:nth-child(odd)::after {

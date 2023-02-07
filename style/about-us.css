@@ -1,0 +1,29 @@
+.about__subtitle {
+  margin-bottom: 40px;
+}
+
+.about__text {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.about__text:first-of-type {
+  margin-bottom: 36px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 70px;
+}
+
+.quote {
+  margin: 0;
+}
+
+.quote__text {
+  position: relative;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+}

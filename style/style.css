@@ -16,52 +16,18 @@ body {
   border: 1px solid red;
 }
 
-/*Наши залы*/
 .section {
   margin-bottom: 100px;
 }
 
-.halls__title {
+.subtitle {
   margin-top: 0;
-  margin-bottom: 60px;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   text-align: center;
-}
-
-.halls__list {
-  padding: 0;
-  list-style: none;
-}
-
-.halls__item {
-  position: relative;;
-  margin: 0 auto;
-  width: 100%;
-  height: 710px;
-
-}
-
-.halls__item:not(:last-child) {
-  margin-bottom: 60px;
-}
-
-.halls__link {
-  position: absolute;
-
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 80px;
   text-transform: uppercase;
-  text-align: center;
-  color: inherit;
-  text-decoration: none;
 }
-
-
-/*----------------------------------------------------*/
-
 
 ul {
   margin: 0;
@@ -73,7 +39,4 @@ ul {
   text-transform: uppercase;
 }
 
-/*изменить класс*/
-.time {
-  display: inline;
-}
+
