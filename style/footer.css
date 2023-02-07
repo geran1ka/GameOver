@@ -1,3 +1,52 @@
+.footer {
+  margin-bottom: 51px;
+}
+
 .footer__subtitle {
   margin-bottom: 54px;
+}
+
+.contacts {
+  margin-bottom: 35px;
+}
+
+.contacts__text {
+  width: 415px;
+  height: auto;
+  margin-top: 0;
+  padding: 0px 0 0px 65px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  font-style: normal;
+  background-size: 35px 32px;
+  background-repeat: no-repeat;
+  background-position: left;
+  
+}
+
+.contacts__location {
+  margin-bottom: 35px;
+  white-space: pre-line;
+  background-image: url("../img/location.svg");
+  background-position: 0 40px;
+}
+
+.contacts__tel {
+  margin-bottom: 10px;
+  background-image: url("../img/phone-call.svg");
+}
+
+.contacts__mail {
+  background-image: url("../img/envelope.svg");
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 26px;
 }

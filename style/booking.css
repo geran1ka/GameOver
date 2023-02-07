@@ -2,7 +2,11 @@
   margin-bottom: 50px;
 }
 
+.booking__form {
+  font-size: 14px;
+}
+
 /*изменить класс*/
-.booking__time {
-  display: inline;
+.booking__container {
+  display: inline-block;
 }
