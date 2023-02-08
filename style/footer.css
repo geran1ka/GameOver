@@ -42,8 +42,9 @@
 }
 
 .contacts__link {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+  
 }
 
 .social__item {

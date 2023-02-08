@@ -44,9 +44,9 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
-  text-transform: uppercase;
-  text-align: center;
   color: inherit;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
