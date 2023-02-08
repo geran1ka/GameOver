@@ -22,6 +22,7 @@
   display: block;
   margin: 0;
 
+
 }
 
 .quote__text {
@@ -51,7 +52,12 @@
   font-weight: 900;
 }
 
+.quote__container {
+  text-align: end;
+}
+
 .quote__caption {
+  display: inline-block;
   position: relative;
   margin: 0 0 0 auto;
   width: 389px;
@@ -61,6 +67,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
+  text-align: left;
 }
 
 .quote__caption::before {
