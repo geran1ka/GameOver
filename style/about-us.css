@@ -1,24 +1,27 @@
-.about__subtitle {
+.about-us__subtitle {
   margin-bottom: 40px;
 }
 
-.about__text {
+.about-us__text {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 }
 
-.about__text:first-of-type {
+.about-us__text:first-of-type {
   margin-bottom: 36px;
 }
 
-.about__text:last-of-type {
+.about-us_margin-bottom {
   margin-bottom: 70px;
 }
 
 .quote {
+  display: block;
   margin: 0;
+
 }
 
 .quote__text {
@@ -27,12 +30,14 @@
   font-size: 44px;
   font-weight: 400;
   line-height: 50px;
-  white-space: pre;
+  white-space: pre-line;
+  text-transform: uppercase;
 }
 
 .quote__text::before {
   content: '“';
   position: absolute;
+  top: 0;
   left: 0;
   color: #6c0287;
   font-weight: 900;
@@ -41,20 +46,15 @@
 .quote__text::after {
   content: '”';
   position: absolute;
+  padding-left: 10px;
   color: #6c0287;
-  font-weight: 900;
-} 
-
-.quote__text_black {
-  display: block;
   font-weight: 900;
 }
 
 .quote__caption {
   position: relative;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   width: 389px;
-  height: 84px;
   padding-left: 110px;
   padding-right: 15px;
   font-size: 20px;
@@ -67,8 +67,9 @@
   content: '';
   position: absolute;
   left: 0;
+  top: 0;
   width: 80px;
-  height: 80px;
+  height: 84px;
   background-image: url('../img/boss.jpg');
   background-repeat:  no-repeat;
   background-position: 0 -10px;

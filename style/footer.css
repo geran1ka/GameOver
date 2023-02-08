@@ -13,7 +13,7 @@
 .contacts__text {
   width: 415px;
   height: auto;
-  margin-top: 0;
+  margin: 0;
   padding: 0px 0 0px 65px;
   font-size: 24px;
   font-weight: 700;
@@ -21,15 +21,13 @@
   font-style: normal;
   background-size: 35px 32px;
   background-repeat: no-repeat;
-  background-position: left;
-  
+  background-position: left center;
 }
 
 .contacts__location {
   margin-bottom: 35px;
   white-space: pre-line;
   background-image: url("../img/location.svg");
-  background-position: 0 40px;
 }
 
 .contacts__tel {
@@ -42,13 +40,19 @@
 }
 
 .contacts__link {
+  display: inline-block;
+  height: 100%;
   color: inherit;
+  line-height: 0;
   text-decoration: none;
   
 }
 
 .social__list {
+  display: inline-block;
+  padding: 0;
   margin: 0;
+  line-height: 0;
 }
 
 .social__item {
