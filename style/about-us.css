@@ -23,7 +23,59 @@
 
 .quote__text {
   position: relative;
+  padding-left: 55px;
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 50px;
+  white-space: pre;
+}
+
+.quote__text::before {
+  content: '“';
+  position: absolute;
+  left: 0;
+  color: #6c0287;
+  font-weight: 900;
+} 
+
+.quote__text::after {
+  content: '”';
+  position: absolute;
+  color: #6c0287;
+  font-weight: 900;
+} 
+
+.quote__text_black {
+  display: block;
+  font-weight: 900;
+}
+
+.quote__caption {
+  position: relative;
+  margin-left: auto;
+  width: 389px;
+  height: 84px;
+  padding-left: 110px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.quote__caption::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url('../img/boss.jpg');
+  background-repeat:  no-repeat;
+  background-position: 0 -10px;
+  background-size: 80px;
+  border-radius: 50%;
+}
+
+.caption {
+  font-style: normal;
 }

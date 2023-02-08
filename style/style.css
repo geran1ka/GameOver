@@ -13,11 +13,14 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 1180px;
-  border: 1px solid red;
 }
 
 .section {
   margin-bottom: 100px;
+}
+
+.section:first-of-type {
+  margin-top: 146px;
 }
 
 .subtitle {
@@ -29,14 +32,5 @@ body {
   text-transform: uppercase;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.quote__text {
-  text-transform: uppercase;
-}
 
 
