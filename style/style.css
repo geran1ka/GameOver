@@ -8,13 +8,11 @@ body {
   font-family: Arial, sans-serif;
   color: #ffffff;
   background-color: #1b1a1b;
-  
 }
 
 .wrapper {
   margin: 0 auto;
   width: 1180px;
-  border: 1px solid red;
 }
 
 .section {

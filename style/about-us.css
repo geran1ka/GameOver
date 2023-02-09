@@ -24,9 +24,9 @@
 }
 
 .quote__text {
+  position: relative;
   margin-top: 0;
   margin-bottom: 40px;
-  position: relative;
   padding-left: 55px;
   font-size: 44px;
   font-weight: 400;
