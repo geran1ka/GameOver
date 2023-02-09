@@ -1,3 +1,7 @@
+/*
+@import url("style/normalize.css");
+@import url("style/global.css");
+*/
 @import url("style/style.css");
 @import url("style/faq.css");
 @import url("style/halls.css");

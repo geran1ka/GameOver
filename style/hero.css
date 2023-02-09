@@ -1,9 +1,9 @@
-.hero {
+.hero__container {
   position: relative;
   height: 823px;
 }
 
-.hero::after {
+.hero__container::after {
   content: '';
   position: absolute;
   right: 0;
