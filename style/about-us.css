@@ -21,11 +21,11 @@
 .quote {
   display: block;
   margin: 0;
-
-
 }
 
 .quote__text {
+  margin-top: 0;
+  margin-bottom: 40px;
   position: relative;
   padding-left: 55px;
   font-size: 44px;
