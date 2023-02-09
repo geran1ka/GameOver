@@ -13,7 +13,6 @@
 .contacts__text {
   width: 415px;
   height: auto;
-  margin: 0;
   padding: 0px 0 0px 65px;
   font-size: 24px;
   font-weight: 700;
@@ -49,12 +48,6 @@
 
 .social {
   display: inline-block;
-}
-
-.social__list {
-  padding: 0;
-  margin: 0;
-  line-height: 0;
 }
 
 .social__item {

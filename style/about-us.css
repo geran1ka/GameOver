@@ -3,8 +3,6 @@
 }
 
 .about-us__text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -25,7 +23,6 @@
 
 .quote__text {
   position: relative;
-  margin-top: 0;
   margin-bottom: 40px;
   padding-left: 55px;
   font-size: 44px;
@@ -58,7 +55,7 @@
 
 .quote__caption {
   display: inline-block;
-  margin: 0 0 0 auto;
+  margin-left: auto;
   width: 389px;
   font-size: 20px;
   font-weight: 400;
@@ -77,6 +74,7 @@
   background-position: 0 -10px;
   background-size: 80px;
   border-radius: 50%;
+
 }
 
 .caption {

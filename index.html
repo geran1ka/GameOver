@@ -18,9 +18,10 @@
     <title>GAME OVER</title>
   </head>
   <body>
-    <div class="wrapper">
-      <!--
-      <header class="header">
+    
+    <!--
+    <header class="header">
+        <div class="container">
         <img class="logo" src="img/logo.svg" alt="Логотип">
   
         <nav class="navigation">
@@ -33,60 +34,62 @@
             <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
   -->
       <main>
-<!--
-        <section>
-          <h2 class="subtitle">У нас есть всё для классного отдыха с друзьями!</h2>
-    
-          <ul>
-            <li>
-              <figure>
-                <img src="img/vr.jpg" alt="VR-очки" height="228">
-                <figcaption>VR очки</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/audio.jpg" alt="Аудио система" height="228">
-                <figcaption>Аудио система 5.1 с отличным звуком</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/micro.jpg" alt="Девушка с микрофоном" height="228">
-                <figcaption>Караоке (4 микрофона)</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/game.jpg" alt="Игра в маджонг" height="228">
-                <figcaption>Настольные игры</figcaption>
-              </figure></li>
-            <li>
-              <figure>
-                <img src="img/netflix.jpg" alt="Телевизор с картинкой логотипа Netflix" height="228">
-                <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-              </figure></li>
-            <li>
-              <figure>
-                <img src="img/sony.jpg" alt="Приставка sony playstation" height="228">
-                <figcaption>PlayStation 5</figcaption>
-              </figure></li>
-          </ul>
-        </section>
--->
+        <div class="container">
+  <!--
+          <section>
+            <h2 class="subtitle">У нас есть всё для классного отдыха с друзьями!</h2>
+      
+            <ul>
+              <li>
+                <figure>
+                  <img src="img/vr.jpg" alt="VR-очки" height="228">
+                  <figcaption>VR очки</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/audio.jpg" alt="Аудио система" height="228">
+                  <figcaption>Аудио система 5.1 с отличным звуком</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/micro.jpg" alt="Девушка с микрофоном" height="228">
+                  <figcaption>Караоке (4 микрофона)</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/game.jpg" alt="Игра в маджонг" height="228">
+                  <figcaption>Настольные игры</figcaption>
+                </figure></li>
+              <li>
+                <figure>
+                  <img src="img/netflix.jpg" alt="Телевизор с картинкой логотипа Netflix" height="228">
+                  <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+                </figure></li>
+              <li>
+                <figure>
+                  <img src="img/sony.jpg" alt="Приставка sony playstation" height="228">
+                  <figcaption>PlayStation 5</figcaption>
+                </figure></li>
+            </ul>
+          </section>
+  -->
         <section class="hero section">
           <div class="hero__container">
-              <h1 class="hero__title">GAME OVER</h1>
-              <p class="hero__text">Новый формат игр и отдыха</p>
+            <h1 class="hero__title">GAME OVER</h1>
+            <p class="hero__text">Новый формат игр и отдыха</p>
           </div>
         </section>
 
         <section class="halls section" id="halls">
           <h2 class="halls__title title">Наши залы</h2>
-                
+                  
           <ol class="halls__list">
             <li class="halls__item halls__item_vibes">
               <a class="halls__link" href="vibes.html">80's vibes</a>
@@ -105,27 +108,27 @@
 
         <section class="booking section">
           <h2 class="booking__title title">ЗАБРОНИРОВАТЬ</h2>
-  
+
           <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="post" id="booking">
             <fieldset>
               <fieldset>
                 <legend>Выбери зал</legend>
                 <input type="radio" name="halls" value="80s_vibes" id="80s-vibes">
                 <label for="80s-vibes">80's vibes</label>
-  
+
                 <input type="radio" name="halls" value="star_wars" id="star-wars">
                 <label for="star-wars">star wars</label>
-  
+
                 <input type="radio" name="halls" value="wild_west" id="wild-west">
                 <label for="wild-west">wild west</label>
-  
+
                 <input type="radio" name="halls" value="neon_style" id="neon-style">
                 <label for="neon-style">neon style</label>
               </fieldset>
-    
+
               <fieldset>
                 <legend>Собери набор развлечений</legend>
-  
+
                 <fieldset>
                   <legend>Приставка:</legend>
                   <label><input type="radio" name="gameconsole" value="play_station">PlayStation</label>
@@ -133,7 +136,7 @@
                   <label><input type="radio" name="gameconsole" value="x-box_one_s">X-box One S</label>
                   <label><input type="radio" name="gameconsole" value="dendy">Dendy</label>
                 </fieldset>
-    
+
                 <fieldset>
                   <legend>Настольные игры:</legend>
                   <label><input type="checkbox" name="boardgame" value="jenga">Jenga</label>
@@ -141,7 +144,7 @@
                   <label><input type="checkbox" name="boardgame" value="manichkin">Маничкин</label>
                   <label><input type="checkbox" name="boardgame" value="alias">Alias</label>
                 </fieldset>
-    
+
                 <fieldset>
                   <legend>Дополнительно:</legend>
                   <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
@@ -150,7 +153,7 @@
               </fieldset>
               <fieldset>
                 <legend >Выбери дату и время</legend>
-  
+
                 <div class="booking__container">
                   <div class="booking__container">
                     <label for="data">Дата*</label>
@@ -158,19 +161,19 @@
                     <label for="time">Время*</label>
                     <input type="time" name="time" id="time" required>
                   </div>
-  
+
                   <label for="count">Количество человек*</label>
                   <input type="number" name="count" id="count" required>
                 </div>
-  
+
                 <div class="booking__container">
                   <label for="name">Имя*</label>
                   <input type="text" name="name" id="name" required>
-    
+
                   <label for="surname">Фамилия*</label>
                   <input type="text" name="surname" id="surname" required>
                 </div>
-  
+
                 <div class="booking__time">
                   <label for="tel">Номер телефона*</label>
                   <input type="tel" name="tel" id="tel" required>
@@ -179,15 +182,14 @@
                   <label for="age">Я старше 18 лет</label> 
                 </div>
               </fieldset>
-  
+
               <button type="submit" formtarget="_blank">Забронировать</button>
-              
+                
               <input type="checkbox" name="personal" id="personal">
               <label for="personal">Согласен на обработку персональных данных</label> 
             </fieldset>
           </form>
         </section>
-
 
         <section class="about-us section" id="aboutUs">
           <h2 class="about-us__title title">О нас</h2>
@@ -195,7 +197,7 @@
             <p class="about-us__text">Для наших гостей мы создали контептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
             <p class="about-us__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
           </div>
-                
+                  
           <blockquote class="quote">
             <p class="quote__text">GAME OVER — 
               это место незабываемых впечатлений </p>
@@ -204,7 +206,7 @@
             </div>
           </blockquote>
         </section>
-  <!--
+        <!--
         <section class="section" id="reviews">
           <h2 class="subtitle">ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
           <ul>
@@ -230,7 +232,6 @@
               <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космосв</p>
             </li>
           </ul>
-          
         </section>
         --->
         <section class="faq section" id="faq">
@@ -243,10 +244,11 @@
             <li class="faq__item">Какая комната самая популярная?</li>
           </ul>
         </section>
-          
-      </main>
+      </div>
+    </main>
       
-      <footer class="footer" id="contacts"> 
+    <footer class="footer" id="contacts">
+      <div class="container">
         <h2 class="footer__title title">Контакты</h2>
         <address class="contacts">
           <p class="contacts__text contacts__location">г. Москва 
@@ -293,7 +295,7 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div> 
+    </footer>
   </body>
 </html>
