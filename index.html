@@ -117,7 +117,7 @@
 
           <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post" id="booking">
             <fieldset class="form__box">
-              <fieldset class="form__box-halls">
+              <fieldset class="form__box halls">
                 <legend class="form__title">Выбери зал</legend>
                 <input class="form__radio" type="radio" name="halls" value="80s_vibes" id="80s-vibes">
                 <label class="form__label" for="80s-vibes">80's vibes</label>
@@ -132,10 +132,10 @@
                 <label class="form__label" for="neon-style">neon style</label>
               </fieldset>
 
-              <fieldset class="form__box-gameconsole">
+              <fieldset class="form__box entertainment">
                 <legend class="form__title">Собери набор развлечений</legend>
 
-                <fieldset class="form__box">
+                <fieldset class="form__box gameconsole" >
                   <legend class="form__title">Приставка:</legend>
                   <label class="form__label">
                     <input class="form__radio" type="radio" name="gameconsole" value="play_station">PlayStation
@@ -151,7 +151,7 @@
                   </label>
                 </fieldset>
 
-                <fieldset class="form__box-boardgame">
+                <fieldset class="form__box boardgame">
                   <legend class="form__title">Настольные игры:</legend>
                   <label class="form__label">
                     <input class="form__chekbox" type="checkbox" name="boardgame" value="jenga">Jenga
@@ -167,7 +167,7 @@
                   </label>
                 </fieldset>
 
-                <fieldset class="form__box-additionally">
+                <fieldset class="form__box additionally">
                   <legend class="form__title">Дополнительно:</legend>
                   <label class="form__label">
                     <input class="form__chekbox" type="checkbox" name="additionally" value="karaoke">Караоке
@@ -177,11 +177,11 @@
                   </label>
                 </fieldset>
               </fieldset>
-              <fieldset class="form__box-time">
+              <fieldset class="form__box time">
                 <legend class="form__title">Выбери дату и время</legend>
 
-                <div class="form-container">
-                  <div class="form-container">
+                <div class="group-container">
+                  <div class="group-container__time">
                     <label class="form__label" for="data">Дата*</label>
                     <input class="form__input" type="date" name="date" id="data" required>
                     <label class="form__label" for="time">Время*</label>
@@ -192,7 +192,7 @@
                   <input class="form__input" type="number" name="count" id="count" required>
                 </div>
 
-                <div class="form-container">
+                <div class="group-container">
                   <label class="form__label" for="name">Имя*</label>
                   <input class="form__input" type="text" name="name" id="name" required>
 
@@ -200,7 +200,7 @@
                   <input class="form__input" type="text" name="surname" id="surname" required>
                 </div>
 
-                <div class="form-container">
+                <div class="group-container">
                   <label class="form__label" for="tel">Номер телефона*</label>
                   <input class="form__input" type="tel" name="tel" id="tel" required>
 
