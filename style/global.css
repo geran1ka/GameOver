@@ -83,7 +83,7 @@ iframe {
   padding: 50px 0;
 }
 
-.section:first-of-type {
+.section:first-child {
   padding-top: 146px;
 }
 

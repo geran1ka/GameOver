@@ -17,7 +17,7 @@
 
     <title>GAME OVER</title>
   </head>
-  <body>
+  <body class="page">
     
     <!--
     <header class="header">
@@ -117,7 +117,7 @@
 
           <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="post" id="booking">
             <fieldset>
-              <fieldset class="">
+              <fieldset class="booking-form__box">
                 <legend class="booking-form__title">Выбери зал</legend>
                 <input class="booking-form__radio" type="radio" name="halls" value="80s_vibes" id="80s-vibes">
                 <label class="booking-form__label" for="80s-vibes">80's vibes</label>
@@ -132,11 +132,11 @@
                 <label class="booking-form__label" for="neon-style">neon style</label>
               </fieldset>
 
-              <fieldset>
+              <fieldset class="booking-form__box">
                 <legend class="booking-form__title">Собери набор развлечений</legend>
 
-                <fieldset>
-                  <legend>Приставка:</legend>
+                <fieldset class="booking-form__box">
+                  <legend class="booking-form__title">Приставка:</legend>
                   <label class="booking-form__label">
                     <input class="booking-form__radio" type="radio" name="gameconsole" value="play_station">PlayStation
                   </label>
@@ -151,7 +151,7 @@
                   </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="booking-form__box">
                   <legend class="booking-form__title">Настольные игры:</legend>
                   <label class="booking-form__label">
                     <input class="booking-form__chekbox" type="checkbox" name="boardgame" value="jenga">Jenga
@@ -167,7 +167,7 @@
                   </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="booking-form__box">
                   <legend class="booking-form__title">Дополнительно:</legend>
                   <label class="booking-form__label">
                     <input class="booking-form__chekbox" type="checkbox" name="additionally" value="karaoke">Караоке
@@ -177,7 +177,7 @@
                   </label>
                 </fieldset>
               </fieldset>
-              <fieldset>
+              <fieldset class="booking-form__box">
                 <legend class="booking-form__title">Выбери дату и время</legend>
 
                 <div class="form-container">
@@ -277,7 +277,7 @@
       </section>
     </main>
       
-    <footer class="footer" id="contacts">
+    <footer class="footer section" id="contacts">
       <div class="container">
         <h2 class="footer__title title">Контакты</h2>
         <address class="contacts">
