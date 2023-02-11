@@ -15,19 +15,19 @@
   height: 710px;
 }
 
-.halls__item_background-image_vibes {
+.halls__item_theme_vibes {
   background-image: url("../img/80s-vibes.jpg");
 }
 
-.halls__item_background-image_starwars {
+.halls__item_theme_starwars {
   background-image: url("../img/star-wars.jpg");
 }
 
-.halls__item_background-image_wildwest {
+.halls__item_theme_wildwest {
   background-image: url("../img/wild-west.jpg");
 }
 
-.halls__item_background-image_neon {
+.halls__item_theme_neon {
   background-image: url("../img/neon-style.jpg");
 }
 
