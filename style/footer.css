@@ -11,8 +11,6 @@
 }
 
 .contacts__text {
-  width: 415px;
-  height: auto;
   padding: 0px 0 0px 65px;
   font-size: 24px;
   font-weight: 700;
@@ -38,9 +36,8 @@
   background-image: url("../img/envelope.svg");
 }
 
-.contacts__link {
+link {
   display: inline-block;
-  height: 100%;
   color: inherit;
   line-height: 0;
   text-decoration: none;
@@ -58,9 +55,8 @@
   margin-right: 26px;
 }
 
-.social__link {
+link {
   display: inline-block;
-  height: 100%;
   color: inherit;
   line-height: 0;
   text-decoration: none;

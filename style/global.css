@@ -84,7 +84,11 @@ iframe {
 }
 
 .section:first-child {
-  padding-top: 146px;
+  padding-top: 0;
+}
+
+.section:last-child {
+  padding-bottom: 0;
 }
 
 .title {
