@@ -1,3 +1,7 @@
+.container_display_float {
+  display: flow-root;
+}
+
 .about-us__title {
   margin-bottom: 40px;
 }
@@ -26,7 +30,6 @@
 .quote {
   display: flow-root;
   margin: 0;
-  border: 1px solid red;
 }
 
 .quote__text {
