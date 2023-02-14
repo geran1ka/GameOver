@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 51px;
+  padding-bottom: 101px;
 }
 
 .footer__title {
@@ -36,7 +36,7 @@
   background-image: url("../img/envelope.svg");
 }
 
-link {
+.contacts__link {
   display: inline-block;
   color: inherit;
   line-height: 0;
@@ -47,6 +47,10 @@ link {
   display: inline-block;
 }
 
+.social__list{
+  font-size: 0;
+}
+
 .social__item {
   display: inline-block;
 }
@@ -55,11 +59,12 @@ link {
   margin-right: 26px;
 }
 
-link {
-  display: inline-block;
+.social__link {
+  display: block;
   color: inherit;
   line-height: 0;
   text-decoration: none;
 }
+
 
 
