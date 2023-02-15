@@ -3,7 +3,6 @@
 }
 
 .halls__list {
-  display: relative;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -13,8 +12,9 @@
 .halls__item {
   display: inline-block;
   vertical-align: top;
-  width: 580px;
-  height: 349px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 349px;
   text-align: center;
 
 }
