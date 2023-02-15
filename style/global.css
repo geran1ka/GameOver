@@ -90,7 +90,7 @@ iframe {
   margin-top: 0;
   font-size: 40px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
 }

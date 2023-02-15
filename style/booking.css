@@ -2,10 +2,15 @@
   margin-bottom: 50px;
 }
 
-.booking-form {
-  font-size: 14px;
+.group-container {
+  display: inline-block;
+  vertical-align: top;
+  word-wrap: normal;
+  
 }
 
-.form-container {
-  display: inline-block;
+.group-container__time {
+  display: inline-block;  
+  vertical-align: top;
 }
+

@@ -16,7 +16,7 @@
   max-width: 580px;
   max-height: 349px;
   text-align: center;
-
+  background-size: contain;
 }
 .halls__item:first-child {
   margin-bottom: 20px;
