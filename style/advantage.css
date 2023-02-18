@@ -10,26 +10,41 @@
 }
 
 .advantage__item {
+  display: flex;
   flex-basis: 380px;
+  min-height: 228px;
+  padding: 6px 40px;
+  align-items: flex-end;
+
 }
 
 .advantage__text {
+  min-height: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
 }
 
-.figure {
-  position: relative;
+.advantage__item_vr {
+  background-image: url('../img/vr.jpg');
 }
 
-.figure__caption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding-left: 40px;
-  padding-bottom: 20px;
-  max-width: 340px;
-  max-height: 40px;
+.advantage__item_audio {
+  background-image: url('../img/audio.jpg');
+}
 
+.advantage__item_micro {
+  background-image: url('../img/micro.jpg');
+}
+
+.advantage__item_game {
+  background-image: url('../img/game.jpg');
+}
+
+.advantage__item_netflix {
+  background-image: url('../img/netflix.jpg');
+}
+
+.advantage__item_sony {
+  background-image: url('../img/sony.jpg');
 }

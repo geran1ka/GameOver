@@ -1,29 +1,22 @@
 .halls__title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .halls__list {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .halls__item {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  max-width: 580px;
-  max-height: 349px;
-  text-align: center;
+  display: flex;
+  flex-basis: 580px;
+  justify-content: center;
+  align-items: center;
+  min-height: 349px;
+  background-repeat: no-repeat;
   background-size: contain;
-}
-.halls__item:first-child {
-  margin-bottom: 20px;
-}
-
-.halls__item:not(:nth-child(2n)) {
-  margin-right: 20px;
 }
 
 .halls__item_theme_vibes {
@@ -44,12 +37,12 @@
 }
 
 .halls__link {
-  display: block;
-  padding: 135px 0;
+  max-width: 252px;
   font-size: 70px;
   font-weight: 700;
   line-height: 1.142;
   color: inherit;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
