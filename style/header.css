@@ -1,0 +1,37 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.header__container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 40px
+}
+
+.navigation__item {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 2.273;
+  text-transform: uppercase;
+}
+
+.header__button {
+  padding: 12px 32px 13px;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.364;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #1b1a1b;
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+}
+

@@ -76,6 +76,7 @@ iframe {
   max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .section {
@@ -83,7 +84,7 @@ iframe {
 }
 
 .section:first-child {
-  padding-top: 146px;
+  padding-top: 25px;
 }
 
 .title {
