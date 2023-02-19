@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  max-width: 1440px;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
@@ -49,6 +50,7 @@ fieldset {
   margin: 0;
 }
 
+
 iframe {
   border: none;
 }
@@ -84,6 +86,9 @@ iframe {
 
 .section:first-child {
   padding-top: 25px;
+}
+.section:last-child {
+  padding-bottom: 45px;
 }
 
 .title {
