@@ -1,6 +1,6 @@
 .advantage__title {
   padding: 0 100px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .advantage__list {
@@ -11,11 +11,10 @@
 
 .advantage__item {
   display: flex;
+  align-items: flex-end;
   flex-basis: 380px;
   min-height: 228px;
   padding: 6px 40px;
-  align-items: flex-end;
-
 }
 
 .advantage__text {

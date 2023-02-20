@@ -1,5 +1,7 @@
 .about-us__container {
-  display: flow-root;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .about-us__title {
@@ -10,10 +12,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
-}
-
-.about-us__text:first-of-type {
-  margin-bottom: 28px;
 }
 
 .about-us__img {
@@ -28,13 +26,14 @@
 }
 
 .quote {
-  display: flow-root;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
   margin: 0;
 }
 
 .quote__text {
   position: relative;
-  margin-bottom: 39px;
   padding-left: 31px;
   font-size: 44px;
   font-weight: 400;
@@ -61,29 +60,28 @@
 }
 
 .quote__caption {
-  display: block;
-  margin-left: auto;
-  max-width: 384px;
-  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
   font-size: 20px;
   font-weight: 400;
-  font-style: normal;
-  line-height: 28px;
+  line-height: 1.4;
 }
 
 .quote__caption::before {
   content: '';
-  float: left;
   width: 80px;
-  height: 84px;
+  height: 80px;
   background-image: url('../img/boss.jpg');
   background-repeat:  no-repeat;
+  background-size: cover;
   background-position: 0 -10px;
-  background-size: 80px;
   border-radius: 50%;
-  margin: 0px 30px 0px 0;
 }
 
 .caption {
+  flex-basis: 274px;
   font-style: normal;
 }
