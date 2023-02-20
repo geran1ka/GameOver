@@ -74,6 +74,17 @@
   text-decoration: none;
 }
 
+.social__link:active {
+  color: #cd06ff;
+}
+
+.social__link:focus {
+  border: 1px solid #cd06ff;
+}
+
+
+
+
 .footer__img {
   padding-bottom: 58px;
 }

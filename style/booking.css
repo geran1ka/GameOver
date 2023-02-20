@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;
+  background-color: #6c0287;
 }
 
 .booking__container {
@@ -52,11 +52,24 @@
   color: #000000;
   background-color: #ffffff;
   border-radius: 8px;
+  border: 3px solid #ffffff;
   cursor: pointer;
 }
 
-.form__radio-hidden:checked + .form__label-radio {
-  background-color: red;
+
+
+.form__label-radio:hover {
+  border-color: #ffffff;
+}
+
+.form__label-radio:focus {
+  border-color: #ffffff;
+}
+
+.form__radio-hidden:checked  + .form__label-radio {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #6c0287;
 }
 
 .form__box-style_entertainment {
@@ -112,6 +125,11 @@
   cursor: pointer;
 }
 
+.form__radio:focus,
+.form__chekbox:focus {
+  outline: 1px solid #CD06FF;
+}
+
 .time {
   display: flex;
   max-width: 980px;
@@ -128,16 +146,6 @@
   flex-basis: 300px;
   gap: 36px 32px;
   flex-wrap: wrap;
-}
-
-.form__input {
-  position: relative;
-  padding: 12px 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #211E1E;
-  background-color: #ffffff;
 }
 
 /*
@@ -188,12 +196,19 @@
 }
 
 .form__input {
+  position: relative;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
   color: #211E1E;
-  border: none;
+  background-color: #ffffff;
+  outline: none;
+  border: 3px solid #ffffff;
+}
+
+.form__input:focus {
+  border-color:#CD06FF;
 }
 
 .form__input_data {
@@ -222,7 +237,24 @@
   text-transform: uppercase;
   color: #6C0287;
   border-radius: 10px;
+  outline: none;
+  border: 3px solid #ffffff;
 }
+
+.form__btn:hover  {
+  border-color: #6C0287;
+  
+}
+
+.form__btn:focus  {
+  border-color: #6C0287;
+}
+
+.form__btn:active  {
+  border-color: #eadeed;
+  background-color: #eadeed;
+}
+
 
 
 

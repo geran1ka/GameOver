@@ -31,7 +31,25 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #1b1a1b;
+  outline: none;
   border: 3px solid #cd06ff;
   border-radius: 10px;
 }
+
+.header__button:hover {
+  background-color: #6c0287;
+  border-color: #6c0287;
+}
+
+.header__button:focus {
+  background-color: #6c0287;
+}
+
+.header__button:active {
+  background-color: #640AA3;
+  border: 1px solid  #000000;
+}
+
+
+
 
