@@ -1,5 +1,5 @@
 .booking {
-  background-color: #6c0287;
+  background-color: #440f51;
 }
 
 .booking__container {
@@ -59,16 +59,16 @@
 
 
 .form__label-radio:hover {
-  border-color: #ffffff;
+  background-color: #eadeed;
+  border-color: #640AA3;
 }
 
 .form__label-radio:focus {
-  border-color: #ffffff;
+  border-color: #640AA3;
 }
 
 .form__radio-hidden:checked  + .form__label-radio {
   color: #ffffff;
-  border-color: #ffffff;
   background-color: #6c0287;
 }
 
@@ -148,18 +148,6 @@
   flex-wrap: wrap;
 }
 
-/*
-.form__input-hidden_data::after {
-  content: 'Дата';
-  position: absolute;
-}
-
-.form__input-hidden_time::after {
-  content: 'Время';
-  position: absolute;
-}
-*/
-
 .form__label-small {
   display: flex;
   flex-direction: column;
@@ -236,14 +224,15 @@
   line-height: 1.273;
   text-transform: uppercase;
   color: #6C0287;
+  background-color: #ffffff;
   border-radius: 10px;
   outline: none;
   border: 3px solid #ffffff;
 }
 
 .form__btn:hover  {
+  background-color: #eadeed;
   border-color: #6C0287;
-  
 }
 
 .form__btn:focus  {

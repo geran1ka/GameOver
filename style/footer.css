@@ -72,17 +72,26 @@
   display: block;
   color: inherit;
   text-decoration: none;
+  outline: 1px solid transparent;
+  /*
+  outline-offset: 3px;
+  border-radius: 50%;
+  */  
+  color: #ffffff;
+}
+
+.social__link:hover {
+  color: #eadeed;
+}
+
+.social__link:focus {
+  color: #eadeed;
+  outline-color: #cd06ff;
 }
 
 .social__link:active {
   color: #cd06ff;
 }
-
-.social__link:focus {
-  border: 1px solid #cd06ff;
-}
-
-
 
 
 .footer__img {
