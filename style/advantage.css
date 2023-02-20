@@ -11,14 +11,11 @@
 
 .advantage__item {
   display: flex;
-  align-items: flex-end;
   flex-basis: 380px;
-  min-height: 228px;
-  padding: 6px 40px;
+  padding: 166px 40px 6px;
 }
 
 .advantage__text {
-  min-height: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;

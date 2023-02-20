@@ -1,6 +1,9 @@
+.booking {
+  background-color: #440F51;
+}
+
 .booking__container {
   padding: 80px 30px;
-  background-color: #440F51;
 }
 
 .booking__title {
@@ -49,6 +52,7 @@
   color: #000000;
   background-color: #ffffff;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .form__radio-hidden:checked + .form__label-radio {
@@ -57,7 +61,7 @@
 
 .form__box-style_entertainment {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   max-width: 1080px;
   margin-left: auto;
   margin-bottom: 60px;
@@ -67,7 +71,7 @@
   display: flex;
   flex-basis: 280px;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
   row-gap: 20px; 
 }
 
@@ -76,7 +80,7 @@
   display: flex;
   flex-basis: 300px;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
   row-gap: 20px; 
 }
 
@@ -85,14 +89,17 @@
   display: flex;
   flex-basis: 300px;
   flex-direction: column;
+  align-items: flex-start;
   row-gap: 20px; 
 }
 
-
 .form__label {
+  display: inline-flex;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.136;
+  cursor: pointer;
+  align-items: flex-start;
 }
 
 .form__radio,
@@ -102,6 +109,7 @@
   width: 26px;
   height: 26px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .time {
@@ -122,7 +130,7 @@
   flex-wrap: wrap;
 }
 
-.form__input-hidden {
+.form__input {
   position: relative;
   padding: 12px 20px;
   font-weight: 400;
@@ -132,23 +140,7 @@
   background-color: #ffffff;
 }
 
-.form__input-hidden::-webkit-datetime-edit-fields-wrapper {
-  display: none; 
-}
-
-.form__input-hidden_data {
-  width: 134px;
-}
-
-.form__input-hidden_time {
-  width: 134px;
-}
-
-.form__input-hidden_count {
-  width: 300px;
-}
-
-
+/*
 .form__input-hidden_data::after {
   content: 'Дата';
   position: absolute;
@@ -158,30 +150,7 @@
   content: 'Время';
   position: absolute;
 }
-
-/*
-.form__label-type {
-  position: relative;
-  flex-basis: 134px;
-  flex-grow: 1;
-  padding: 12px 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #211E1E;
-  background-color: #ffffff;
-}
-
-.form__label-type::after {
-  content: '';
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 21px;
-  height: 15px;
-  background-image: url('../img/treugol.jpg');
-  background-color: #2a282b;
-}*/
+*/
 
 .form__label-small {
   display: flex;
@@ -224,6 +193,19 @@
   font-size: 18px;
   line-height: 1.556;
   color: #211E1E;
+  border: none;
+}
+
+.form__input_data {
+  width: 134px;
+}
+
+.form__input_time {
+  width: 134px;
+}
+
+.form__input_count {
+  width: 300px;
 }
 
 .form-container {

@@ -65,7 +65,6 @@
 .hero__link {
   display: inline-block;
   position: relative;
-  margin-right: 165px;
   padding: 25px 69px;
   z-index: 100;
   font-weight: 700;
@@ -75,12 +74,14 @@
   color: #FFFFFF;
   background: #6C0287;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px #6C0287;
 }
 
 .hero__link-down {
   position: absolute;
-  left: 46%;
-  bottom: 11%;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
   display: inline-flex;
   width: 97px;
   height: 97px;
