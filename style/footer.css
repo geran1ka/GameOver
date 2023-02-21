@@ -91,8 +91,8 @@
 
 .social__link:active {
   color: #cd06ff;
+  outline-color: transparent;
 }
-
 
 .footer__img {
   padding-bottom: 58px;
