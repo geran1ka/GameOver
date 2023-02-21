@@ -22,10 +22,6 @@
   text-transform: uppercase;
 }
 
-.navigation__link {
-  border: 3px solid #cd06ff;
-}
-
 .header__button {
   padding: 12px 32px 13px;
   font-family: 'Arial';
