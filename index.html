@@ -118,16 +118,16 @@
               <fieldset class="form__box-style form__box-style_halls">
                 <legend class="form__title form__title_type">Выбери зал</legend>
                 <input class="form__radio-hidden" type="radio" name="halls" value="80s_vibes" id="80s-vibes">
-                <label class="form__label-radio" for="80s-vibes">80's vibes</label>
+                <label class="form__label-radio" for="80s-vibes" tabindex="0">80's vibes</label>
 
                 <input class="form__radio-hidden" type="radio" name="halls" value="star_wars" id="star-wars">
-                <label class="form__label-radio" for="star-wars">star wars</label>
+                <label class="form__label-radio" for="star-wars" tabindex="0">star wars</label>
 
                 <input class="form__radio-hidden" type="radio" name="halls" value="wild_west" id="wild-west">
-                <label class="form__label-radio" for="wild-west">wild west</label>
+                <label class="form__label-radio" for="wild-west" tabindex="0">wild west</label>
 
                 <input class="form__radio-hidden" type="radio" name="halls" value="neon_style" id="neon-style">
-                <label class="form__label-radio" for="neon-style">neon style</label>
+                <label class="form__label-radio" for="neon-style" tabindex="0">neon style</label>
               </fieldset>
 
               <fieldset class="form__box-style form__box-style_entertainment">
@@ -271,9 +271,9 @@
           <h2 class="faq__title title">Частые вопросы</h2>
           <ul class="faq__list">
             <li class="faq__item">
-              <span>Можно ли забронировать комнату онлайн?</span>
               <button class="faq__item-btn" type="button">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <span>Можно ли забронировать комнату онлайн?</span>
+                <svg class="box-svg" width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23" cy="23" r="22.5" stroke="white"/>
                   <path d="M22.8305 14H23.5085V34H22.8305V14Z"/>
                   <path d="M13 24.1695V23.4915H33V24.1695H13Z"/>
@@ -281,9 +281,19 @@
               </button>
             </li>
             <li class="faq__item">
-              <span>Могут ли мне вернуть деньги за бронь?</span>
               <button class="faq__item-btn" type="button">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <span>Могут ли мне вернуть деньги за бронь?</span>
+                <svg class="box-svg" width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="23" cy="23" r="22.5" stroke="currentColor"/>
+                  <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </li>
+            <li class="faq__item">            
+              <button class="faq__item-btn" type="button">
+                <span>Какая комната самай популярная?</span>  
+                <svg class="box-svg" width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23" cy="23" r="22.5" stroke="currentColor"/>
                   <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
                   <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
@@ -291,19 +301,9 @@
               </button>
             </li>
             <li class="faq__item">
-              <span>Какая комната самай популярная?</span>              
               <button class="faq__item-btn" type="button">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="23" cy="23" r="22.5" stroke="currentColor"/>
-                  <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
-                </svg>
-              </button>
-            </li>
-            <li class="faq__item">
-              <span>Как получить VIP карту?</span>
-              <button class="faq__item-btn" type="button">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <span>Как получить VIP карту?</span>
+                <svg class="box-svg" width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23" cy="23" r="22.5" stroke="currentColor"/>
                   <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
                   <path  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
@@ -311,9 +311,9 @@
               </button>
             </li>
             <li class="faq__item">
-              <span>Какая комната самая популярная?</span>
               <button class="faq__item-btn" type="button">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <span>Какая комната самая популярная?</span>
+                <svg class="box-svg" width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23" cy="23" r="22.5" stroke="currentColor"/>
                   <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
                   <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>

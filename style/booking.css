@@ -50,13 +50,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  outline: none;
   background-color: #ffffff;
   border-radius: 8px;
   border: 3px solid #ffffff;
   cursor: pointer;
 }
-
-
 
 .form__label-radio:hover {
   background-color: #eadeed;

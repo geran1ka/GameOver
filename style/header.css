@@ -8,7 +8,6 @@
   align-items: center;
 }
 
-
 .navigation__list {
   display: flex;
   gap: 40px
@@ -20,6 +19,23 @@
   font-size: 22px;
   line-height: 2.273;
   text-transform: uppercase;
+}
+
+.navigation__link {
+  border-bottom: 3px solid transparent;
+  outline: none;
+}
+
+.navigation__link:hover {
+  color: #CD06FF        ;
+}
+
+.navigation__link:focus {
+  border-bottom-color: #ffffff;
+}
+
+.navigation__link:active {
+  color: #640AA3;
 }
 
 .header__button {
