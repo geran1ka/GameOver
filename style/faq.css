@@ -31,16 +31,54 @@
 .faq__item-btn {
   max-width: 46px;
   max-height: 46px;
-  color: transparent;
   border-radius: 50%;
   border: none;
 }
 
-.faq__item-btn {
+.faq__item:nth-child(odd) .faq__item-btn {
+  color: #ffffff;
   stroke:#440F51;
   outline: 1px solid #440F51;
 }
 
+.faq__item:nth-child(even) .faq__item-btn {
+  color: #440F51;
+  stroke:#ffffff;
+  outline: 1px solid #ffffff;
+}
+
+.faq__item:nth-child(odd) .faq__item-btn:hover {
+  color: #440F51;
+  stroke: #ffffff;
+}
+
+
+.faq__item:nth-child(even) .faq__item-btn:hover {
+  color: #ffffff;
+  stroke: #440F51;
+}
+
+.faq__item:nth-child(odd) .faq__item-btn:active {
+  color: #ffffff;
+  stroke:#440F51;
+  outline: 1px solid #440F51;
+}
+
+.faq__item:nth-child(even) .faq__item-btn:active {
+  color: #440F51;
+  stroke:#ffffff;
+  outline: 1px solid #ffffff;
+}
+
+.faq__item:nth-child(odd) .faq__item-btn:active path:first-of-type {
+  stroke: #ffffff;
+}
+
+.faq__item:nth-child(even) .faq__item-btn:active path:first-of-type {
+  stroke: #440F51;
+}
+
+/*
 
 .faq__item-btn:hover {
   color: #440F51;
