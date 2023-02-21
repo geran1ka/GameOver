@@ -11,7 +11,7 @@
 .faq__item {
   display: flex;
   justify-content: space-between;
-  padding: 30px 70px;
+  padding: 21px 70px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.917;
@@ -27,6 +27,65 @@
   background-color: #440F51;
 }
 
+
+.faq__item-btn {
+  max-width: 46px;
+  max-height: 46px;
+  color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+
+.faq__item-btn {
+  stroke:#440F51;
+  outline: 1px solid #440F51;
+}
+
+
+.faq__item-btn:hover {
+  color: #440F51;
+  stroke: #fff;
+}
+
+.faq__item-btn:active .box__line {
+  color: transparent;
+  stroke:#440F51;
+}
+
+.faq__item-btn:active {
+  color: transparent;
+  stroke:#fff;
+}
+
+.faq__item-btn_odd {
+  max-width: 46px;
+  max-height: 46px;
+  color: #440F51;
+  border-radius: 50%;
+  stroke:#ffffff;
+  outline: 1px solid #ffffff;
+  border: none;
+}
+
+
+.faq__item-btn_odd:hover {
+  color: #ffffff;
+  stroke: #440F51;
+}
+
+.faq__item-btn_odd:active .box__line {
+  color: transparent;
+  stroke:#ffffff;
+}
+
+.faq__item-btn_odd:active {
+  color: transparent;
+  stroke:#440F51;
+}
+
+
+
+/*
 .faq__item::after {
   content: "";
   display: block;
@@ -40,7 +99,7 @@
   background-image: url("../icon/open-purple.svg");
 }
 
-.faq__item:focus:nth-child(odd)::after {
+.faq__item:nth-child(odd)::after {
   background-image: url("../icon/open-purple.svg");
   border: 10px solid red  ;
 }
@@ -48,3 +107,4 @@
 .faq__item:nth-child(even)::after {
   background-image: url("../icon/open.svg");
 }
+*/
