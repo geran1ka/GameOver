@@ -40,6 +40,11 @@
   background-image: url("../icon/open-purple.svg");
 }
 
+.faq__item:focus:nth-child(odd)::after {
+  background-image: url("../icon/open-purple.svg");
+  border: 10px solid red  ;
+}
+
 .faq__item:nth-child(even)::after {
   background-image: url("../icon/open.svg");
 }

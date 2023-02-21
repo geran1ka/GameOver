@@ -93,6 +93,7 @@
 }
 
 
+
 .hero__link-down {
   position: absolute;
   left: 50%;
@@ -102,29 +103,44 @@
   height: 97px;
   z-index: 100;
   color: transparent;
+  outline: 1px solid transparent;
+}
+
+.down__box_circle {
   stroke: #ffffff;
-  outline: 1px solid #ffffff;
-  outline-offset: -2px;
-  border-radius: 50%;
-
 }
 
-
-.hero__link-down:hover {
-  color: #ffffff;
-
-  stroke: #6C0287;
+.down__box_line {
+  fill: #ffffff;
+}
+/*управление цветом down-svg при различных состояниях*/
+/*:hover*/
+.hero__link-down:hover .down__box_circle {
+  stroke: transparent;
+  fill: #ffffff;
 }
 
+.hero__link-down:hover .down__box_line {
+  stroke: transparent;
+  fill: #6C0287;
+}
+
+/*:focus*/
 .hero__link-down:focus {
   outline-color: #CD06FF;
-  outline-offset: 0;
-  border-radius: 0%;
 }
 
+/*active:*/
 .hero__link-down:active {
-  color: #CD06FF;
-  stroke: #ffffff;
+  outline-color: transparent;
 }
 
+.hero__link-down:active .down__box_circle {
+  stroke: transparent;
+  fill: #CD06FF;
+}
 
+.hero__link-down:active .down__box_line {
+  stroke: transparent;
+  fill: #ffffff;
+}
