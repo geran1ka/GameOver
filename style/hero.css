@@ -77,6 +77,8 @@
   outline: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #6C0287;
+
+  transition: background-color 0.3s ease-in-out; 
 }
 
 .hero__link:hover {
@@ -92,7 +94,21 @@
   background-color: #640AA3;
 }
 
+.down__box_circle {
+  stroke: #ffffff;
 
+  transition: 
+    stroke 0.3s ease-in-out,
+    fill 0.3s ease-in-out;
+}
+
+.down__box_line {
+  fill: #ffffff;
+
+  transition: 
+    stroke 0.3s ease-in-out,
+    fill 0.3s ease-in-out;
+}
 
 .hero__link-down {
   position: absolute;
@@ -104,15 +120,12 @@
   z-index: 100;
   color: transparent;
   outline: 1px solid transparent;
+
+  transition: outline-color 0.3s ease-in-out;
 }
 
-.down__box_circle {
-  stroke: #ffffff;
-}
 
-.down__box_line {
-  fill: #ffffff;
-}
+
 /*управление цветом down-svg при различных состояниях*/
 /*:hover*/
 .hero__link-down:hover .down__box_circle {

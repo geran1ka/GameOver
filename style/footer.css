@@ -78,6 +78,10 @@
   border-radius: 50%;
   */  
   color: #ffffff;
+
+  transition: 
+    color 0.3s ease-in-out,
+    outline-color 0.3s ease-in-out;
 }
 
 .social__link:hover {
@@ -112,4 +116,9 @@
 .footer__copyright,
 .footer__development {
   padding-top: 58px;
+}
+
+.footer__link:hover {
+  transition: color 0.3s ease-in-out;
+  color: #CD06FF;
 }

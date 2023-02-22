@@ -55,6 +55,11 @@
   border-radius: 8px;
   border: 3px solid #ffffff;
   cursor: pointer;
+
+  transition: 
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    color 0.4s ease-in-out;
 }
 
 .form__label-radio:hover {
@@ -122,11 +127,15 @@
   height: 26px;
   margin-right: 12px;
   cursor: pointer;
+  border: none;
+  outline: 1px solid transparent;
+
+  transition: outline-color 0.5s ease-in-out;
 }
 
 .form__radio:focus,
 .form__chekbox:focus {
-  outline: 1px solid #CD06FF;
+  outline-color: #CD06FF;
 }
 
 .time {
@@ -191,7 +200,9 @@
   color: #211E1E;
   background-color: #ffffff;
   outline: none;
-  border: 3px solid #ffffff;
+  border: 2px solid transparent;
+
+  transition: border-color 0.4s ease-in-out;
 }
 
 .form__input:focus {
@@ -227,6 +238,10 @@
   border-radius: 10px;
   outline: none;
   border: 3px solid #ffffff;
+
+  transition: 
+    border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
 }
 
 .form__btn:hover  {
@@ -239,7 +254,7 @@
 }
 
 .form__btn:active  {
-  border-color: #eadeed;
+  border-color: transparent;
   background-color: #eadeed;
 }
 
