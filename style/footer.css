@@ -102,6 +102,10 @@
   padding-bottom: 58px;
 }
 
+.footer__development {
+  text-align: end;
+}
+
 .footer-development__text {
   font-weight: 400;
   font-size: 14px;
@@ -112,6 +116,7 @@
 .footer-development__text:not(:last-child) {
   margin-bottom: 6px;
 }
+
 
 .footer__copyright,
 .footer__development {
