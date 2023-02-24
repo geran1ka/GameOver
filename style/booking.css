@@ -245,7 +245,7 @@
 }
 
 .form__btn:hover  {
-  background-color: #eadeed;
+  background-color: var(--gray-light-color, #eadeed);
   border-color: var(--purple-color, #6c0287);
 }
 
