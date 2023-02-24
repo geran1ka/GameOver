@@ -36,12 +36,13 @@
 }
 
 .form__radio-hidden {
-  display: none;
+  position: fixed;
+  transform: scale(0);    
 }
 
 .form__label-radio {
   display: inline-flex;
-  justify-content: center;
+  justify-content: center;      
   flex-basis: 250px;
   padding: 7px 15px;
   font-weight: 700;
