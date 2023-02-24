@@ -54,8 +54,6 @@
     color 0.3s ease-in-out,
     stroke 0.3s ease-in-out,
     outline-color 0.3s ease-in-out;
-
-
 }
 
 .faq__item:nth-child(odd) .box-svg {

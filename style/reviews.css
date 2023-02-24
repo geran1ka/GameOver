@@ -13,20 +13,20 @@
   flex-direction: column;
   gap: 50px;
 }
+
 .reviews__item {
   display: flex;
   gap: 20px;
-  
 }
 
 .reviews__img {
-
   width: 280px;
   max-height: 280px;
   margin-bottom: 11px;
   object-fit: cover;
   border-radius: 50%;
 }
+
 .reviews__box-img{
   position: relative;
 }

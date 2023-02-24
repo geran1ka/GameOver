@@ -43,13 +43,12 @@
   font-size: 30px;
   line-height: 34px;
   text-align: center;
-
   color: var(--main-color, #ffffff);
 }
 
 .text-big {
   font-weight: 900;
-    font-size: 100px;
+  font-size: 100px;
   line-height: 141px;
   color: var(--pink-color, #cd06ff);
 }
