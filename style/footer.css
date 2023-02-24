@@ -85,16 +85,16 @@
 }
 
 .social__link:hover {
-  color: #eadeed;
+  color: var(--gray-light-color, #eadeed);
 }
 
 .social__link:focus {
-  color: #eadeed;
-  outline-color: var(--pink-light-color, #CD06FF);
+  color: var(--gray-light-color, #eadeed)d;
+  outline-color: var(--pink-color, #cd06ff);
 }
 
 .social__link:active {
-  color: var(--pink-light-color, #CD06FF);
+  color: var(--pink-color, #cd06ff);
   outline-color: transparent;
 }
 
@@ -125,5 +125,5 @@
 
 .footer__link:hover {
   transition: color 0.3s ease-in-out;
-  color: var(--pink-light-color, #cd06ff);
+  color: var(--pink-color, #cd06ff);
 }

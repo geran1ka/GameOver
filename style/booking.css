@@ -1,5 +1,5 @@
 .booking {
-  background-color: var(--pink-dark-color, #440f51);
+  background-color: var(--purple-dark-color, #440f51);
 }
 
 .booking__container {
@@ -63,17 +63,17 @@
 }
 
 .form__label-radio:hover {
-  background-color: #eadeed;
+  background-color: var(--gray-light-color, #eadeed);
   border-color: #640AA3;
 }
 
 .form__label-radio:focus {
-  border-color: #640AA3;
+  border-color: var(--purple-light-color, #640aa3);
 }
 
 .form__radio-hidden:checked  + .form__label-radio {
   color: var(--main-color, #ffffff);
-  background-color: var(--pink-color, #6c0287);
+  background-color: var(--purple-color, #6c0287);
 }
 
 .form__box-style_entertainment {
@@ -135,7 +135,7 @@
 
 .form__radio:focus,
 .form__chekbox:focus {
-  outline-color: var(--pink-light-color, #CD06FF);
+  outline-color: var(--pink-color, #cd06ff);
 }
 
 .time {
@@ -188,7 +188,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
-  color: #211E1E;
+  color: var(--second-color, #000000);
 }
 
 .form__input {
@@ -197,7 +197,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
-  color: #211E1E;
+  color: var(--second-color, #000000);
   background-color: var(--main-color, #ffffff);
   outline: none;
   border: 2px solid transparent;
@@ -206,7 +206,7 @@
 }
 
 .form__input:focus {
-  border-color:var(--pink-light-color, #CD06FF);
+  border-color:var(--pink-color, #cd06ff);
 }
 
 .form__input_data {
@@ -233,7 +233,7 @@
   font-size: 22px;
   line-height: 1.273;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--purple-color, #6c0287);
   background-color: var(--main-color, #ffffff);
   border-radius: 10px;
   outline: none;
@@ -246,16 +246,16 @@
 
 .form__btn:hover  {
   background-color: #eadeed;
-  border-color: var(--pink-color, #6c0287);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .form__btn:focus  {
-  border-color: var(--pink-color, #6c0287);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .form__btn:active  {
   border-color: transparent;
-  background-color: #eadeed;
+  background-color: var(--gray-light-color, #eadeed);
 }
 
 

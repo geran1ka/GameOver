@@ -31,7 +31,7 @@
 }
 
 .navigation__link:hover {
-  color: var(--pink-light-color, #cd06ff);
+  color: var(--pink-color, #cd06ff);
 }
 
 .navigation__link:focus {
@@ -39,7 +39,7 @@
 }
 
 .navigation__link:active {
-  color: #640AA3;
+  color: var(--purple-light-color, #640aa3);
 }
 
 .header__button {
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   background-color: var(--main-bg-color, #1b1a1b);
   outline: none;
-  border: 3px solid var(--pink-light-color, #cd06ff);
+  border: 3px solid var(--pink-color, #cd06ff);
   border-radius: 10px;
 
   transition: 
@@ -61,16 +61,16 @@
 }
 
 .header__button:hover {
-  background-color: var(--pink-color, #6c0287);
-  border-color: var(--pink-color, #6c0287);
+  background-color: var(--purple-color, #6c0287);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .header__button:focus {
-  background-color: var(----pink-color, #6c0287);
+  background-color: var(--purple-color, #6c0287);
 }
 
 .header__button:active {
-  background-color: #640AA3;
+  background-color: var(--purple-light-color, #640aa3);
   border-color: var(--second-color, #000000);
 }
 

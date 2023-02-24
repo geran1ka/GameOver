@@ -51,7 +51,7 @@
   font-weight: 900;
     font-size: 100px;
   line-height: 141px;
-  color: var(--pink-light-color, #cd06ff);
+  color: var(--pink-color, #cd06ff);
 }
 
 .text-medium {
@@ -59,7 +59,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: all-small-caps;
-  color: var(--pink-light-color, #cd06ff);
+  color: var(--pink-color, #cd06ff);
 }
 
 .hero__link {
@@ -72,26 +72,26 @@
   line-height: 30px;
   text-transform: uppercase;
   color: var(--main-color, #ffffff);
-  background: var(--pink-color, #6c0287);
+  background: var(--purple-color, #6c0287);
   border: none;
   outline: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px var(--pink-color, #6c0287);
+  box-shadow: 0px 0px 10px var(--purple-color, #6c0287);
 
   transition: background-color 0.3s ease-in-out; 
 }
 
 .hero__link:hover {
-  background-color: #840AA3;
+  background-color: var(--pink-dark-color, #840aa3);
 }
 
 
 .hero__link:focus {
-  background-color: #840AA3;
+  background-color: var(--pink-dark-color, #840aa3);
 }
 
 .hero__link:active {
-  background-color: #640AA3;
+  background-color: var(--pink-light-color, #640aa3);
 }
 
 .down__box_circle {
@@ -123,9 +123,6 @@
 
   transition: outline-color 0.3s ease-in-out;
 }
-
-
-
 /*управление цветом down-svg при различных состояниях*/
 /*:hover*/
 .hero__link-down:hover .down__box_circle {
@@ -135,12 +132,12 @@
 
 .hero__link-down:hover .down__box_line {
   stroke: transparent;
-  fill: var(----pink-color, #6c0287);
+  fill: var(--purple-color, #6c0287);
 }
 
 /*:focus*/
 .hero__link-down:focus {
-  outline-color: var(--pink-light-color, #cd06ff);
+  outline-color: var(--pink-color, #cd06ff);
 }
 
 /*active:*/
@@ -150,7 +147,7 @@
 
 .hero__link-down:active .down__box_circle {
   stroke: transparent;
-  fill: var(--pink-light-color, #cd06ff);
+  fill: var(--pink-color, #cd06ff);
 }
 
 .hero__link-down:active .down__box_line {
