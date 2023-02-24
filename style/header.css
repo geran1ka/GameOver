@@ -24,10 +24,12 @@
 .navigation__link {
   border-bottom: 3px solid transparent;
   outline: none;
+  transition: color .3s ease-in-out;
 }
 
 .navigation__link:hover {
-  color: #CD06FF        ;
+  color: #CD06FF;
+
 }
 
 .navigation__link:focus {
@@ -50,6 +52,7 @@
   outline: none;
   border: 3px solid #cd06ff;
   border-radius: 10px;
+  transition: border-color background-color border .3s ease-in-out;
 }
 
 .header__button:hover {
