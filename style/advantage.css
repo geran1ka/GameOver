@@ -13,6 +13,11 @@
   display: flex;
   flex-basis: 380px;
   padding: 166px 40px 6px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.advantage__item:hover {
+  transform: scale(1.1);
 }
 
 .advantage__item:hover {

@@ -24,16 +24,18 @@
 .navigation__link {
   border-bottom: 3px solid transparent;
   outline: none;
-  transition: color .3s ease-in-out;
+
+  transition: 
+    color 0.3s ease-in-out, 
+    border-bottom-color 0.3s ease-in-out;
 }
 
 .navigation__link:hover {
-  color: #CD06FF;
-
+  color: var(--pink-light-color, #cd06ff);
 }
 
 .navigation__link:focus {
-  border-bottom-color: #ffffff;
+  border-bottom-color: var(--main-color, #ffffff);
 }
 
 .navigation__link:active {
@@ -46,27 +48,30 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 1.364;
-  color: #ffffff;
+  color: var(--main-color, #ffffff);
   text-transform: uppercase;
-  background-color: #1b1a1b;
+  background-color: var(--main-bg-color, #1b1a1b);
   outline: none;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--pink-light-color, #cd06ff);
   border-radius: 10px;
-  transition: border-color background-color border .3s ease-in-out;
+
+  transition: 
+  background-color 0.3s ease-in-out, 
+  bborder-color 0.3s ease-in-out;
 }
 
 .header__button:hover {
-  background-color: #6c0287;
-  border-color: #6c0287;
+  background-color: var(--pink-color, #6c0287);
+  border-color: var(--pink-color, #6c0287);
 }
 
 .header__button:focus {
-  background-color: #6c0287;
+  background-color: var(----pink-color, #6c0287);
 }
 
 .header__button:active {
   background-color: #640AA3;
-  border: 3px solid  #000000;
+  border-color: var(--second-color, #000000);
 }
 
 
