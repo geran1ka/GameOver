@@ -11,3 +11,7 @@
   --seven-color: #840AA3;
   --c-color: #EADEED;
 }
+
+.advantage {
+  --padding-bottom: 70px;
+}

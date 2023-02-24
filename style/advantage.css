@@ -7,6 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
+  padding-bottom: var(--padding-bottom);
 }
 
 .advantage__item {
@@ -16,12 +17,17 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.advantage__item:hover {
-  transform: scale(1.1);
+.advantage__item:nth-child(3n-1) {
+  transform: translateY(var(--padding-bottom));
 }
 
 .advantage__item:hover {
   transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.advantage__item:nth-child(3n-1):hover{
+  transform: scale(1.1) translateY(var(--padding-bottom));
   transition: transform 0.5s ease-in-out;
 }
 
