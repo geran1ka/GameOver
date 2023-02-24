@@ -47,7 +47,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #6c0287;
+  color: var(--pink-color, #6c0287);
   font-weight: 900;
 } 
 
@@ -55,7 +55,7 @@
   content: '”';
   position: absolute;
   padding-left: 10px;
-  color: #6c0287;
+  color: var(--pink-color, #6c0287);
   font-weight: 900;
 }
 

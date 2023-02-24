@@ -18,11 +18,11 @@
 }
 
 .faq__item:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440F51;
+  background-color: var(--pink-dark-color, #440F51);
 }
 
 .faq__item-btn {
@@ -40,7 +40,7 @@
 }
 
 .faq__item:nth-child(2n) span {
-  color: #fff;
+  color: var(--main-color, #ffffff);
 }
 
 .box-svg {
@@ -59,44 +59,44 @@
 }
 
 .faq__item:nth-child(odd) .box-svg {
-  color: #ffffff;
-  stroke:#440F51;
-  outline-color: #440F51;
+  color: var(--main-color, #ffffff);
+  stroke:var(--pink-dark-color, #440F51);
+  outline-color: var(--pink-dark-color, #440F51);
 }
 
 .faq__item:nth-child(even) .box-svg {
-  color: #440F51;
-  stroke:#ffffff;
-  outline-color: #ffffff;
+  color: var(--pink-dark-color, #440F51);
+  stroke:var(--main-color, #ffffff);
+  outline-color: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(odd):hover .box-svg {
-  color: #440F51;
-  stroke: #ffffff;
+  color: var(--pink-dark-color, #440F51);
+  stroke: var(--main-color, #ffffff);
 }
 
 
 .faq__item:nth-child(even):hover .box-svg {
-  color: #ffffff;
-  stroke: #440F51;
+  color: var(--main-color, #ffffff);
+  stroke: var(--pink-dark-color, #440F51);
 }
 
 .faq__item:nth-child(odd):active .box-svg {
-  color: #ffffff;
-  stroke:#440F51;
-  outline-color: #440F51;
+  color: var(--main-color, #ffffff);
+  stroke:var(--pink-dark-color, #440F51);
+  outline-color: var(--pink-dark-color, #440F51);
 }
 
 .faq__item:nth-child(even):active .box-svg {
-  color: #440F51;
-  stroke:#ffffff;
-  outline-color: #ffffff;
+  color: var(--pink-dark-color, #440F51);
+  stroke:var(--main-color, #ffffff);
+  outline-color: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(odd):active .box-svg path:first-of-type {
-  stroke: #ffffff;
+  stroke: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(even):active .box-svg path:first-of-type {
-  stroke: #440F51;
+  stroke: var(--pink-dark-color, #440F51);
 }
