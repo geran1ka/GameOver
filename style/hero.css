@@ -18,15 +18,17 @@
 .hero__title {
   width: 883px;
   font-size: 150px;
-  line-height: 150px;
-  letter-spacing: -5px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.1em
 }
 
 .hero__text {
   margin-left: 100px;
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.786;
+  line-height: calc(50/28);
+  margin-bottom: 30px;
 }
 
 .hero__list {
@@ -37,7 +39,7 @@
 }
 
 .hero__item {
-  flex-basis: 193px;
+  flex-basis: 166px;
   text-align: center;
   font-weight: 400;
   font-size: 30px;

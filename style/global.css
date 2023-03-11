@@ -94,7 +94,7 @@ iframe {
   margin-top: 0;
   font-size: 40px;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: calc(50/40);
   text-align: center;
   text-transform: uppercase;
 }

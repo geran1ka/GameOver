@@ -1,9 +1,10 @@
 .booking {
   background-color: var(--purple-dark-color, #440f51);
+  padding-bottom: 45px;
 }
 
 .booking__container {
-  padding: 80px 30px;
+  padding: 30px 30px;
 }
 
 .booking__title {

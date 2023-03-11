@@ -1,3 +1,7 @@
+.about-us {
+  padding-top: 100px;
+}
+
 .about-us__container {
   display: flex;
   flex-direction: column;
@@ -5,13 +9,13 @@
 }
 
 .about-us__title {
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .about-us__text {
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: calc(28/20);
 }
 
 .about-us__img {
@@ -22,13 +26,13 @@
 }
 
 .about-us__container {
-  margin-bottom: 48px;
+  margin-bottom: 57px;
 }
 
 .quote {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 30px;
   margin: 0;
 }
 
@@ -45,7 +49,7 @@
 .quote__text::before {
   content: '“';
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
   color: var(--purple-color, #6c0287);
   font-weight: 900;
@@ -82,6 +86,6 @@
 }
 
 .caption {
-  flex-basis: 274px;
+  flex-basis: 279px;
   font-style: normal;
 }

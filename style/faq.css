@@ -1,5 +1,5 @@
 .faq__title {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .faq__list {
@@ -11,10 +11,7 @@
 .faq__item {
   display: flex;
   justify-content: space-between;
-  padding: 21px 70px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.917;
+  padding: 21px 70px 20px;
 }
 
 .faq__item:nth-child(odd) {
@@ -30,6 +27,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28/24);
   background-color: transparent;
   border: none;
   outline: none;
