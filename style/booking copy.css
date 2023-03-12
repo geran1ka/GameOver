@@ -17,44 +17,28 @@
 }
 
 .form__title {
-
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.167;
 }
 
 .form__title_type {
-
+  margin-bottom: 40px;
   text-align: center;
 }
 
-
-
-.form__title_type-halls {
-  display: grid;
-  grid-column: span 4;
+.form__box-style_halls {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 .form__radio-hidden {
   position: fixed;
   transform: scale(0);    
-}
-
-.form__box-style-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 123px 287px 228px 60px;
-}
-
-.form__box-style_halls {
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  grid-template-rows: 28px 55px;
-
- justify-content: space-between;
-  align-content: space-between;
-  column-gap: 50px;
-  row-gap: 40px;
 }
 
 .form__label-radio {

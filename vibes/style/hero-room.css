@@ -1,0 +1,50 @@
+.hero-room {
+  position: relative;
+  max-height: 1010px;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+
+.hero-room::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 750px;
+  background: url('../img/vibes.jpg') no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.hero-room__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.hero-room__title {
+  padding: 335px 0;
+  flex-basis: 750px;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 90px;
+  line-height: calc(80/90);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color, #ffffff);
+}
+
+
+.hero-room__text {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(36/24);
+  text-align: center;
+  color: var(--main-color, #ffffff);
+}

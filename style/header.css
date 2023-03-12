@@ -5,23 +5,28 @@
 
 .header__container {
   display: grid;
-  grid-template-columns: 120px 1fr 280px;
-  gap: 96px;
+  grid-template-columns: 120px 587px 280px;
+  column-gap: 6vw;
+  row-gap: 60px;
   justify-content: space-between;
   align-items: center;
 }
 
+.navigation__menu {
+  display: none;
+}
+
 .navigation__list {
   display: flex;
-  flex-basis: 587px;
-  gap: 40px;
+  gap: 41px;
 }
 
 .navigation__item {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 2.273;
+  color: var(--main-color, #ffffff);
+  line-height: calc(50/22);
   text-transform: uppercase;
 }
 
@@ -47,18 +52,18 @@
 }
 
 .header__button {
-  padding: 9px 10px;
-  font-family: 'Arial';
+  order: 2;
+  padding: 10px 10px 11px;
+  font-family: 'Arial', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.364;
+  line-height: calc(30/22);
   color: var(--main-color, #ffffff);
   text-transform: uppercase;
   background-color: var(--main-bg-color, #1b1a1b);
   outline: none;
   border: 3px solid var(--pink-color, #cd06ff);
   border-radius: 10px;
-
   transition: 
   background-color 0.3s ease-in-out, 
   bborder-color 0.3s ease-in-out;
@@ -78,6 +83,92 @@
   border-color: var(--second-color, #000000);
 }
 
+@media (max-width: 1240px) {
+  .header {
+    padding-bottom: 15px;
+  }
 
+  .header__container {
+    grid-template-columns: 87px 430px 229px;
+    column-gap: 1vw;
+  }
+
+  .header__logo {
+    height: 55px;
+  }
+
+  .navigation__list {
+    gap: 20px;
+  }
+  
+  .navigation__item {
+    font-size: 18px;
+    line-height: calc(22/18);
+  }
+
+  .header__button {
+    padding: 7px 10px;
+    font-size: 18px;
+    line-height: calc(24/18);
+    border-radius: 8px;
+
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .header__container {
+    grid-template-columns: 54px 87px 229px;
+    column-gap: 1vw;
+  }
+
+  .header__logo {
+    order: 1;
+  }
+  .navigation__menu {
+    max-height: 25px;
+    display: block     ;
+    outline: none;
+    border: transparent;
+    background-color: transparent;
+    color: var(--purple-color, #6c0287);
+  }
+
+  .navigation__list {
+    display: none;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header__logo {
+    width: 66px;
+    height: 42px;
+    justify-self: flex-end;
+
+  }
+  .navigation__menu {
+    height: 20px;
+    width: 39px;
+    justify-self: flex-end;
+    transform: translateY(4px);
+  }
+
+  .header__button {
+    display: none;
+  }
+}
 
 

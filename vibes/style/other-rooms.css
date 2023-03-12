@@ -1,0 +1,61 @@
+.other-rooms {
+  padding-bottom: 100px;
+}
+
+.other-rooms__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.other-rooms__title {
+  flex-basis: 100%;
+}
+
+.other-rooms__list {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.other-rooms__item {
+  display: flex;
+  flex-basis: 380px;
+  justify-content: center;
+  align-items: center;
+  min-height: 229px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-rooms__item_theme_vibes {
+  background-image: url("../img/80s-vibes.jpg");
+}
+
+.other-rooms__item_theme_starwars {
+  background-image: url("../img/star-wars.jpg");
+}
+
+.other-rooms__item_theme_wildwest {
+  background-image: url("../img/wild-west.jpg");
+}
+
+.other-rooms__item_theme_neon {
+  background-image: url("../img/neon-style.jpg");
+}
+
+.other-rooms__link {
+  max-width: 170px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: calc(36/30);
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-color, #ffffff);
+}
+
+
+

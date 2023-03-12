@@ -19,3 +19,28 @@
 .advantage {
   --padding-bottom: 70px;
 }
+.container {
+  --max-width: 1180px;
+  --padding: 30px;
+}
+
+@media (max-width: 1240px) {
+  .container {
+    --max-width: 904px;
+    --padding: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    --max-width: 688px;
+    --padding: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    --max-width: 280px;
+    --padding: 20px;
+  }
+}

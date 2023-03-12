@@ -75,20 +75,13 @@ iframe {
 */
 
 .container {
-  max-width: calc(var(--max-width) + var(--padding) * 2);
-  padding: 0 var(--padding);
+  max-width: 1240px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
 .section {
   padding: 50px 0;
-}
-
-.section:first-child {
-  padding-top: 25px;
-}
-.section:last-child {
-  padding-bottom: 45px;
 }
 
 .title {
@@ -98,19 +91,4 @@ iframe {
   line-height: calc(50/40);
   text-align: center;
   text-transform: uppercase;
-}
-
-
-@media (max-width: 1240px) {
-  .title {
-    font-size: 30px;
-    line-height: calc(40/30);
-  }
-}
-
-@media (max-width: 900px) {
-  .title {
-    font-size: 24px;
-    line-height: calc(36/24);
-  }
 }
