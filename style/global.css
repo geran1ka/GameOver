@@ -114,3 +114,10 @@ iframe {
     line-height: calc(36/24);
   }
 }
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+}
