@@ -221,7 +221,7 @@
   }
 
   .contacts__text {
-    max-width: 380px;
+    width: 380px;
     padding-left: 0;
     text-align: center;
   }
