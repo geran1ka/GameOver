@@ -28,6 +28,7 @@
 }
 
 .halls__item_theme_starwars {
+  padding-left: 10px;
   background-image: url("../img/star-wars.jpg");
 }
 
@@ -48,6 +49,36 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (max-width: 1240px) {
+  .halls {
+    padding-bottom: 35px;
+  }
+  
+  .halls__title {
+    margin-bottom: 37px;
+  }
+  
+  
+  .halls__item {
+    flex-basis: 442px;
+    min-height: 267px;
+  }
+
+  .halls__link {
+    max-width: 252px;
+    font-size: 50px;
+    line-height: calc(60/50);
+  }
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 600px) {
+
 }
 
 
