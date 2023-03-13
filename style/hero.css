@@ -1,5 +1,6 @@
 .hero {
   padding-top: 21px;
+  padding-bottom: 50px;
 }
 
 .hero__container {
@@ -166,6 +167,7 @@
 @media (max-width: 1240px) {
   .hero {
     padding-top: 16px;
+    padding-bottom: 42px;
   }
 
   .hero__container {
@@ -229,6 +231,7 @@
 @media (max-width: 900px) {
   .hero {
     padding-top: 15px;
+    padding-bottom: 40px;
   }
 
   .hero__container {
@@ -292,9 +295,10 @@
 }
 
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .hero {
     padding-top: 10px;
+    padding-bottom: 23px;
   }
 
   .hero__container {

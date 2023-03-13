@@ -31,6 +31,10 @@
     --max-width: 904px;
     --padding: 60px;
   }
+
+  .advantage {
+    --padding-bottom: 53px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -39,9 +43,13 @@
     --max-width: 688px;
     --padding: 40px;
   }
+
+  .advantage {
+    --padding-bottom: 0;
+  }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .container,
   .hero__container {
     --max-width: 280px;
