@@ -1,3 +1,7 @@
+.hero {
+  padding-top: 21px;
+}
+
 .hero__container {
   position: relative;
   height: 823px;
@@ -17,10 +21,12 @@
 
 .hero__title {
   width: 883px;
+  font-family: 'Arial';
   font-size: 150px;
   font-weight: 900;
   line-height: 100%;
-  letter-spacing: -0.1em
+  letter-spacing: -0.1em;
+  color: var(--main-color, #ffffff);
 }
 
 .hero__text {
@@ -154,4 +160,87 @@
 .hero__link-down:active .down__box_line {
   stroke: transparent;
   fill: var(--main-color, #ffffff);
+}
+
+@media (max-width: 1240px) {
+  .hero {
+    padding-top: 16px;
+  }
+
+  .hero__container {
+    height: 583px;
+  }
+
+  .hero__container::after {
+    right: 30px;
+    bottom: 0;
+    width: 453px;
+    height: 520px;
+    background-image: url("../img/banner.png");
+    background-size: contain;
+    z-index: 10;
+  }
+
+  .hero__title {
+    width: 706px;
+    font-size: 120px;
+    margin-bottom: 21px;
+  }
+  
+  .hero__text {
+    font-size: 22px;
+    line-height: calc(30/22);
+    margin-bottom: 30px;
+  }
+
+  .hero__list {
+    gap: 28px;
+    margin-bottom: 79px;
+  }
+  
+  .hero__item {
+    font-size: 26px;
+    line-height: calc(30/26);
+
+  }
+  
+  .text-big {
+    font-size: 80px;
+    line-height: calc(113/80);
+  }
+  
+  .text-medium {
+    font-size: 60px;
+    line-height: calc(85/60);
+  }
+
+  .hero__link {
+    margin-left: 39px;
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: calc(30/22);
+  }
+
+  .hero__link-down {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    width: 67px;
+    height: 67px;
+    z-index: 100;
+    color: transparent;
+    outline: 1px solid transparent;
+  
+    transition: outline-color 0.3s ease-in-out;
+  }
+  
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 540px) {
+
 }

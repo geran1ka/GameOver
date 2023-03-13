@@ -84,13 +84,6 @@ iframe {
   padding: 50px 0;
 }
 
-.section:first-child {
-  padding-top: 25px;
-}
-.section:last-child {
-  padding-bottom: 45px;
-}
-
 .title {
   margin-top: 0;
   font-size: 40px;
@@ -99,7 +92,6 @@ iframe {
   text-align: center;
   text-transform: uppercase;
 }
-
 
 @media (max-width: 1240px) {
   .title {
