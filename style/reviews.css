@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 2005px;
+  padding-top: 45px;
   max-width: 1040px;
   margin: 0 auto;
 }
@@ -78,8 +78,6 @@
     padding-bottom: 35px;
     max-width: 1040px;
     margin: 0 auto;
-
-    padding-top: 1685px;
   }
   
   .reviews__title {
@@ -140,7 +138,6 @@
   .reviews {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-top: 2117px;
   }
 
     
@@ -189,11 +186,10 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .reviews {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-top: 2213px;
     min-height: 662px;
   }
 

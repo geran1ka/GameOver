@@ -168,7 +168,7 @@
 @media (max-width: 900px) {
   .faq {
     padding-top: 23px;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
   }
 
 
@@ -192,7 +192,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .faq {
     padding-top: 15px;
     padding-bottom: 15px;

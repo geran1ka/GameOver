@@ -192,7 +192,7 @@
 @media (max-width: 900px) {
   .footer {
     min-height: 630px;
-    padding-top: 35px;
+    padding-top: 34px;
     padding-bottom: 18px;
   }
 
@@ -256,7 +256,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
 
   .footer {
     min-height: 561px;

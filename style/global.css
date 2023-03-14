@@ -108,7 +108,7 @@ iframe {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .title {
     font-size: 14px;
     line-height: calc(18/14);
