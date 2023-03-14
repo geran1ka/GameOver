@@ -15,12 +15,12 @@
 
 .halls__item {
   display: flex;
-  flex-basis: 580px;
+  flex: 1 1 48%;
   justify-content: center;
   align-items: center;
-  min-height: 349px;
+  height: 349px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .halls__item_theme_vibes {
@@ -28,7 +28,7 @@
 }
 
 .halls__item_theme_starwars {
-  padding-left: 10px;
+
   background-image: url("../img/star-wars.jpg");
 }
 
@@ -53,17 +53,21 @@
 
 @media (max-width: 1240px) {
   .halls {
+    padding-top: 35px;
     padding-bottom: 35px;
   }
   
   .halls__title {
     margin-bottom: 37px;
   }
+
+  .halls__list{
+    row-gap: 18px;
+  }
   
   
   .halls__item {
-    flex-basis: 442px;
-    min-height: 267px;
+    height: 267px;
   }
 
   .halls__link {
@@ -74,12 +78,49 @@
 }
 
 @media (max-width: 900px) {
+  .halls {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
+  .halls__item {
+    height: 200px;
+  }
+
+  .halls__link {
+    max-width: 210px;
+    font-size: 40px;
+    line-height: calc(50/40);
+    transform: translateY(10%);
+  }
 }
 
 @media (max-width: 600px) {
+  .halls {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
+  .halls__title {
+    margin-bottom: 15px;
+  }
+
+  .halls__list{
+    row-gap: 10px;
+  }
+
+  .halls__item {
+    height: 168px;
+  }
+
+  .halls__link {
+    max-width: 125px;
+    font-size: 26px;
+    line-height: calc(34/26);
+    transform: translateY(0);
+  }
 }
+
 
 
 

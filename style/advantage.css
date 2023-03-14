@@ -73,6 +73,7 @@
 @media (max-width: 1240px) {
   .advantage {
     padding-top: 41px;
+    padding-bottom: 35px;
   }
 
   .advantage__title {
@@ -103,6 +104,7 @@
 @media (max-width: 900px) {
   .advantage {
     padding-top: 40px;
+    padding-bottom: 30px;
   }
 
   .advantage__title {
@@ -132,6 +134,7 @@
 @media (max-width: 600px) {
   .advantage {
     padding-top: 23px;
+    padding-bottom: 15px;
   }
 
   .advantage__title {
