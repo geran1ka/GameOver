@@ -1,5 +1,6 @@
 .about-us {
-  padding-top: 270px;
+  padding-top: 50px;
+  padding-top: 1215px;
 }
 
 .about-us__container {
@@ -20,8 +21,8 @@
 
 .about-us__img {
   float: left;
-  max-width: 600px;
-  max-height: 596px;
+  max-width: 420px;
+  max-height: 418px;
   margin-right: 80px;
 }
 
