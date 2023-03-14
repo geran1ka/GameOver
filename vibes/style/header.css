@@ -3,6 +3,16 @@
   padding-bottom: 20px;
 }
 
+.header__logo{
+  display: block;
+}
+
+.header__logo-img{
+  height: 55px;
+  width: 87px;
+}
+
+
 .header__container {
   display: grid;
   grid-template-columns: 120px 1fr 280px;

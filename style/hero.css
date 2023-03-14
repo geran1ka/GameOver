@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 21px;
+  padding-top: 25px;
   padding-bottom: 50px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .hero__title {
-  width: 883px;
+  max-width: 883px;
   font-family: 'Arial';
   font-size: 150px;
   font-weight: 900;
@@ -113,7 +113,6 @@
 
 .down__box_line {
   fill: var(--main-color, #ffffff);
-
   transition: 
     stroke 0.3s ease-in-out,
     fill 0.3s ease-in-out;
@@ -166,7 +165,7 @@
 
 @media (max-width: 1240px) {
   .hero {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 42px;
   }
 
@@ -244,7 +243,7 @@
   }
 
   .hero__title {
-    width: 506px;
+    max-width: 506px;
     margin-bottom: 21px;
     font-size: 86px;
 
