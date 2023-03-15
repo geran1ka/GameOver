@@ -23,6 +23,19 @@
   background-image: url('../img//room-hero-vibes.jpg');
 }
 
+.hero-room_img-star::after {
+  background-image: url('../img//room-hero-star.jpg');
+}
+
+.hero-room_img-wildwest::after {
+  background-image: url('../img//room-hero-wildwest.jpg');
+  background-position: bottom;
+}
+
+.hero-room_img-neonstyle::after {
+  background-image: url('../img//room-hero-neonstyle.jpg');
+}
+
 .hero-room__container {
   display: flex;
   flex-direction: column;
