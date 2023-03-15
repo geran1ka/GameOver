@@ -5,6 +5,10 @@
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
+.footer-room {
+  padding-top: 35px;
+}
+
 .footer__container {
   display: grid;
   grid-template-columns: 380px 1fr;
@@ -155,7 +159,8 @@
 @media (max-width: 1240px) {
   .footer {
     min-height: 501px;
-    padding-top: 35px;
+    /*padding-top: 35px;*/
+    padding-top: 13px;
     padding-bottom: 18px;
   }
 
@@ -192,8 +197,10 @@
 @media (max-width: 900px) {
   .footer {
     min-height: 630px;
-    padding-top: 34px;
+    /*padding-top: 34px;*/
+    padding-top: 10px;
     padding-bottom: 18px;
+
   }
 
 .footer__container {
@@ -260,7 +267,8 @@
 
   .footer {
     min-height: 561px;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
+    padding-top: 8px;
     padding-bottom: 24px;
   }
 

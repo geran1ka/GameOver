@@ -9,6 +9,11 @@
 @import url("style/reviews.css");
 @import url("style/faq.css");
 @import url("style/about-us.css");
+
+/*Стили для комнат*/
+@import url("style/hero-room.css");
+@import url("style/description-room.css");
+@import url("style/other-room.css");
 /*
 @import url("style/booking.css");
 

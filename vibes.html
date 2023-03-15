@@ -10,7 +10,7 @@
     <link rel="manifest" href="icon/site.webmanifest">
     <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#19ec8e">
     <link rel="shortcut icon" href="icon/favicon.ico">
-    <link rel="stylesheet" href="/vibes/index.css">
+    <link rel="stylesheet" href="index.css">
     <meta name="msapplication-TileColor" content="#24d9d2">
     <meta name="msapplication-config" content="icon/browserconfig.xml">
     <meta name="theme-color" content="#19ec8e">
@@ -18,28 +18,35 @@
     <title>GAME OVER</title>
   </head>
   <body class="page">
-    
     <header class="header">
-        <div class="header__container container">
-        <img class="header__logo logo" src="img/logo.svg" alt="Логотип">
-  
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#halls" class="navigation__link">Залы</a></li>
-            <li class="navigation__item"><a href="#aboutUs" class="navigation__link">О&nbsp;нас</a></li>
-            <li class="navigation__item"><a href="#booking" class="navigation__link">Бронь</a></li>
-            <li class="navigation__item"><a href="#reviews" class="navigation__link">Отзывы</a></li>
-            <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="header__container container">
+        <a class="header__logo logo" href="index.html">
+          <img src="img/logo.svg" alt="Логотип" class="header__logo-img">
+        </a>
+      <nav class="header__navigation navigation">
+        <button class="navigation__menu" type="button">
+          <svg class="navigation__svg" width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <rect width="54" height="5" rx="2"/>
+            <rect y="12" width="54" height="5" rx="2"/>
+            <rect y="24" width="31" height="5" rx="2"/>
+          </svg>              
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#halls" class="navigation__link">Залы</a></li>
+          <li class="navigation__item"><a href="#aboutUs" class="navigation__link">О&nbsp;нас</a></li>
+          <li class="navigation__item"><a href="#booking" class="navigation__link">Бронь</a></li>
+          <li class="navigation__item"><a href="#reviews" class="navigation__link">Отзывы</a></li>
+          <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+        </ul>
+      </nav>
 
-        <button class="header__button button" type="button">Заказать звонок</button>
-        <a href="../index.html" class="header__link">Вернуться назад</a>
-      </div>
-    </header>
+      <a class="header__link-call" href="#">Заказать звонок</a>
+      <a href="../index.html" class="header__link">Вернуться назад</a>
+    </div>
+  </header>
 
     <main class="main">
-      <section class="hero-room section">
+      <section class="section hero-room hero-room_img-vibes">
           
         <div class="container hero-room__container hero-room__container_vibes">
           <h1 class="hero-room__title">80’s vibes</h1>
@@ -50,10 +57,10 @@
       <section class="description-room section" id="aboutUs">
         <div class="container description-room__container">
           <h2 class="description-room__title title">Что есть в комнате?</h2>
-          <img src="img/room-vibes.jpg" alt="Изображения с различными развлечениями" class="description-room__img">
-          <div class="description-room__container-2">
-            <p class="description-room__text">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр. </p>
-            <p class="description-room__text">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+          <img src="/img/80s-vibes.jpg" alt="Магнитофон с аудиокасетами" class="description-room__img">
+          <div class="description-room__container-text">
+            <p class="description-room__text">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и&nbsp;мини кинотеатр. </p>
+            <p class="description-room__text">Также вы можете выбрать игровую приставку, настольные игры, VR и&nbsp;караоке.</p>
           </div>
         </div>
       </section>
@@ -78,16 +85,16 @@
 
     </main>
       
-    <footer class="footer" id="contacts">
+    <footer class="footer footer-room" id="contacts">
       <div class="container footer__container">
         <h2 class="footer__title title">Контакты</h2>
-        <div class="footer-wrapper">
-          <address class="contacts">
+
+          <address class="footer__contacts contacts">
             <p class="contacts__text contacts__location">г. Москва ул.&nbsp;Усачёва,&nbsp;29&nbsp;к3</p>
-            <p class="contacts__text contacts__tel"><a class="contacts__link" href="tel:89509302893" target="_blank">8 (950) 930 - 28 - 93</a></p>
+            <p class="contacts__text contacts__tel"><a class="contacts__link" href="tel:89509302893" target="_blank">8 (950) 930-28-93</a></p>
             <p class="contacts__text contacts__mail"><a class="contacts__link" href="mailto:GameOver@gmail.com" target="_blank">GameOver@gmail.com</a></p>
           </address>
-          <div class="social">          
+          <div class="footer__social social">          
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="https://vk.com" target="_blank">
@@ -126,7 +133,7 @@
               </li>
             </ul>
           </div>
-        </div>
+
         <img class="footer__img" src="img/map.jpg" alt="Карта места нахождения GameOver">
 
         <div class="footer__copyright">

@@ -1,6 +1,6 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .header__container {
@@ -16,6 +16,7 @@
   display: block;
   line-height: 0;
 }
+
 
 .navigation__menu {
   display: none;
@@ -122,16 +123,12 @@
 
 @media (max-width: 1240px) {
   .header {
-    /*
     padding-bottom: 15px;
-    */
-    padding-bottom: 20px;
   }
 
   .header__container {
     grid-template-columns: 87px 430px 229px;
     column-gap: 1vw;
-    row-gap: 50px;
   }
 
   .header__logo-img{
@@ -150,7 +147,7 @@
     line-height: calc(22/18);
   }
 
-  .header__link-call {
+  .header__link {
     margin-bottom: 4px;
     padding: 8px 23px;
     font-size: 18px;
@@ -163,15 +160,12 @@
 @media (max-width: 900px) {
   .header {
     padding-top: 32px;
-    /*padding-bottom: 15px;*/
-    padding-bottom: 20px;
-
+    padding-bottom: 15px;
   }
 
   .header__container {
     grid-template-columns: 54px 87px 229px;
     column-gap: 1vw;
-    row-gap: 42px;
   }
 
   .header__logo {
@@ -216,26 +210,21 @@
     margin-bottom: 2px;
     padding: 7px 23px 8px;
   }
-
-  .header__link {
-    padding-left: 40px;
-    font-size: 16px;
-    line-height: calc(28/16);
-
-  }
-  
 }
+
+
+
+
+
 
 @media (max-width: 640px) {
   .header {
     padding-top: 20px;
-    /*padding-bottom: 10px;*/
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   .header__container {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 18px;
   }
 
   .header__logo {
@@ -250,20 +239,8 @@
     margin: 0;
   }
 
-  .header__link-call {
-    display: none;
-  }
-
   .header__link {
-    padding-left: 22px;
-    font-size: 12px;
-    line-height: calc(16/12);
-
-  }
-  
-  .header__link::before {
-    width: 16px;
-    height: 16px;
+    display: none;
   }
 }
 
