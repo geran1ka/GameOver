@@ -45,10 +45,23 @@ h1,
 h2,
 h3,
 p,
-figure,
-fieldset {
+figure {
   margin: 0;
 }
+
+legend {
+  display: block; 
+  padding: 0;
+  white-space: normal;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+
 
 
 iframe {

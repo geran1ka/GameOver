@@ -3,10 +3,6 @@
   padding-bottom: 20px;
 }
 
-.header-main {
-  padding-bottom: 25px
-}
-
 .header__container {
   display: grid;
   grid-template-columns: 120px 587px 280px;
@@ -132,10 +128,6 @@
     padding-bottom: 20px;
   }
 
-  .header-main {
-    padding-bottom: 15px
-  }
-
   .header__container {
     grid-template-columns: 87px 430px 229px;
     column-gap: 1vw;
@@ -176,10 +168,6 @@
 
   }
 
-  .header-main {
-    padding-bottom: 15px
-  }
-  
   .header__container {
     grid-template-columns: 54px 87px 229px;
     column-gap: 1vw;

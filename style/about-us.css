@@ -1,13 +1,12 @@
 .about-us {
-  padding-top: 50px;
-  padding-top: 1215px;
+  padding-top: 100px;
   padding-bottom: 45px;
 }
 
 .about-us__container {
   display: grid;
   grid-template-columns: 600px 1fr;
-  grid-template-rows: 56px 242px 325px;
+  grid-template-rows: 58px 242px 325px;
   grid-template-areas:
     "title title"
     "about-us__img group-text"
@@ -27,10 +26,70 @@
   line-height: calc(28/20);
 }
 
-.about-us__img {
+:root {
+  --width: 600px;
+  --height: 596px;
+}
+
+.flex__list {
   grid-area: about-us__img;
-  max-width: 600px;
-  max-height: 596px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--width);
+  width: 100%;
+  max-height: var(--height);
+  height: 100%;
+}
+
+.flex__item {
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex__item-1 {
+  flex-basis: calc(var(--width) * 0.5);
+  height: calc(var(--height) * 0.346);
+  flex-grow: 2;
+  background-image: url("../img/about-us-one.jpg");
+}
+
+.flex__item-2 {
+  flex-basis: calc(var(--width) * 0.5);
+  height: calc(var(--height) * 0.346);
+  flex-grow: 2;
+  background-image: url("../img/about-us-two.jpg");
+}
+
+.flex__item-3 {
+  height: calc(var(--height) * 0.376);
+  flex-basis: calc(var(--width) * 0.273);
+  background-image: url("../img/about-us-three.jpg");
+}
+
+.flex__item-4 {
+  flex-basis: calc(var(--width) * 0.3);
+  height: calc(var(--height) * 0.376);
+  background-image: url("../img/about-us-four.jpg");
+}
+
+.flex__item-5 {
+  flex-basis: calc(var(--width) * 0.427);
+  height: calc(var(--height) * 0.376);
+  background-image: url("../img/about-us-five.jpg");
+}
+
+.flex__item-6 {
+  flex-basis: calc(var(--width) * 0.633);
+  height: calc(var(--height) * 0.279);
+  background-image: url("../img/about-us-six.jpg");
+}
+
+.flex__item-7 {
+  flex-basis: calc(var(--width) * 0.367);
+  height: calc(var(--height) * 0.279);
+  background-image: url("../img/about-us-seven.jpg");
 }
 
 .about-us__group-text {
@@ -104,10 +163,14 @@
 }
 
 
+.non-space {
+  display: none;
+}
+
 
 @media (max-width: 1240px) {
   .about-us {
-    padding-top: 1112px;
+    padding-top: 70px;
     padding-bottom: 35px;
   }
   
@@ -175,7 +238,7 @@
 
 @media (max-width: 900px) {
   .about-us {
-    padding-top: 1397px;
+    padding-top: 60px;
     padding-bottom: 35px;
   }
   
@@ -236,7 +299,7 @@
   }
 
   .caption {
-    flex-basis: 225px;
+    flex-basis: 221px;
   }
 }
 

@@ -19,7 +19,7 @@
   </head>
   <body class="page">
     
-    <header class="header">
+    <header class="header header-main">
         <div class="header__container container">
           <a class="header__logo logo" href="index.html">
             <img src="img/logo.svg" alt="Логотип" class="header__logo-img">
@@ -116,44 +116,40 @@
           </ol>
         </div>
       </section>
-<!--
+      
       <section class="booking section" id="booking">
         <div class="container booking__container">
           <h2 class="booking__title title">Забронировать зал просто</h2>
 
           <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <fieldset class="form__box-style form__box-style-grid">
-              <fieldset class="form__box-style form__box-style_halls">
-                <legend class="form__title form__title_type-halls">Выбери зал</legend>
-   
-                  <label class="form__label-radio" for="80s-vibes" tabindex="0">
-                    <input class="form__radio-hidden" type="radio" name="halls" value="80s_vibes" id="80s-vibes" tabindex="-1">80's vibes
-                  </label>
-                <div class="cl2">
+            <fieldset class="form__box-grid">
+              <fieldset class="form__box-halls halls">
+                <legend class="form__subtitle  form__subtitle-halls">Выбери зал</legend>
+
+                <input class="form__radio-hidden" type="radio" name="halls" value="80s_vibes" id="80s-vibes" tabindex="-1">
+                <label class="form__label-radio" for="80s-vibes" tabindex="0">80's vibes</label>
+
                   <input class="form__radio-hidden" type="radio" name="halls" value="star_wars" id="star-wars" tabindex="-1">
                   <label class="form__label-radio" for="star-wars" tabindex="0">star wars</label>
-                </div>
 
-                <div class="cl3">
+
+
                   <input class="form__radio-hidden" type="radio" name="halls" value="wild_west" id="wild-west" tabindex="-1">
                   <label class="form__label-radio" for="wild-west" tabindex="0">wild west</label>
-                </div>
 
-                <div class="cl4">
+
+
                   <input class="form__radio-hidden" type="radio" name="halls" value="neon_style" id="neon-style" tabindex="-1">
                   <label class="form__label-radio" for="neon-style" tabindex="0">neon style</label>
-                  </div>
-
-
               </fieldset>
 
-              <fieldset class="form__box-style form__box-style_entertainment">
-                <legend class="form__title form__title_type">Собери набор развлечений</legend>
+              <fieldset class="form__box-entertainment">
+                <legend class="form__subtitle  form__subtitle-entertainment">Собери набор развлечений</legend>
 
-                <fieldset class="form__box-style form__box-style_gameconsole" >
-                  <legend class="form__title">Приставка:</legend>
+                <fieldset class="form__box-gameconsole" >
+                  <legend class="form__subtitle form__subtitle-gameconsole">Приставка:</legend>
                   <label class="form__label">
-                    <input class="form__radio" type="radio" name="gameconsole" value="play_station">PlayStation
+                    <input class="form__radio" type="radio" name="gameconsole" value="play_station">PlayStation 5
                   </label>
                   <label class="form__label">
                     <input class="form__radio" type="radio" name="gameconsole" value="sega_mega_drive">Sega Mega Drive
@@ -166,8 +162,8 @@
                   </label>
                 </fieldset>
 
-                <fieldset class="form__box-style form__box-style_boardgame">
-                  <legend class="form__title">Настольные игры:</legend>
+                <fieldset class="form__box-boardgame">
+                  <legend class="form__subtitle form__subtitle-boardgame">Настольные игры:</legend>
                   <label class="form__label">
                     <input class="form__chekbox" type="checkbox" name="boardgame" value="jenga">Jenga
                   </label>
@@ -175,15 +171,15 @@
                     <input class="form__chekbox" type="checkbox" name="boardgame" value="monopoly">Monopoly
                   </label>
                   <label class="form__label">
-                    <input class="form__chekbox" type="checkbox" name="boardgame" value="manichkin">Маничкин
+                    <input class="form__chekbox" type="checkbox" name="boardgame" value="manichkin">Манчкин
                   </label>
                   <label class="form__label">
                     <input class="form__chekbox" type="checkbox" name="boardgame" value="alias">Alias
                   </label>
                 </fieldset>
 
-                <fieldset class="form__box-style form__box-style_additionally">
-                  <legend class="form__title">Дополнительно:</legend>
+                <fieldset class="form__box-additionally">
+                  <legend class="form__subtitle form__subtitle-additionally">Дополнительно:</legend>
                   <label class="form__label">
                     <input class="form__chekbox" type="checkbox" name="additionally" value="karaoke">Караоке
                   </label>
@@ -191,35 +187,36 @@
                     <input class="form__chekbox" type="checkbox" name="additionally" value="vr">VR
                   </label>
                 </fieldset>
-              </fieldset>
-              <fieldset class="form__box-style time">
-                <legend class="form__title form__title_type">Выбери дату и время</legend>
 
-                <div class="time__container" >
+              </fieldset>
+              <fieldset class="form__box-time time">
+                <legend class="form__subtitle form__subtitle-time">Выбери дату и время</legend>
+
+                <div class="time__group-1" >
                     <label class="form__label-type" for="data">
                       <input class="form__input form__input_data" type="date" name="date" id="data" required>
                     </label>
                     <label class="form__label-type" for="time">
                       <input class="form__input form__input_time" type="time" name="time" id="time" required>
                     </label>
-                    <label class="form__label-type" for="count">
-                      <input class="form__input form__input_count" type="number" name="count" id="count" placeholder="Сколько человек" required>
-                    </label>
+                </div>
+                <div class="time__group-2">
+                  <label class="form__label-type" for="count">
+                    <input class="form__input form__input_count" type="number" name="count" id="count" placeholder="Сколько человек" required>
+                  </label>
                 </div>
 
-                <div class="time__container-name">
+                <div class="time__group-3">
                   <label class="form__label-small" for="name">Имя
                     <input class="form__input" type="text" name="name" id="name" required>
                   </label>
-                  
-
+                
                   <label class="form__label-small" for="surname">Фамилия
                     <input class="form__input" type="text" name="surname" id="surname" required>
                   </label>
-                  
                 </div>
 
-                <div class="time__container-contacts">
+                <div class="time__group-4">
                   <label class="form__label-small" for="tel">Телефон
                     <input class="form__input" type="tel" name="tel" id="tel"  required>
                   </label>
@@ -229,21 +226,32 @@
                   </label>
                 </div>
               </fieldset>
-              <div class="form-container">
+              <div class="container-form">
                 <button class="form__btn" type="submit" formtarget="_blank">Забронировать</button>
               </div>
             </fieldset>
           </form>
         </div>
       </section>
-    -->
+
       <section class="about-us section" id="aboutUs">
         <div class="container about-us__container">
           <h2 class="about-us__title title">О нас</h2>
-                <img src="img/about-us.jpg" alt="Изображения с различными развлечениями" class="about-us__img">
+          <ul class="flex__list">
+            <li class="flex__item flex__item-1"></li>
+            <li class="flex__item flex__item-2"></li>
+            <li class="flex__item flex__item-3"></li>
+            <li class="flex__item flex__item-4"></li>
+            <li class="flex__item flex__item-5"></li>
+            <li class="flex__item flex__item-6"></li>
+            <li class="flex__item flex__item-7"></li>
+          </ul>
+          <!--
+          <img src="img/about-us.jpg" alt="Изображения с различными развлечениями" class="about-us__img">
+          -->
           <div class="about-us__group-text">
             <p class="about-us__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в&nbsp;центральной части города.</p>
-            <p class="about-us__text">Каждый день мы стараемся создавать для&nbsp;вас самую лучшую игровую атмосферу и&nbsp;радовать Вас топовыми игровыми разработками со&nbsp;всего мира.</p>
+            <p class="about-us__text">Каждый день мы стараемся создавать для&nbsp;вас<span>&nbsp;</span>самую лучшую игровую атмосферу и&nbsp;радовать Вас топовыми игровыми разработками со&nbsp;всего мира.</p>
           </div>
                             
           <blockquote class="quote">
@@ -343,7 +351,7 @@
 
     </main>
 
-    <footer class="footer" id="contacts">
+    <footer class="footer footer-main" id="contacts">
       <div class="container footer__container">
         <h2 class="footer__title title">Контакты</h2>
 
@@ -404,7 +412,7 @@
         </div>
       </div> 
     </footer>
- 
+
     <script>
       document.addEventListener('click', event => {
         if (event.target.matches('button')) {

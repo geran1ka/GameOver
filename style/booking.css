@@ -1,38 +1,41 @@
+
 .booking {
   background-color: var(--purple-dark-color, #440f51);
   padding-bottom: 45px;
 }
 
 .booking__container {
-  padding: 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .booking__title {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
-.form__box-style {
+.form__box-grid {
+  display: grid;
+  grid-template-rows: 143px 307px 229px 1fr;
+  gap: 40px;
+}
+
+.form__box-halls {
   padding: 0;
+  display: flex;
+  justify-content: space-between;
   border: none;
+  text-align: center;
+  align-items: flex-start;
 }
 
-.form__title {
-
+.form__subtitle {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.167;
+  line-height: calc(28/24);
 }
 
-.form__title_type {
-
-  text-align: center;
-}
-
-
-
-.form__title_type-halls {
-  display: grid;
-  grid-column: span 4;
+.form__subtitle-halls {
+  margin-bottom: 42px;
 }
 
 .form__radio-hidden {
@@ -40,28 +43,11 @@
   transform: scale(0);    
 }
 
-.form__box-style-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 123px 287px 228px 60px;
-}
-
-.form__box-style_halls {
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  grid-template-rows: 28px 55px;
-
- justify-content: space-between;
-  align-content: space-between;
-  column-gap: 50px;
-  row-gap: 40px;
-}
-
 .form__label-radio {
+
   display: inline-flex;
   justify-content: center;      
-  flex-basis: 250px;
-  padding: 7px 15px;
+  padding: 4px 15px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.333;
@@ -94,43 +80,41 @@
   background-color: var(--purple-color, #6c0287);
 }
 
-.form__box-style_entertainment {
-  display: flex;
+
+.form__box-entertainment {
+  display: grid;
   gap: 100px;
-  max-width: 1080px;
-  margin-left: auto;
-  margin-bottom: 60px;
+  grid-template-columns: 280px 300px 1fr;
+  justify-self: center;
+  max-width: 980px;
+  width: 100%;
+  text-align: center;
 }
 
-.form__box-style_gameconsole {
-  display: flex;
-  flex-basis: 280px;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px; 
+.form__subtitle-entertainment {
+  margin-bottom: 40px;
 }
 
-.form__box-style_boardgame {
+.form__box-gameconsole,
+.form__box-boardgame,
+.form__box-additionally {
   display: flex;
-  flex-basis: 300px;
   flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px; 
+  row-gap: 20px;
 }
 
-.form__box-style_additionally {
-  display: flex;
-  flex-basis: 300px;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px; 
+.form__subtitle-gameconsole,
+.form__subtitle-boardgame,
+.form__subtitle-additionally {
+  margin-bottom: 23px;
+  text-align: left;
 }
 
 .form__label {
   display: inline-flex;
   font-weight: 400;
   font-size: 22px;
-  line-height: 1.136;
+  line-height: calc(25/22);
   cursor: pointer;
   align-items: flex-start;
 }
@@ -139,8 +123,8 @@
 .form__chekbox {
   display: inline-block;
   vertical-align: middle;
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
   margin-right: 12px;
   cursor: pointer;
   border: none;
@@ -149,27 +133,66 @@
   transition: outline-color 0.5s ease-in-out;
 }
 
+.form__chekbox {
+  width: 26px;
+  height: 26px;
+}
+
 .form__radio:focus,
 .form__chekbox:focus {
   outline-color: var(--pink-color, #cd06ff);
 }
 
-.time {
-  display: flex;
+
+.form__box-time {
   max-width: 980px;
-  margin: 0 auto 40px;
-  justify-content: space-between;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 280px 1fr;
+  grid-template-areas: 
+  "time name contacts"
+  "count name contacts";
   column-gap: 50px;
-  row-gap: 50px;
+  row-gap: 14px;
 }
 
-.time__container {
-  padding-top: 22px;
+.form__subtitle-time {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.time__group-1 {
+  display: flex; 
+  gap: 32px;
+  grid-area: time;
+  align-self: flex-end;
+}
+
+.time__group-2 {
+  grid-area: count;
+  align-self: flex-end;
+}
+
+.time__group-3 {
+  grid-area: name;
+}
+
+.time__group-4 {
+  grid-area: contacts;
+}
+
+.time__group-3, 
+.time__group-4 {
   display: flex;
-  flex-direction: row;
-  flex-basis: 300px;
-  gap: 36px 32px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.container-form {
+  width: 100%;
+  justify-self: center;
+  max-width: 980px;
+
 }
 
 .form__label-small {
@@ -183,24 +206,8 @@
   line-height: 16px;
 }
 
-.time__container-name {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 280px;
-  flex-shrink: 0;
-  gap: 14px
-}
-
-.time__container-contacts {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 300px;
-  flex-shrink: 0;
-  gap: 14px;
-}
-
 .form__select {
-  padding: 12px 20px;
+  padding: 12px 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
@@ -209,7 +216,7 @@
 
 .form__input {
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
@@ -225,16 +232,20 @@
   border-color:var(--pink-color, #cd06ff);
 }
 
-.form__input_data {
-  width: 134px;
-}
-
+.form__input_data,
 .form__input_time {
   width: 134px;
 }
 
 .form__input_count {
-  width: 300px;
+  width: 100%;
+}
+
+.form__input_count::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
 }
 
 .form-container {
@@ -244,17 +255,22 @@
 }
 
 .form__btn {
-  padding: 16px 50px;
+  display: block;
+  margin-left: auto;
+  padding: 13px;
+  max-width: 300px;
+  width: 100%;
+  
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.273;
+  line-height: calc(28/22);
   text-transform: uppercase;
   color: var(--purple-color, #6c0287);
   background-color: var(--main-color, #ffffff);
   border-radius: 10px;
   outline: none;
   border: 3px solid var(--main-color, #ffffff);
-
+  box-shadow: 0 0 15px var(--main-color, #ffffff);;
   transition: 
     border-color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
@@ -274,6 +290,143 @@
   background-color: var(--gray-light-color, #eadeed);
 }
 
+/*-----------------------------------------------------------------*/
+@media (max-width: 1240px) {
+  .booking {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+    
+  .booking__title {
+    margin-bottom: 40px;
+  }
+
+  .form__box-grid {
+    grid-template-rows: 108px 283px 216px 1fr;
+    gap: 50px;
+  }
+
+
+  .form__subtitle-halls {
+    margin-bottom: 26px;
+  }
+
+  .form__label-radio {
+    flex-basis: 180px;  
+    padding: 7px 20px;
+    font-size: 20px;
+    line-height: calc(24/20);
+    border-radius: 6px;
+  }
+
+  .form__box-entertainment {
+    gap: 39px;
+    grid-template-columns: 31% 32% 28%;
+    max-width: 904px;
+  }
+  
+  .form__subtitle-entertainment {
+    margin-bottom: 26px;
+  }
+
+  .form__chekbox {
+    width: 26px;
+    height: 25px;
+  }
+
+  .form__box-time {
+    grid-template-columns: 301px 251px 254px;
+  }
+
+  .form__subtitle-time {
+    margin-bottom: 26px;
+  }
+
+  .form__btn {
+    padding: 10px;
+    max-width: 254px;
+    font-size: 18px;
+    line-height: calc(24/18);
+  }
+}
+
+@media (max-width: 900px) {
+  .booking {
+    padding-top: 20px;
+    padding-bottom: 13px;
+  }
+
+  .form__box-grid {
+    grid-template-rows: 96px 513px 314px 60px;
+    gap: 50px;
+  }
+
+  .form__box-halls {
+  max-width: 688px;
+  }
+
+  .form__subtitle-halls {
+    margin-bottom: 30px;
+  }
+
+
+  
+  .form__label-radio {
+    flex-basis: 150px;  
+    padding: 6px 20px;
+    font-size: 16px;
+    line-height: calc(20/16);
+  }
+
+  .form__box-entertainment {
+    column-gap: 66px;
+    row-gap: 32px;
+    grid-template-columns: 301px 321px;
+    grid-template-rows: 272px 1fr;
+    max-width: 688px;
+  } 
+
+  .form__subtitle-entertainment {
+    margin-bottom: 30px;
+  }
+  .form__radio,
+  .form__chekbox {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .form__label {
+    align-items: center;
+  }
+
+  .time__group-1 {
+    gap: 14px;
+  }
+  
+  .form__box-time {
+    max-width: 688px;
+
+    grid-template-columns: 280px 300px;
+    grid-template-rows: 55px 162px;
+    grid-template-areas: 
+    "time count"
+    "name contacts";
+    column-gap: 106px;
+    row-gap: 42px;
+  }
+
+  .form__subtitle-time {
+    margin-bottom: 28px;
+  }
+
+  .form__btn {
+    padding: 13px 50px;
+    max-width: 300px;
+    font-size: 22px;
+    line-height: calc(28/22);
+  }
+}
 
 
 

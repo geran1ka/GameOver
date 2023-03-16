@@ -5,7 +5,7 @@
 }
 
 .reviews__title {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 
@@ -123,7 +123,7 @@
   
   .reviews__text {
     max-width: 515px;
-    padding-top: 35px;
+    padding-top: 33px;
     font-size: 18px;
     line-height: calc(26/18);
   }

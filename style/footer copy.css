@@ -1,7 +1,7 @@
 .footer {
   min-height: 630px;
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
@@ -12,7 +12,7 @@
 .footer__container {
   display: grid;
   grid-template-columns: 380px 1fr;
-  grid-template-rows: 56px 167px 67px 65px;
+  grid-template-rows: 57px 167px 67px 65px;
   column-gap: 120px;
   row-gap: 40px;
   grid-template-areas: 
@@ -197,13 +197,10 @@
 @media (max-width: 900px) {
   .footer {
     min-height: 630px;
- 
+    /*padding-top: 34px;*/
     padding-top: 10px;
     padding-bottom: 18px;
-  }
 
-  .footer-main {
-   padding-top: 34px
   }
 
 .footer__container {
