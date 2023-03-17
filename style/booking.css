@@ -234,7 +234,7 @@
   width: 100%;
 }
 
-.form__input_count::placeholder {
+.form__input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -248,6 +248,7 @@
 }
 
 .form__btn {
+  grid-column: -1 / -2;
   display: block;
   margin-left: auto;
   padding: 13px;
