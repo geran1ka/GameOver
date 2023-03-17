@@ -1,12 +1,8 @@
 
 .booking {
   background-color: var(--purple-dark-color, #440f51);
-  padding-bottom: 45px;
-}
-
-.booking__container {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .booking__title {
@@ -44,8 +40,7 @@
 }
 
 .form__label-radio {
-
-  display: inline-flex;
+  flex-basis: 250px; 
   justify-content: center;      
   padding: 4px 15px;
   font-weight: 700;
@@ -145,15 +140,16 @@
 
 
 .form__box-time {
-  max-width: 980px;
   display: grid;
   justify-self: center;
   grid-template-columns: 1fr 280px 1fr;
   grid-template-areas: 
-  "time name contacts"
+  "count name contacts"
   "count name contacts";
   column-gap: 50px;
   row-gap: 14px;
+  max-width: 980px;
+  width: 100%;
 }
 
 .form__subtitle-time {
@@ -162,22 +158,30 @@
 }
 
 .time__group-1 {
-  display: flex; 
+  max-width: 134px;
+  width: 100%;
+  max-height: 52px;
+  display: inline-flex; 
   gap: 32px;
-  grid-area: time;
-  align-self: flex-end;
 }
 
 .time__group-2 {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
   grid-area: count;
   align-self: flex-end;
 }
 
 .time__group-3 {
+  width: 100%;
   grid-area: name;
 }
 
 .time__group-4 {
+  width: 100%;
   grid-area: contacts;
 }
 
@@ -188,14 +192,9 @@
   gap: 14px;
 }
 
-.container-form {
-  width: 100%;
-  justify-self: center;
-  max-width: 980px;
-
-}
-
 .form__label-small {
+  max-width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -206,17 +205,10 @@
   line-height: 16px;
 }
 
-.form__select {
-  padding: 12px 10px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.556;
-  color: var(--second-color, #000000);
-}
-
 .form__input {
+  width: 100%;
   position: relative;
-  padding: 10px 10px;
+  padding: 10px 18px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
@@ -235,6 +227,7 @@
 .form__input_data,
 .form__input_time {
   width: 134px;
+  max-height: 52px;
 }
 
 .form__input_count {
@@ -248,9 +241,9 @@
   color: #211E1E;
 }
 
-.form-container {
+.container-form {
   max-width: 980px;
-  text-align: end;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -293,8 +286,8 @@
 /*-----------------------------------------------------------------*/
 @media (max-width: 1240px) {
   .booking {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
     
   .booking__title {
@@ -335,7 +328,10 @@
   }
 
   .form__box-time {
-    grid-template-columns: 301px 251px 254px;
+    max-width: 904px;
+    grid-template-columns: 300px 1fr 1fr;
+    column-gap: 48px;
+    justify-self: auto;
   }
 
   .form__subtitle-time {
@@ -352,17 +348,18 @@
 
 @media (max-width: 900px) {
   .booking {
-    padding-top: 20px;
-    padding-bottom: 13px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .form__box-grid {
-    grid-template-rows: 96px 513px 314px 60px;
+    grid-template-rows: 96px 513px 313px 59px;
     gap: 50px;
   }
 
   .form__box-halls {
-  max-width: 688px;
+    max-width: 688px;
+    gap: 29px;
   }
 
   .form__subtitle-halls {
@@ -370,18 +367,19 @@
   }
 
 
-  
   .form__label-radio {
-    flex-basis: 150px;  
-    padding: 6px 20px;
+    flex-basis: 130px;
+    flex-grow: 1;
+    padding: 6px 3px;
     font-size: 16px;
     line-height: calc(20/16);
+
   }
 
   .form__box-entertainment {
-    column-gap: 66px;
+    column-gap: 46px;
     row-gap: 32px;
-    grid-template-columns: 301px 321px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 272px 1fr;
     max-width: 688px;
   } 
@@ -400,31 +398,179 @@
     align-items: center;
   }
 
+  .form__label-type {
+    flex-grow: 1;
+  }
+
   .time__group-1 {
+    max-width: 280px;
     gap: 14px;
+  }
+
+  .time__group-3 {
+    max-width: 280px;
+  }
+
+  .time__group-2 {
+    flex-direction: row;
+    column-gap: 14vw;
   }
   
   .form__box-time {
     max-width: 688px;
-
-    grid-template-columns: 280px 300px;
+    grid-template-columns: 280px 1fr;
     grid-template-rows: 55px 162px;
     grid-template-areas: 
-    "time count"
+    "count count"
     "name contacts";
-    column-gap: 106px;
+    column-gap: 14vw;
     row-gap: 42px;
   }
 
   .form__subtitle-time {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
+  }
+
+  .form__input {
+    max-height: 52px;
+    padding: 10px 20px;
+  }
+
+  .form__input_count {
+    max-width: 300px;
+    width: 100%;
   }
 
   .form__btn {
-    padding: 13px 50px;
+    padding: 12px 20px;
     max-width: 300px;
     font-size: 22px;
     line-height: calc(28/22);
+  }
+}
+
+@media (max-width: 640px) {
+  .booking {
+    padding-top: 30px;
+    padding-bottom: 27px;
+  }
+
+  
+  .booking__title {
+    margin-bottom: 15px;
+  }
+
+  .form__box-grid {
+    grid-template-rows: 107px 607px 561px 64px;
+    gap: 30px;
+  }
+
+  .form__box-halls {
+    flex-wrap: wrap;
+    max-width: 280px;
+    gap: 14px 20px;
+  }
+
+  .form__subtitle-halls {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+
+  .form__label-radio {
+    padding: 3px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+/*-------------------------------------------------------------*/
+
+  .form__box-entertainment {
+    column-gap: 46px;
+    row-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 280px;
+    justify-self: self-start;
+  } 
+
+  .form__subtitle-entertainment {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+
+  .form__subtitle-gameconsole,
+  .form__subtitle-boardgame,
+  .form__subtitle-additionally {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+
+  .form__radio,
+  .form__chekbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .form__box-gameconsole {
+    row-gap: 15px;
+}
+
+
+  .form__label {
+    font-size: 16px;
+    line-height: calc(18/16);
+  }
+
+  .time__group-1 {
+    gap: 14px;
+  }
+
+  .time__group-2 {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .time__group-3 {
+    max-width: 280px;
+  }
+  
+  .form__box-time {
+    max-width: 688px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 119px 163px 1fr 1fr;
+    grid-template-areas:
+    "count"
+    "name" 
+    "contacts";
+    row-gap: 35px;
+  }
+
+  .form__subtitle-time {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+
+  .form__input::placeholder {
+    font-size: 14px;
+    line-height: calc(18/14);
+  } 
+
+  .form__input {
+    max-height: 52px;
+    padding: 10px 20px;
+  }
+
+  .form__btn {
+    padding: 14px 20px;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: calc(26/18);
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--main-color, #ffffff);;
   }
 }
 

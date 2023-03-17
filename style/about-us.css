@@ -275,7 +275,7 @@
   
   .quote {
     padding-top: 16px;
-    gap: 25px;
+    gap: 24px;
   }
   
   .quote__text {
@@ -292,20 +292,15 @@
     gap: 25px;
   }
 
-    
   .quote__caption::before {
     width: 70px;
     height: 70px;
-  }
-
-  .caption {
-    flex-basis: 221px;
   }
 }
 
 @media (max-width: 640px) {
   .about-us {
-    padding-top: 1564px;
+    padding-top: 30px;
     padding-bottom: 0px;
   }
 

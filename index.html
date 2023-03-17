@@ -191,16 +191,16 @@
               </fieldset>
               <fieldset class="form__box-time time">
                 <legend class="form__subtitle form__subtitle-time">Выбери дату и время</legend>
-
+                <div class="time__group-2">
                 <div class="time__group-1" >
                     <label class="form__label-type" for="data">
-                      <input class="form__input form__input_data" type="date" name="date" id="data" required>
+                      <input class="form__input form__input_data" type="text" onfocus="(this.type = 'date')" onblur="(this.type='text')" name="date" id="data" required placeholder="Дата">
                     </label>
                     <label class="form__label-type" for="time">
-                      <input class="form__input form__input_time" type="time" name="time" id="time" required>
+                      <input class="form__input form__input_time" type="text" onfocus="(this.type = 'time')" onblur="(this.type='text')" name="time" id="time" required placeholder="время">
                     </label>
                 </div>
-                <div class="time__group-2">
+              
                   <label class="form__label-type" for="count">
                     <input class="form__input form__input_count" type="number" name="count" id="count" placeholder="Сколько человек" required>
                   </label>
