@@ -40,8 +40,7 @@
 }
 
 .form__label-radio {
-  flex-basis: 250px; 
-  justify-content: center;      
+  flex-basis: 250px;    
   padding: 4px 15px;
   font-weight: 700;
   font-size: 30px;

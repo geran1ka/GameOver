@@ -103,7 +103,7 @@
   background-color: var(--pink-light-color, #640aa3);
 }
 
-.down__box_circle {
+.down__box-circle {
   stroke: var(--main-color, #ffffff);
 
   transition: 
@@ -111,7 +111,7 @@
     fill 0.3s ease-in-out;
 }
 
-.down__box_line {
+.down__box-line {
   fill: var(--main-color, #ffffff);
   transition: 
     stroke 0.3s ease-in-out,
@@ -133,12 +133,12 @@
 }
 /*управление цветом down-svg при различных состояниях*/
 /*:hover*/
-.hero__link-down:hover .down__box_circle {
+.hero__link-down:hover .down__box-circle {
   stroke: transparent;
   fill: var(--main-color, #ffffff);
 }
 
-.hero__link-down:hover .down__box_line {
+.hero__link-down:hover .down__box-line {
   stroke: transparent;
   fill: var(--purple-color, #6c0287);
 }
@@ -153,12 +153,12 @@
   outline-color: transparent;
 }
 
-.hero__link-down:active .down__box_circle {
+.hero__link-down:active .down__box-circle {
   stroke: transparent;
   fill: var(--pink-color, #cd06ff);
 }
 
-.hero__link-down:active .down__box_line {
+.hero__link-down:active .down__box-line {
   stroke: transparent;
   fill: var(--main-color, #ffffff);
 }
