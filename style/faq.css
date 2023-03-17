@@ -1,5 +1,5 @@
 .faq__title {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 
 .faq__list {
@@ -107,7 +107,7 @@
   }
 
   .faq__title {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .faq__list {
@@ -165,8 +165,12 @@
 
 @media (max-width: 900px) {
   .faq {
-    padding-top: 23px;
+    padding-top: 25px;
     padding-bottom: 34px;
+  }
+
+  .faq__title {
+    margin-bottom: 25px;
   }
 
 

@@ -165,7 +165,6 @@
 
 .time__group-2 {
   display: inline-flex;
-  flex-grow: 1;
   flex-direction: column;
   gap: 36px;
   width: 100%;
@@ -205,9 +204,7 @@
 
 .form__input {
   width: 100%;
-  position: relative;
   padding: 10px 18px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
   color: var(--second-color, #000000);
@@ -337,9 +334,18 @@
     margin-bottom: 26px;
   }
 
+  .container-form {
+    display: grid;
+    max-width: 904px;
+    grid-template-columns: 300px 1fr 1fr;
+    column-gap: 48px;
+    justify-self: auto;
+  }
+
   .form__btn {
-    padding: 10px;
-    max-width: 254px;
+
+    grid-column: -1 / -2;
+    padding: 10px 2px;
     font-size: 18px;
     line-height: calc(24/18);
   }
@@ -398,6 +404,8 @@
 
   .form__label-type {
     flex-grow: 1;
+    max-width: 300px;
+    width: 100%;
   }
 
   .time__group-1 {
@@ -411,8 +419,16 @@
 
   .time__group-2 {
     flex-direction: row;
-    column-gap: 14vw;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 30px;
   }
+
+  .time__group-4 {
+    align-items: flex-end;
+  }
+
+
   
   .form__box-time {
     max-width: 688px;
@@ -421,7 +437,7 @@
     grid-template-areas: 
     "count count"
     "name contacts";
-    column-gap: 14vw;
+    column-gap: 30px;
     row-gap: 42px;
   }
 
@@ -439,8 +455,14 @@
     width: 100%;
   }
 
+  .container-form {
+    max-width: 688px;
+    grid-template-columns: 280px 1fr;
+    column-gap: 30px;
+  }
+
   .form__btn {
-    padding: 12px 20px;
+    padding: 12px 2px;
     max-width: 300px;
     font-size: 22px;
     line-height: calc(28/22);
@@ -523,7 +545,7 @@
   }
 
   .time__group-1 {
-    gap: 14px;
+    gap: 12px;
   }
 
   .time__group-2 {
@@ -543,6 +565,7 @@
     "count"
     "name" 
     "contacts";
+    column-gap: 0;
     row-gap: 35px;
   }
 
@@ -560,6 +583,10 @@
   .form__input {
     max-height: 52px;
     padding: 10px 17px;
+  }
+
+  .container-form {
+    grid-template-columns: 1fr;
   }
 
   .form__btn {
