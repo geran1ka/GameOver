@@ -33,7 +33,6 @@
 
 .navigation__item {
   font-family: 'Arial', sans-serif;
-  font-weight: 400;
   font-size: 22px;
   color: var(--main-color, #ffffff);
   line-height: calc(50/22);
@@ -88,6 +87,7 @@
 
 .header__link-call:focus {
   background-color: var(--purple-color, #6c0287);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .header__link-call:active {
@@ -244,15 +244,15 @@
 
   .header__container {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 18px;
+    row-gap: 20px;
   }
 
   .header__logo {
     width: 66px;
     height: 42px;
     justify-self: flex-end;
-
   }
+  
   .navigation__menu {
     height: 33px;
     width: 39px;

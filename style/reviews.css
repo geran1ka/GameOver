@@ -198,12 +198,12 @@
   }
 
   .reviews__list {
-    gap: 20px;
+    gap: 19px;
   }
 
   .reviews__item {
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
   }
 
   .reviews__box-img {
@@ -219,7 +219,7 @@
   .reviews__img {
     width: 86px;
     height: 86px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .reviews__img-two {

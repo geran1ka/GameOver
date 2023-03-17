@@ -14,7 +14,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: calc(28/20);
   color: var(--main-color, #ffffff);
   background-color: var(--main-bg-color, #1b1a1b);
 }
@@ -62,12 +65,6 @@ fieldset {
 }
 
 
-
-
-iframe {
-  border: none;
-}
-
 /*
 Доступно скрываю элементы
 */
@@ -77,15 +74,6 @@ iframe {
   transform: scale(0);
 }
 
-
-/*
-Пример контейнера
-
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2, 
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
 
 .container {
   max-width: calc(var(--max-width) + var(--padding) * 2);
@@ -99,7 +87,7 @@ iframe {
 
 .title {
   margin-top: 0;
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: calc(50/40);

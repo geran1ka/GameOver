@@ -25,13 +25,13 @@
   --padding: 30px;
 }
 
-.flex__list {
+.about-us__list {
   --width: 600px;
   --height: 596px;
 }
 
 @media (max-width: 1240px) {
-  .flex__list {
+  .about-us__list {
     --width: 420.46px;
     --height: 417.66px;
   }
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 900px) {
-  .flex__list {
+  .about-us__list {
     --width: 382px;
     --height: 380px;
   }
@@ -65,7 +65,7 @@
 
 @media (max-width: 640px) {
 
-  .flex__list {
+  .about-us__list {
     --width: 280px;
     --height: 280px;
   }

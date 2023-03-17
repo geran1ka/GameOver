@@ -41,7 +41,8 @@
 }
 
 .halls__link {
-  max-width: 252px;
+  max-width: 580px;
+  padding: 120px;
   font-size: 70px;
   font-weight: 700;
   line-height: calc(80/70);
@@ -71,7 +72,7 @@
   }
 
   .halls__link {
-    max-width: 252px;
+    padding: 74px 90px;
     font-size: 50px;
     line-height: calc(60/50);
   }
@@ -92,7 +93,7 @@
   }
 
   .halls__link {
-    max-width: 210px;
+    padding: 25px 65px 35px;
     font-size: 40px;
     line-height: calc(50/40);
     transform: translateY(10%);
@@ -118,7 +119,7 @@
   }
 
   .halls__link {
-    max-width: 125px;
+    padding: 68px 75px;
     font-size: 26px;
     line-height: calc(34/26);
     transform: translateY(0);

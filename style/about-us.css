@@ -26,12 +26,9 @@
   line-height: calc(28/20);
 }
 
-:root {
-  --width: 600px;
-  --height: 596px;
-}
 
-.flex__list {
+
+.about-us__list {
   grid-area: about-us__img;
   display: flex;
   flex-wrap: wrap;
@@ -41,52 +38,52 @@
   height: 100%;
 }
 
-.flex__item {
+.about-us__item {
   flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.flex__item-1 {
+.about-us__item-1 {
   flex-basis: calc(var(--width) * 0.5);
   height: calc(var(--height) * 0.346);
   flex-grow: 2;
   background-image: url("../img/about-us-one.jpg");
 }
 
-.flex__item-2 {
+.about-us__item-2 {
   flex-basis: calc(var(--width) * 0.5);
   height: calc(var(--height) * 0.346);
   flex-grow: 2;
   background-image: url("../img/about-us-two.jpg");
 }
 
-.flex__item-3 {
+.about-us__item-3 {
   height: calc(var(--height) * 0.376);
   flex-basis: calc(var(--width) * 0.273);
   background-image: url("../img/about-us-three.jpg");
 }
 
-.flex__item-4 {
+.about-us__item-4 {
   flex-basis: calc(var(--width) * 0.3);
   height: calc(var(--height) * 0.376);
   background-image: url("../img/about-us-four.jpg");
 }
 
-.flex__item-5 {
+.about-us__item-5 {
   flex-basis: calc(var(--width) * 0.427);
   height: calc(var(--height) * 0.376);
   background-image: url("../img/about-us-five.jpg");
 }
 
-.flex__item-6 {
+.about-us__item-6 {
   flex-basis: calc(var(--width) * 0.633);
   height: calc(var(--height) * 0.279);
   background-image: url("../img/about-us-six.jpg");
 }
 
-.flex__item-7 {
+.about-us__item-7 {
   flex-basis: calc(var(--width) * 0.367);
   height: calc(var(--height) * 0.279);
   background-image: url("../img/about-us-seven.jpg");
@@ -162,11 +159,9 @@
   font-style: normal;
 }
 
-
 .non-space {
   display: none;
 }
-
 
 @media (max-width: 1240px) {
   .about-us {

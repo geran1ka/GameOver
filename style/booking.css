@@ -44,7 +44,7 @@
   padding: 4px 15px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 1.333;
+  line-height: calc(40/30);
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -73,7 +73,6 @@
   color: var(--main-color, #ffffff);
   background-color: var(--purple-color, #6c0287);
 }
-
 
 .form__box-entertainment {
   display: grid;
@@ -366,14 +365,12 @@
     margin-bottom: 30px;
   }
 
-
   .form__label-radio {
     flex-basis: 130px;
     flex-grow: 1;
     padding: 6px 3px;
     font-size: 16px;
     line-height: calc(20/16);
-
   }
 
   .form__box-entertainment {
@@ -387,6 +384,7 @@
   .form__subtitle-entertainment {
     margin-bottom: 30px;
   }
+
   .form__radio,
   .form__chekbox {
     width: 40px;
@@ -481,8 +479,8 @@
     padding: 3px;
     font-size: 14px;
     line-height: calc(18/14);
+    border-radius: 4px;
   }
-/*-------------------------------------------------------------*/
 
   .form__box-entertainment {
     column-gap: 46px;
@@ -561,7 +559,7 @@
 
   .form__input {
     max-height: 52px;
-    padding: 10px 20px;
+    padding: 10px 17px;
   }
 
   .form__btn {
