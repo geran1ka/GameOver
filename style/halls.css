@@ -53,7 +53,7 @@
 
   transition: 
     color .3s ease-in-out,
-    outline-color .3s ease-in-out;
+    outline-color .5s ease-in-out;
 }
 
 .halls__link:hover {
