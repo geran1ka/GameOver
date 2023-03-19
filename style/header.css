@@ -240,6 +240,7 @@
   }
 
   .header__link {
+    max-width: 175px;
     padding-left: 40px;
     font-size: 16px;
     line-height: calc(28/16);
@@ -279,6 +280,7 @@
   }
 
   .header__link {
+    max-width: 124px;
     padding-left: 22px;
     font-size: 12px;
     line-height: calc(16/12);
