@@ -10,7 +10,7 @@
 .header__container {
   display: grid;
   grid-template-columns: 120px 587px 280px;
-  column-gap: 6vw;
+  column-gap: 10px;
   row-gap: 60px;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +151,6 @@
 
   .header__container {
     grid-template-columns: 87px 430px 229px;
-    column-gap: 1vw;
     row-gap: 50px;
   }
 
