@@ -47,7 +47,7 @@
 }
 
 .other-rooms__link {
-  max-width: 170px;
+  padding: 78px 110px;
   font-size: 30px;
   font-weight: 700;
   line-height: calc(36/30);
@@ -56,6 +56,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-color, #ffffff);
+  outline: 3px solid transparent;
+
+  transition: 
+    color .3s ease-in-out,
+    outline-color .3s ease-in-out;
+}
+
+.other-rooms__link:hover {
+  color: var(--pink-color, #cd06ff);
+}
+
+.other-rooms__link:focus {
+  outline-color: var(--main-color, #ffffff);
 }
 
 @media (max-width: 1240px) {
@@ -69,6 +82,9 @@
     height: 172px;
   }
   
+  .other-rooms__link {
+    padding: 50px 60px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -91,7 +107,7 @@
   }
 
   .other-rooms__link {
-    max-width: 100px;
+    padding: 43px 55px;
     font-size: 20px;
     line-height: calc(24/20);
   }
@@ -118,7 +134,7 @@
   }
 
   .other-rooms__link {
-    max-width: 100px;
+    padding: 45px 85px;
     font-size: 20px;
     line-height: calc(24/20);
   }
