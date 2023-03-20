@@ -32,18 +32,19 @@
   line-height: calc(28/24);
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid transparent;
-  outline: none;
+  border-radius: 25px;
+  outline: 2px solid transparent;
+  outline-offset: 6px;
 
-  transition: border-color .5s ease-in-out;
+  transition: outline-color .5s ease-in-out;
 }
 
 .faq__item:nth-child(odd) .faq__item-btn:focus {
-  border-color: var(--purple-color, #6c0287);
+  outline-color: var(--purple-color, #6c0287);
 }
 
 .faq__item:nth-child(even) .faq__item-btn:focus {  
-  border-color: var(--main-color, #ffffff);
+  outline-color: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(odd) span {
@@ -171,7 +172,7 @@
   }
 
   .faq__item:nth-child(even) .faq__item-btn:focus {
-    border-color: var(--purple-color, #6c0287);
+    outline-color: var(--purple-color, #6c0287);
   }
 
   
@@ -246,6 +247,9 @@
     text-align: left;
     font-size: 12px;
     line-height: calc(16/12);
+    outline-offset: 4px;
+    border-radius: 10px;
+
   }
 
   .box-svg {
