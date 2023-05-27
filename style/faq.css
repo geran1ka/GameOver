@@ -10,7 +10,12 @@
 
 .faq__item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+}
+
+.faq__item-btn-wrapper {
   padding: 21px 70px 20px;
 }
 
@@ -54,6 +59,26 @@
 .faq__item:nth-child(even) span {
   color: var(--main-color, #ffffff);
 }
+
+.faq__item-text-wrapper {
+  height: 0;
+  padding: 57px 70px;
+  min-height: 214px;
+  background-color: var(--main-color, #ffffff);
+  overflow: hidden;
+  transition: height .4s ease-in-out;
+}
+
+.faq__item-text {
+  font-size: 24px;
+  line-height: calc(28/24);
+  color: var(--second-color, #000000)
+}
+
+.faq__item_active .faq__item-text-wrapper {
+  height: auto;
+}
+
 
 .box-svg {
   max-width: 46px;
