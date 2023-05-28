@@ -1,0 +1,152 @@
+.modal {
+  position: relative;
+  overflow-y: auto;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: var(--purple-dark-color, #440F51);
+}
+
+.modal__container {
+  width: 600px;
+  padding: 0 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: calc(30/22);
+  text-transform: uppercase;
+  color: var(--main-color, #ffffff);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  color: var(--main-color, #ffffff);
+}
+
+.modal__input {
+  width: 280px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(28/18);
+  padding: 10px;
+  text-transform: uppercase;
+  outline: 2px solid transparent;
+  color: var(--purple-color, #6C0287);
+  
+  transition: outline-color 0.3s ease-in-out;
+}
+
+.modal__input:focus {
+  outline-color: var(--pink-color, #cd06ff);
+}
+
+.modal__submit {
+  width: 300px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(28/18);
+  padding: 16px 50px;
+  text-transform: uppercase;
+  color: var(--purple-color, #6C0287);
+  border-radius: 10px;
+
+  transition: 
+    background-color .3s ease-in-out,
+    color .3s ease-in-out;
+}
+
+.modal__submit:focus {
+
+}
+
+.modal__submit:hover {
+  background-color: var(--purple-color, #6C0287);
+  color: var(--main-color, #ffffff);
+}
+
+.modal__submit:active {
+  
+}
+
+.modal__close {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 15px;
+  right: 15px;
+  border: none;
+  stroke: var(--second-color, #6e6893);
+
+  transition: 
+  transform 0.3s ease-in-out,
+  stroke .3s ease-in-out;
+}
+
+.modal__close-svg {
+  background-color: var(--purple-dark-color, #440F51);
+  color: var(--main-color, #ffffff);
+  stroke: none;
+  transition: color .3s ease-in-out;
+}
+
+.modal__close-svg:hover {
+  color: var(--purple-color, #6C0287);
+}
+
+@media (max-width: 640px) {
+
+  .modal {
+    padding-bottom: 88px;
+  }
+
+  .modal__container {
+    width: 280px;
+    padding: 0 18px;
+  }
+  
+  .modal__title {
+    font-size: 20px;
+    line-height: calc(30/20);
+  }
+  
+  .modal__form {
+    gap: 50px;
+  }
+  
+  .modal__input {
+    width: 220px;
+  }
+  
+  .modal__submit {
+    width: 244px;
+    padding: 11px 39px;
+  }
+  
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+  }
+}
