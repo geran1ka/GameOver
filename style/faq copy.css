@@ -17,14 +17,10 @@
 
 .faq__item-btn-wrapper {
   padding: 21px 70px 20px;
-}
-
-.faq__item-btn-wrapper_white {
   background-color: var(--main-color, #ffffff);
 }
 
-.faq__item-btn-wrapper_purple {
-  color: var(--main-color, #ffffff);
+.faq__item-btn-wrapper_color {
   background-color: var(--purple-dark-color, #440f51);
 }
 
@@ -32,7 +28,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: start;
   width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28/24);
   background-color: transparent;
   border: none;
   border-radius: 25px;
@@ -40,21 +40,6 @@
   outline-offset: 6px;
 
   transition: outline-color .5s ease-in-out;
-}
-
-.faq__item-btn-title {
-  text-align: start;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(28/24);
-}
-
-.faq__item-btn-title_white {
-  color: var(--main-color, #ffffff);
-}
-
-.faq__item-btn-title_black {
-  color: var(--dark-color, #1c1a1a);
 }
 
 /*
@@ -66,15 +51,14 @@
   outline-color: var(--main-color, #ffffff);
 }
 */
-/*
-.faq__item-btn-wrapper_purple span {
+.faq__item-btn-wrapper span {
   color: var(--dark-color, #1c1a1a);
 }
 
-.faq__item-btn-wrapper_white span {
+.faq__item-btn-wrapper_color span {
   color: var(--main-color, #ffffff);
 }
-*/
+
 .faq__item-text-wrapper {
   height: 0;
   padding: 0 70px;
@@ -95,7 +79,7 @@
   height: 214px;
 }
 
-.faq__item-box-svg {
+.box-svg {
   max-width: 46px;
   max-height: 46px;
   border-radius: 50%;
@@ -108,47 +92,69 @@
     outline-color 0.3s ease-in-out;
 }
 
-.faq__item-box-svg_purple {
+.faq__item-btn-wrapper .box-svg {
   color: var(--main-color, #ffffff);
   stroke:var(--purple-dark-color, #440f51);
   outline-color: var(--purple-dark-color, #440f51);
 }
 
-.faq__item-box-svg_white {
+.faq__item-btn-wrapper_color .box-svg {
   color: var(--purple-dark-color, #440f51);
   stroke:var(--main-color, #ffffff);
   outline-color: var(--main-color, #ffffff);
 }
 
-.faq__item-btn-wrapper_white:hover .faq__item-box-svg {
+.faq__item-btn-wrapper:hover .box-svg {
   color: var(--purple-dark-color, #440f51);
   stroke: var(--main-color, #ffffff);
 }
 
-.faq__item-btn-wrapper_purple:hover .faq__item-box-svg {
+
+.faq__item-btn-wrapper_color:hover .box-svg {
   color: var(--main-color, #ffffff);
   stroke: var(--purple-dark-color, #440f51);
 }
 
-
-.faq__item_active .faq__item-box-svg_purple {
+/*
+.faq__item-btn-wrapper:active .box-svg {
   color: var(--main-color, #ffffff);
   stroke:var(--purple-dark-color, #440f51);
   outline-color: var(--purple-dark-color, #440f51);
 }
 
-.faq__item_active .faq__item-box-svg_white  {
+.faq__item-btn-wrapper_color:active .box-svg {
   color: var(--purple-dark-color, #440f51);
   stroke:var(--main-color, #ffffff);
   outline-color: var(--main-color, #ffffff);
 }
 
-.faq__item_active .faq__item-box-svg_purple path:first-of-type,
-.faq__item_active .faq__item-box-svg_white  path:first-of-type {
-  display: none;
+.faq__item-btn-wrapper:active .box-svg path:first-of-type {
+  stroke: var(--main-color, #ffffff);
 }
 
+.faq__item-btn-wrapper_color:active .box-svg path:first-of-type {
+  stroke: var(--purple-dark-color, #440f51);
+}
+*/
+.faq__item_active .box-svg {
+  color: var(--main-color, #ffffff);
+  stroke:var(--purple-dark-color, #440f51);
+  outline-color: var(--purple-dark-color, #440f51);
+}
 
+.faq__item_active .faq__item-btn-wrapper_color  .box-svg {
+  color: var(--purple-dark-color, #440f51);
+  stroke:var(--main-color, #ffffff);
+  outline-color: var(--main-color, #ffffff);
+}
+
+.faq__item_active .box-svg path:first-of-type {
+  stroke: var(--main-color, #ffffff);
+}
+
+.faq__item_active .faq__item-btn-wrapper_color .box-svg path:first-of-type {
+  stroke: var(--purple-dark-color, #440f51);
+}
 
 @media (max-width: 1240px) {
   .faq {
@@ -262,7 +268,7 @@
     line-height: calc(16/12);
   }
 
-  .faq__item-box-svg {
+  .box-svg {
     max-width: 30px;
     max-height: 30px;
 
