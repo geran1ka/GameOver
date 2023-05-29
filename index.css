@@ -10,7 +10,6 @@
 @import url("style/faq.css");
 @import url("style/about-us.css");
 @import url("style/booking.css");
-@import url("style/flex.css");
 /*Стили для модального окна*/
 @import url("style/overlay.css");
 @import url("style/modal.css");
@@ -18,11 +17,3 @@
 @import url("style/hero-room.css");
 @import url("style/description-room.css");
 @import url("style/other-room.css");
-/*
-
-
-
-
-
-@import url("style/vibes.css");
-*/

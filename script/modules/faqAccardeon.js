@@ -1,5 +1,5 @@
-const faqItems = document.querySelectorAll('.faq__item');
-const faqItemBtn = document.querySelectorAll('.faq__item-btn');
+import {faqItemBtn, faqItems} from './const.js';
+
 
 faqItemBtn.forEach((btn, indexBtn) => {
   btn.addEventListener('click', () => {
@@ -9,6 +9,6 @@ faqItemBtn.forEach((btn, indexBtn) => {
       } else {
         faqItems[indexItems].classList.remove('faq__item_active');
       }
-    })
+    });
   });
-})
+});

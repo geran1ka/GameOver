@@ -1,6 +1,5 @@
+import {page} from './const.js';
 import {createElement} from './function.js';
-
-const page = document.querySelector('.page');
 
 export const overlay = createElement('div', {
   className: 'overlay',
@@ -20,6 +19,9 @@ export const overlay = createElement('div', {
           }),
           createElement('form', {
             className: 'modal__form',
+            id: 'modal__form',
+            method: 'get',
+
           }, {
             appends: [
               createElement('div', {
@@ -59,6 +61,7 @@ export const overlay = createElement('div', {
               createElement('button', {
                 className: 'modal__submit',
                 textContent: 'Позвонить мне',
+                type: 'submit',
               }, {
                 cb(elem) {
                   elem.addEventListener('submit', e => {

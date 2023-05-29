@@ -1,8 +1,6 @@
+import {nav, navigationList, page} from './const.js';
 import {createElement} from './function.js';
 
-const nav = document.querySelector('.header__navigation');
-const navigationList = document.querySelector('.navigation__list');
-console.log('navigationList: ', navigationList);
 
 export const createBurgerMenu = () => {
   const burger = createElement('button', {
@@ -10,14 +8,27 @@ export const createBurgerMenu = () => {
     innerHTML: '<span class="navigation__line"></span>',
   });
 
-  burger.addEventListener('click', () => {
+  burger.addEventListener('click', (e) => {
     burger.classList.toggle('navigation__menu_active');
     navigationList.classList.toggle('navigation__list_active');
+  });
+
+  nav.prepend(burger);
+
+  return burger;
+};
+
+const burger = createBurgerMenu();
+
+
+page.addEventListener('click', e => {
+  const target = e.target;
+
+  if (!(navigationList.classList.contains('navigation__list_active') &&
+    target === navigationList) && target !== burger) {
+    navigationList.classList.remove('navigation__list_active');
+    burger.classList.remove('navigation__menu_active');
+  }
 });
 
 
-  nav.prepend(burger);
-};
-
-
-createBurgerMenu(nav, 'header__navigation_active');

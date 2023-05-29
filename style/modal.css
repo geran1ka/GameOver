@@ -1,7 +1,5 @@
 .modal {
-  
   position: relative;
-
   overflow-y: auto;
   margin: 0 auto;
   padding-top: 60px;
@@ -115,6 +113,7 @@
 
 .modal__close-svg:hover {
   color: var(--purple-color, #6C0287);
+  stroke: var(--main-color, #ffffff);
 }
 
 @media (max-width: 640px) {

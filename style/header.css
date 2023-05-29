@@ -306,6 +306,12 @@
     background-color: var(--pink-color, #cd06ff);
   }
 
+  .navigation__line,
+  .navigation__menu::before,
+  .navigation__menu::after { 
+    height: 3px;
+  }
+
   .navigation__link {
     border: none;
   }
@@ -351,7 +357,7 @@
   }
   
   .navigation__menu {
-    height: 33px;
+    height: 39px;
     width: 39px;
     margin: 0;
   }
