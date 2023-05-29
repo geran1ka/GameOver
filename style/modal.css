@@ -9,6 +9,7 @@
 }
 
 .modal__container {
+  position: relative;
   width: 600px;
   padding: 0 84px;
   display: flex;
