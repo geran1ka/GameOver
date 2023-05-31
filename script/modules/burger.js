@@ -17,7 +17,7 @@ export const createBurgerMenu = () => {
 
   return burger;
 };
-
+/*
 const burger = createBurgerMenu();
 
 
@@ -31,4 +31,4 @@ page.addEventListener('click', e => {
   }
 });
 
-
+*/

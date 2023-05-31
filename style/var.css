@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .about-us__list {
     --width: 382px;
     --height: 380px;
