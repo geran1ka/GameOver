@@ -210,7 +210,7 @@
   }
 
   .navigation__list_active {
-    top: calc(75px - 0%);
+    top: 69px;
     visibility: visible;
     opacity: 1;
   }
@@ -243,12 +243,12 @@
 
   .header__overlay {
     position: fixed;
-    top: 0;
+    top: 107px;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(27, 26, 27, 0.7);
-    padding: 102px 30px 30px;
+    
     z-index: 288;
     transition:  opacity .3s ease-in-out,
     visibility .2s ease-in-out;
@@ -259,7 +259,7 @@
   .header__overlay_active {
     visibility: visible;
     opacity: 1;
-
+  }
 }
 
 @media (max-width: 640px) {

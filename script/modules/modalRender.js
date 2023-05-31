@@ -2,7 +2,7 @@ import {page} from './const.js';
 import {createElement} from './function.js';
 
 export const overlay = createElement('div', {
-  className: 'overlay',
+  className: 'overlay-modal',
 }, {
   parent: page,
   append: createElement('div', {
@@ -89,7 +89,7 @@ export const overlay = createElement('div', {
     elem.addEventListener('click', (e) => {
       const target = e.target;
       if (elem === target || target.closest('.modal__close')) {
-        document.querySelector('.overlay').classList.remove('overlay_active');
+        document.querySelector('.overlay-modal').classList.remove('overlay-modal_active');
       }
     });
   },

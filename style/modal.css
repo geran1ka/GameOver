@@ -1,6 +1,31 @@
+.overlay-modal {
+  display: flex;
+  position: fixed;
+  padding: 38px;
+  top: 107px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(27, 26, 27, 0.7);
+  visibility: hidden;
+  align-items: start;
+  justify-content: center;
+  transform: scale(0.2);
+  
+  transition: opacity .5s ease-in-out, 
+    transform .5s ease-in-out;
+}
+
+.overlay-modal_active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
 .modal {
   position: relative;
-  overflow-y: auto;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -9,7 +34,8 @@
 
 .modal__container {
   position: relative;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   padding: 0 84px;
   display: flex;
   flex-direction: column;
@@ -67,7 +93,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: calc(28/18);
-  padding: 16px 50px;
+  padding: 14px 50px;
   text-transform: uppercase;
   color: var(--purple-color, #6C0287);
   border-radius: 10px;
@@ -77,17 +103,9 @@
     color .3s ease-in-out;
 }
 
-.modal__submit:focus {
-
-}
-
 .modal__submit:hover {
   background-color: var(--purple-color, #6C0287);
   color: var(--main-color, #ffffff);
-}
-
-.modal__submit:active {
-  
 }
 
 .modal__close {
@@ -118,6 +136,10 @@
 
 @media (max-width: 640px) {
 
+  .overlay-modal {
+    padding-top: 0;
+    top: 72px;
+  }
   .modal {
     padding-bottom: 88px;
   }
@@ -138,11 +160,12 @@
   
   .modal__input {
     width: 220px;
+    padding: 5px;
   }
   
   .modal__submit {
     width: 244px;
-    padding: 11px 39px;
+    padding: 10px 39px;
   }
   
   .modal__close {
