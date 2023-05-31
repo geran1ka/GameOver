@@ -26,6 +26,7 @@
 
 .modal {
   position: relative;
+
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -34,8 +35,7 @@
 
 .modal__container {
   position: relative;
-  max-width: 600px;
-  width: 100%;
+  width: 600px;
   padding: 0 84px;
   display: flex;
   flex-direction: column;
