@@ -145,8 +145,20 @@
 
 @media (max-width: 940px) {
   .header {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 20px;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    background-color: var(--main-bg-color, #1b1a1b);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102px;
+    z-index: 300;
   }
 
   .header-main {
@@ -157,11 +169,13 @@
     position: relative;
     grid-template-columns: 54px 87px 229px;
     row-gap: 42px;
+
   }
 
   .header__logo {
     order: 1;
     align-self: self-end;
+    z-index: 301;
   }
 
   .header__navigation {
@@ -170,6 +184,7 @@
 
   .header__link-call {
     padding: 7px 23px 8px;
+    z-index: 301;
   }
 
   .navigation__list {
@@ -179,22 +194,24 @@
     align-items: center;
     max-width: 768px;
     position: absolute;
-    top: 75px;
+    top: -700%;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 299;
     background-color: var(--main-bg-color, #1b1a1b);
     padding: 39px 39px 43px;
     visibility: hidden;
     opacity: 0;
-    transform: rotate3d(1, 0 , 0, 90deg);
-    transition: transform .5s ease-in-out,
-      opacity .5s ease-in-out;
+    overflow: hidden;
+
+    transition: top .5s ease-in-out,
+      opacity .5s ease-in-out,
+      visibility .5s ease-in-out;
   }
 
   .navigation__list_active {
+    top: calc(75px - 0%);
     visibility: visible;
-    transform: rotate3d(1, 0 , 0, 0deg);
     opacity: 1;
   }
 
@@ -223,6 +240,26 @@
   .navigation__link:active{
     color: inherit;
   }
+
+  .header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 26, 27, 0.7);
+    padding: 102px 30px 30px;
+    z-index: 288;
+    transition:  opacity .3s ease-in-out,
+    visibility .2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .header__overlay_active {
+    visibility: visible;
+    opacity: 1;
+
 }
 
 @media (max-width: 640px) {
@@ -231,8 +268,9 @@
     padding-bottom: 10px;
   }
 
-  .header-main {
-    padding-bottom: 10px
+
+  .header::before {
+    height: 72px;
   }
 
   .header__container {
@@ -247,18 +285,33 @@
   }
 
   .navigation {
+    position: absolute;
     flex-direction: column;
     row-gap: 25px;
     align-items: center;
     justify-content: center;
-    width: 280px;
+    width: 100%;
     max-height: 352px;
     padding: 23px 10px 27px;
-    
+    z-index: 299;
+    background-color: var(--main-bg-color, #1b1a1b);
+    top: -900%;
+    left: 0;
+    opacity: 0;
+
+    transition: top .5s ease-in-out,
+      opacity .5s ease-in-out,
+      visibility .5s ease-in-out;
+  }
+
+  .navigation_active {
+    visibility: visible;
+    opacity: 1;
     top: 51px;
   }
   
   .navigation__list {
+    width: 100%;
     position: static;
     gap: 0;
     padding: 0;

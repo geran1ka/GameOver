@@ -1,6 +1,7 @@
 @import url("style/var.css");
 @import url("style/normalize.css");
 @import url("style/global.css");
+@import url("style/overlay.css");
 @import url("style/header.css");
 @import url("style/burger.css");
 @import url("style/footer.css");
@@ -12,7 +13,7 @@
 @import url("style/about-us.css");
 @import url("style/booking.css");
 /*Стили для модального окна*/
-@import url("style/overlay.css");
+
 @import url("style/modal.css");
 /*Стили для комнат*/
 @import url("style/hero-room.css");
