@@ -23,3 +23,4 @@ export const createElement = (tag, attr, {append, appends, parent, cb} = {}) => 
 
   return element;
 };
+

@@ -1,8 +1,8 @@
 .overlay-modal {
   display: flex;
   position: fixed;
-  padding: 38px;
-  top: 107px;
+  padding: 107px 38px 38px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -13,7 +13,7 @@
   align-items: start;
   justify-content: center;
   transform: scale(0.2);
-  
+  overflow-y: auto;
   transition: opacity .5s ease-in-out, 
     transform .5s ease-in-out;
 }
@@ -26,7 +26,6 @@
 
 .modal {
   position: relative;
-
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -137,8 +136,7 @@
 @media (max-width: 640px) {
 
   .overlay-modal {
-    padding-top: 0;
-    top: 72px;
+    padding-top: 72px;
   }
   .modal {
     padding-bottom: 88px;

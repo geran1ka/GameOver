@@ -1,7 +1,8 @@
 import {page} from './const.js';
 import {createElement} from './function.js';
+import {scrollController} from './scrollControl.js';
 
-export const overlay = createElement('div', {
+export const overlayModal = createElement('div', {
   className: 'overlay-modal',
 }, {
   parent: page,
@@ -90,6 +91,7 @@ export const overlay = createElement('div', {
       const target = e.target;
       if (elem === target || target.closest('.modal__close')) {
         document.querySelector('.overlay-modal').classList.remove('overlay-modal_active');
+        scrollController.enabledScroll();
       }
     });
   },
