@@ -1,11 +1,19 @@
-import {burger, header, headerLinkCall} from './const.js';
+import {burger, header, headerLinkCall, headerLinkCallMobile} from './const.js';
 import {scrollController} from './scrollControl.js';
 import {overlayModal} from './modalRender.js';
-import {closeMenu, openMenu} from './burger.js';
+import {closeMenu, closeModal, openMenu, openModal} from './burger.js';
+import {isWindowWidthMobile} from './function.js';
 
 
 headerLinkCall.addEventListener('click', () => {
-  overlayModal.classList.add('overlay-modal_active');
+  requestAnimationFrame(openModal);
+  burger.classList.remove('burger_active');
+  scrollController.disabledScroll();
+  if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
+});
+
+headerLinkCallMobile.addEventListener('click', () => {
+  requestAnimationFrame(openModal);
   burger.classList.remove('burger_active');
   scrollController.disabledScroll();
   if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
@@ -28,9 +36,9 @@ header.addEventListener('click', e => {
   const target = e.target;
   if (target !== burger && target !== headerLinkCall && target.closest('.header') === header) {
     burger.classList.remove('burger_active');
-    requestAnimationFrame(closeMenu);
-    scrollController.enabledScroll();
-    overlayModal.classList.remove('overlay-modal_active');
+    if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
+    isWindowWidthMobile() ? '' : scrollController.enabledScroll();
+    isWindowWidthMobile() ? '' : requestAnimationFrame(closeModal);
   }
 });
 

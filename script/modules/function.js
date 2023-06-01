@@ -24,3 +24,19 @@ export const createElement = (tag, attr, {append, appends, parent, cb} = {}) => 
   return element;
 };
 
+export const isWindowWidthMobile = () => window.innerWidth < 640;
+
+/*
+const resetStyles = () => {
+  const windowWidth = window.innerWidth;
+  if (windowWidth > 940) {
+    navigationList.style = '';
+  } else if (windowWidth < 640) {
+    navigationList.style = '';
+  } else {
+    nav.style = '';
+  }
+};
+
+window.addEventListener('resize', resetStyles);*/
+
