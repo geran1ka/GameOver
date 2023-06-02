@@ -91,7 +91,7 @@ export const overlayModal = createElement('div', {
     elem.addEventListener('click', (e) => {
       const target = e.target;
       if (elem === target || target.closest('.modal__close')) {
-        requestAnimationFrame(closeModal);
+        overlayModal.classList.remove('overlay-modal_active');
         scrollController.enabledScroll();
       }
     });

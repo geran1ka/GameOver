@@ -6,14 +6,14 @@ import {isWindowWidthMobile} from './function.js';
 
 
 headerLinkCall.addEventListener('click', () => {
-  requestAnimationFrame(openModal);
+  overlayModal.classList.add('overlay-modal_active');
   burger.classList.remove('burger_active');
   scrollController.disabledScroll();
   if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
 });
 
 headerLinkCallMobile.addEventListener('click', () => {
-  requestAnimationFrame(openModal);
+  overlayModal.classList.add('overlay-modal_active');
   burger.classList.remove('burger_active');
   scrollController.disabledScroll();
   if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
@@ -36,9 +36,10 @@ header.addEventListener('click', e => {
   const target = e.target;
   if (target !== burger && target !== headerLinkCall && target.closest('.header') === header) {
     burger.classList.remove('burger_active');
+    overlayModal.classList.remove('overlay-modal_active');
     if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
     isWindowWidthMobile() ? '' : scrollController.enabledScroll();
-    isWindowWidthMobile() ? '' : requestAnimationFrame(closeModal);
+    //isWindowWidthMobile() ? '' : requestAnimationFrame(closeModal);
   }
 });
 

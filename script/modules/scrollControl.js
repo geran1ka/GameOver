@@ -12,11 +12,9 @@ export const scrollController = {
       width: 100vw;
       padding-right: ${window.innerWidth - page.offsetWidth}px;
     `;
-    console.log('dis');
   },
   enabledScroll() {
     page.style.cssText = ``;
     window.scroll({top: scrollController.scrollPosition});
-    console.log('en');
   },
 };
