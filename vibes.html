@@ -15,38 +15,46 @@
     <meta name="msapplication-config" content="icon/browserconfig.xml">
     <meta name="theme-color" content="#19ec8e">
 
+    <script src="index.js" type="module"></script>
+
     <title>GAME OVER</title>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header header-main">
       <div class="header__container container">
         <a class="header__logo logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип" class="header__logo-img">
         </a>
+        <div class="header__burger burger">
+          <span class="burger__line"></span>
+        </div>
       <nav class="header__navigation navigation">
-        <button class="navigation__menu" type="button">
-          <svg class="navigation__svg" width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <rect width="54" height="5" rx="2"/>
-            <rect y="12" width="54" height="5" rx="2"/>
-            <rect y="24" width="31" height="5" rx="2"/>
-          </svg>              
-        </button>
         <ul class="navigation__list">
           <li class="navigation__item"><a href="index.html#halls" class="navigation__link">Залы</a></li>
           <li class="navigation__item"><a href="index.html#aboutUs" class="navigation__link">О&nbsp;нас</a></li>
           <li class="navigation__item"><a href="index.html#booking" class="navigation__link">Бронь</a></li>
           <li class="navigation__item"><a href="index.html#reviews" class="navigation__link">Отзывы</a></li>
-          <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+          <li class="navigation__item"><a href="index.html#contacts" class="navigation__link">Контакты</a></li>
         </ul>
       </nav>
-
-      <a class="header__link-call" href="index.html#booking">Заказать звонок</a>
+      <button class="header__link-call" type="button">Заказать звонок</button>
       <a href="index.html" class="header__link">
         <svg width="31" height="16" viewBox="0 0 31 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM31 7L1 7V9L31 9V7Z"/>
         </svg>
         <span>Вернуться назад</span>
       </a>
+      <div class="header__navigation-mobile navigation-mobile">
+        <ul class="navigation__list-mobile">
+          <li class="navigation__item-mobile"><a href="index.html#halls" class="navigation__link">Залы</a></li>
+          <li class="navigation__item-mobile"><a href="index.html#aboutUs" class="navigation__link">О&nbsp;нас</a></li>
+          <li class="navigation__item-mobile"><a href="index.html#booking" class="navigation__link">Бронь</a></li>
+          <li class="navigation__item-mobile"><a href="index.html#reviews" class="navigation__link">Отзывы</a></li>
+          <li class="navigation__item-mobile"><a href="index.html#contacts" class="navigation__link">Контакты</a></li>
+        </ul>
+        <button class="header__link-call-mobile" type="button">Заказать звонок</button>
+      </div>
+      <div class="header__overlay"></div>
     </div>
   </header>
 
