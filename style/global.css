@@ -74,6 +74,11 @@ fieldset {
   transform: scale(0);
 }
 
+.visible {
+  transition: transform .1s ease,
+    opacity .1s ease;
+}
+
 
 .container {
   max-width: calc(var(--max-width) + var(--padding) * 2);

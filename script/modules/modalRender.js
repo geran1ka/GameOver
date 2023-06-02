@@ -1,6 +1,6 @@
-import {page} from './const.js';
+import {headerLinkCall, headerLinkCallMobile, page} from './const.js';
 import {createElement} from './function.js';
-import {scrollController} from './scrollControl.js';
+import {closeModal} from './modal.js';
 
 export const overlayModal = createElement('div', {
   className: 'overlay-modal',
@@ -90,8 +90,9 @@ export const overlayModal = createElement('div', {
     elem.addEventListener('click', (e) => {
       const target = e.target;
       if (elem === target || target.closest('.modal__close')) {
-        document.querySelector('.overlay-modal').classList.remove('overlay-modal_active');
-        scrollController.enabledScroll();
+        closeModal();
+        headerLinkCall.removeAttribute('disabled');
+        headerLinkCallMobile.removeAttribute('disabled');
       }
     });
   },

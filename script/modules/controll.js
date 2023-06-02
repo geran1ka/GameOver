@@ -1,36 +1,54 @@
-import {burger, header, headerLinkCall} from './const.js';
-import {scrollController} from './scrollControl.js';
+import {burger, header, headerLinkCall, headerLinkCallMobile, nav, navMobile} from './const.js';
 import {overlayModal} from './modalRender.js';
-import {closeMenu, openMenu} from './burger.js';
-
+import {isWindowWidthMobile} from './function.js';
+import {closeModal, openModal} from './modal.js';
+import {closeMenu, openMenu} from './navigation.js';
 
 headerLinkCall.addEventListener('click', () => {
-  overlayModal.classList.add('overlay-modal_active');
+  openModal();
+  console.log('openModalBtn');
   burger.classList.remove('burger_active');
-  scrollController.disabledScroll();
-  if (window.innerWidth < 940) requestAnimationFrame(closeMenu);
+  headerLinkCall.setAttribute('disabled', 'disabled');
 });
+
+headerLinkCallMobile.addEventListener('click', () => {
+  openModal();
+  console.log('openModalBtnMob');
+
+  burger.classList.remove('burger_active');
+  headerLinkCallMobile.setAttribute('disabled', 'disabled');
+});
+
 
 burger.addEventListener('click', e => {
   if (burger.classList.contains('burger_active')) {
     burger.classList.remove('burger_active');
-    scrollController.enabledScroll();
-    requestAnimationFrame(closeMenu);
+    closeMenu();
+    console.log('closeMenuBtn');
   } else {
     burger.classList.add('burger_active');
-    overlayModal.classList.remove('overlay-modal_active');
-    scrollController.disabledScroll();
-    requestAnimationFrame(openMenu);
+    openMenu();
+    console.log('openMenuBtn');
   }
 });
 
-header.addEventListener('click', e => {
-  const target = e.target;
-  if (target !== burger && target !== headerLinkCall && target.closest('.header') === header) {
+
+header.addEventListener('click', (e) => {
+  const menu = isWindowWidthMobile() ? navMobile : nav;
+  const btnModal = isWindowWidthMobile() ? headerLinkCallMobile : headerLinkCall;
+  console.log(e.target);
+  if (menu.classList.contains('visible') && e.target !== burger && e.target.closest('.header') === header) {
+    closeMenu();
+    console.log('closeMenuTar');
+
     burger.classList.remove('burger_active');
-    requestAnimationFrame(closeMenu);
-    scrollController.enabledScroll();
-    overlayModal.classList.remove('overlay-modal_active');
+  }
+
+  if (overlayModal.classList.contains('visible') && e.target !== btnModal && e.target.closest('.header') === header) {
+    isWindowWidthMobile() ? '' : closeModal();
+    headerLinkCall.removeAttribute('disabled');
+    headerLinkCallMobile.removeAttribute('disabled');
+    console.log('closeModalTar');
   }
 });
 
