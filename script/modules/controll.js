@@ -13,9 +13,9 @@ $('body').on('click', (e) => {
     if (e.target.closest('.burger_active') && e.target === btnBurger[0]) {
       closeMenuA(menu);
     } else {
-      openMenuA(menu);
       overlayModal.classList.contains('visible') ? closeModal() : '';
       headerLinkCall.removeAttribute('disabled');
+      openMenuA(menu);
     }
   } else {
     $(window).outerWidth() < 940 ? closeMenuA(menu) : '';

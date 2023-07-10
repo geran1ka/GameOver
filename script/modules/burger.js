@@ -1,5 +1,5 @@
 import {btnBurger, overlayHeader} from './constJQuery.js';
-import { overlayModal } from './modalRender.js';
+import {overlayModal} from './modalRender.js';
 import {scrollController} from './scrollControl.js';
 
 
