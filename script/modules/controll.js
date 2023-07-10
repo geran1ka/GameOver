@@ -33,7 +33,7 @@ $('body').on('click', (e) => {
       closeMenuA(menu);
     } else {
       openMenuA(menu);
-      closeModal();
+      overlayModal.classList.contains('visible') ? closeModal() : '';
       headerLinkCall.removeAttribute('disabled');
     }
   } else {
