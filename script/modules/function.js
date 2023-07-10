@@ -1,3 +1,6 @@
+import { closeMenuA } from './burger.js';
+import {navigation, navigationMobile, overlayHeader} from './constJQuery.js';
+
 export const createElement = (tag, attr, {append, appends, parent, cb} = {}) => {
   const element = document.createElement(tag);
   // Проверка: передан ли атрибут
@@ -26,17 +29,17 @@ export const createElement = (tag, attr, {append, appends, parent, cb} = {}) => 
 
 export const isWindowWidthMobile = () => window.innerWidth < 640;
 
-/*
-const resetStyles = () => {
+export const getMenu = () => (isWindowWidthMobile() ? navigationMobile : navigation);
+
+export const resetStyles = () => {
+  const menu = getMenu();
   const windowWidth = window.innerWidth;
-  if (windowWidth > 940) {
-    navigationList.style = '';
-  } else if (windowWidth < 640) {
-    navigationList.style = '';
+  if (windowWidth >= 940) {
+    navigation[0].style.display = '';
+    overlayHeader[0].style = 'none';
   } else {
-    nav.style = '';
+    closeMenuA(menu);
   }
 };
 
-window.addEventListener('resize', resetStyles);*/
 

@@ -1,20 +1,21 @@
-import { btnBurger, overlayHeader } from "./constJQuery.js";
-import { scrollController } from "./scrollControl.js";
-
+import {btnBurger, overlayHeader} from './constJQuery.js';
+import { overlayModal } from './modalRender.js';
+import {scrollController} from './scrollControl.js';
 
 
 export const openMenuA = (menu) => {
-  console.log('menu: ', menu);
+  overlayHeader.show();
   btnBurger.addClass('burger_active');
   menu.slideDown();
-  menu.css({display: 'flex'})
-  overlayHeader.slideDown();
+  menu.css({display: 'flex'});
   scrollController.disabledScroll();
 };
 
 export const closeMenuA = (menu) => {
+  overlayHeader.hide();
   btnBurger.removeClass('burger_active');
-  overlayHeader.slideUp();
-  scrollController.enabledScroll();
+  overlayModal.classList.contains('visible') ? scrollController.disabledScroll() : scrollController.enabledScroll();
   menu.slideUp();
-}
+};
+
+
