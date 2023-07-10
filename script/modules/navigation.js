@@ -35,8 +35,6 @@ export const openMenu = () => {
   if (overlayModal.classList.contains('visible')) closeModal();
 
   const elem = isWindowWidthMobile() ? navMobile : nav;
-  console.log('elem: ', elem);
-
   elem.classList.add('visible');
 
   const animateOpenMenu = (timestamp) => {

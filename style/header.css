@@ -231,15 +231,17 @@
   
 
   .navigation {
+    display: none;
     position: absolute;
     top: 69px;
     left: 0;
     right: 0;
     padding: 39px 39px 43px;
     order: 1;
-    visibility: hidden;
+    /* visibility: hidden; */
     transform-origin: center;
-    transform: scale(0) translateY(-130%);
+    top: 55px;
+    /* transform: scale(0) translateY(-130%); */
     overflow-y: auto;
     background-color: var(--main-bg-color, #1b1a1b);
   }
@@ -291,7 +293,7 @@
   }
 
   .header__overlay {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -300,8 +302,8 @@
     background: rgba(27, 26, 27, 0.7);
     
     z-index: 288;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
   }
 }
 
@@ -347,7 +349,7 @@
   }
 
   .navigation-mobile {
-    display: flex;
+    display: none;
     position: absolute;
     top: 51px;
     left: 0;
@@ -361,8 +363,8 @@
     padding: 23px 10px 27px;
     z-index: 299;
     background-color: var(--main-bg-color, #1b1a1b);
-    visibility: hidden;
-    transform: scale(0) translateY(-130%);
+    /* visibility: hidden;
+    transform: scale(0) translateY(-130%); */
     overflow-y: auto;
   }
 
