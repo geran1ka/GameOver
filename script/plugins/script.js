@@ -1,5 +1,5 @@
 const bookingTitle = document.querySelector('.booking__title');
-const fieldset  =document.querySelector('.form__box-grid');
+const fieldset = document.querySelector('.form__box-grid');
 const inputTel = document.querySelector('.form__input_tel');
 const telMask = new Inputmask('+7 (999)-999-99-99');
 telMask.mask(inputTel);
@@ -90,3 +90,18 @@ justValidate
             bookingTitle.textContent = `Что-то пошло не так, попробуйте позже`;
           });
     });
+
+new Swiper('.swiper', {
+
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+
+
+});

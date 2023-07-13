@@ -14,6 +14,9 @@
     <meta name="msapplication-TileColor" content="#24d9d2">
     <meta name="msapplication-config" content="icon/browserconfig.xml">
     <meta name="theme-color" content="#19ec8e">
+    <link rel="stylesheet" href="style/plugins/swiper-bundle.min.css"/>
+
+    <script src="script/plugins/swiper-bundle.min.js" defer></script>
     <script src="script/plugins/jquery-3.7.0.min.js" defer></script>
     <script src="script/plugins/raw.githubusercontent.com_RobinHerbots_Inputmask_5.x_dist_inputmask.min.js" defer></script>
     <script src="script/plugins/unpkg.com_just-validate@4.2.0_dist_just-validate.production.min.js" defer></script>
@@ -268,36 +271,60 @@
         </div>
       </section>
       
-
       <section class="reviews section" id="reviews">
-        <div class="container">
+        <div class="container reviews__container">
           <h2 class="reviews__title title">ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <figure class="reviews__box-img">
-                <img class="reviews__img reviews__img-first" src="img/maks.jpg" alt="Молодой человек в черной футболке">
-                <figcaption class="reviews__cuption">Макс Самойлов</figcaption>
-              </figure>
-              <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-            </li>
-            <li class="reviews__item">
-              <figure class="reviews__box-img">
-                <img class="reviews__img reviews__img-two" src="img/oksana.jpg" alt="Девушка в шляпке и белом платье с вертикальными черными полосами">
-                <figcaption class="reviews__cuption">Оксана Григорьева</figcaption>
-              </figure>
-              <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
-            </li>
-            <li class="reviews__item">
-              <figure class="reviews__box-img">
-                <img class="reviews__img reviews__img-three" src="img/nikita.jpg" alt="Молодой человек в зеленом лонгсливе на фоне дерева">
-                <figcaption class="reviews__cuption">Никита Ященко</figcaption>
-              </figure>
-              <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космосв</p>
-            </li>
-          </ul>
+          <!-- Slider main container -->
+          <div class="swiper reviews__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="reviews__item">
+                  <figure class="reviews__box-img">
+                    <img class="reviews__img reviews__img-first" src="img/maks.jpg" alt="Молодой человек в черной футболке">
+                    <figcaption class="reviews__cuption">Макс Самойлов</figcaption>
+                  </figure>
+                  <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item">
+                  <figure class="reviews__box-img">
+                    <img class="reviews__img reviews__img-two" src="img/oksana.jpg" alt="Девушка в шляпке и белом платье с вертикальными черными полосами">
+                    <figcaption class="reviews__cuption">Оксана Григорьева</figcaption>
+                  </figure>
+                  <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <li class="reviews__item">
+                  <figure class="reviews__box-img">
+                    <img class="reviews__img reviews__img-three" src="img/nikita.jpg" alt="Молодой человек в зеленом лонгсливе на фоне дерева">
+                    <figcaption class="reviews__cuption">Никита Ященко</figcaption>
+                  </figure>
+                  <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <button class="button swiper-button-left">
+            <svg width="34" height="66" viewBox="0 0 34 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z"/>
+              <path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z"/>
+            </svg>                
+          </button>
+
+          <button class="button swiper-button-right">
+            <svg width="35" height="66" viewBox="0 0 35 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z"/>
+              <path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z"/>
+            </svg>                              
+          </button>
         </div>
       </section>
-
+      
       <section class="faq section" id="faq">
         <div class="container faq__container-m">
           <h2 class="faq__title title">Частые вопросы</h2>
