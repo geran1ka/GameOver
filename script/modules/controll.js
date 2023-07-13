@@ -7,7 +7,6 @@ import {closeMenuA, openMenuA} from './burger.js';
 
 $('body').on('click', (e) => {
   const menu = getMenu();
-  console.log('menu: ', menu);
 
   if (e.target === btnBurger[0]) {
     if (e.target.closest('.burger_active') && e.target === btnBurger[0]) {
