@@ -134,9 +134,17 @@ function init() {
 
 
 new AirDatepicker('.form__input_data', {
-  formatter: (input, date, instance) => {
-    const value = date.toLocaleDateString();
-    input.value = value; // => '1/1/2099'
+  navTitles: {
+    days(dp) {
+      if (dp.selectedDates.length) {
+        const date = dp.selectedDates[0];
+        return `<small>
+              Вы выбрали  ${dp.formatDate(date, 'dd MMMM yyyy')}
+            </small>`;
+      }
+
+      return 'Выберите дату';
+    },
   },
   autoClose: true,
 });
