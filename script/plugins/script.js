@@ -102,6 +102,14 @@ new Swiper('.swiper', {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
   },
+});
 
-
+$('.faq__list').accordion({
+  active: true, // аккордеон закрыт
+  collapsible: true, // открыть закрыть аккордеон
+  heightStyle: 'content', // высота блока по контенту
+  icons: {
+    header: 'icon-alt',
+    activeHeader: 'icon-alt:active',
+  },
 });
