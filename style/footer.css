@@ -137,9 +137,8 @@
 
 .footer__img {
   grid-area: map;
-  width: 680px;
-  height: 274px;
-  object-fit: cover;
+  max-width: 680px;
+  max-height: 274px;
 }
 
 .footer__social {
