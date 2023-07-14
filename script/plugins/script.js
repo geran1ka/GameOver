@@ -102,39 +102,7 @@ new Swiper('.swiper', {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
   },
-
-
 });
-
-
-// const getCart = async () => {
-//   await ymaps3.ready;
-//   const {
-//     YMap,
-//     YMapDefaultSchemeLayer,
-//     YMapMarker,
-//     YMapControls,
-//     YMapDefaultFeaturesLayer
-// } = ymaps3;
-
-//   // Создание карты
-//   const map = new ymaps3.YMap(document.getElementById('map'), {
-//     location: {
-//       center: [37.565084, 55.723157],
-//       zoom: 17,
-//     },
-//   });
-//   // map.addChild(new ymaps3.YMapDefaultSchemeLayer());
-//   map.addChild(scheme = new YMapDefaultSchemeLayer());
-//   map.addChild(new YMapControls({position: 'right'}));
-//   map.addChild(new YMapDefaultFeaturesLayer({id: 'features'}));
-//   const marker = new YMapDefaultMarker([37.565084, 55.723157]);
-//   map.addChild(marker);
-// };
-
-// getCart();
-
-
 
 ymaps.ready(init);
 
@@ -146,7 +114,7 @@ function init() {
 
   const mark = new ymaps.Placemark([55.723157, 37.565084], {
     hintContent: 'GAME OVER',
-    balloonContent: 'GAME OVER',
+    balloonContent: 'GAME OVER - новый формат игр и отдыха',
   }, {
   });
 
@@ -162,5 +130,4 @@ function init() {
   myMap.controls.remove('fullscreenControl'); // удаляет переход в полноэкранный режим
   myMap.controls.remove('zoomControl'); // удаляет контроль зуммирования
   myMap.controls.remove('rulerControl'); // удаляет контроль правил
-
 }
