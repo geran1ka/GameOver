@@ -131,3 +131,12 @@ function init() {
   myMap.controls.remove('zoomControl'); // удаляет контроль зуммирования
   myMap.controls.remove('rulerControl'); // удаляет контроль правил
 }
+
+
+new AirDatepicker('.form__input_data', {
+  formatter: (input, date, instance) => {
+    const value = date.toLocaleDateString();
+    input.value = value; // => '1/1/2099'
+  },
+  autoClose: true,
+});
