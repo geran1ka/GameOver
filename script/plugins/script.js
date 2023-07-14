@@ -110,6 +110,6 @@ $('.faq__list').accordion({
   heightStyle: 'content', // высота блока по контенту
   icons: {
     header: 'icon-alt',
-    activeHeader: 'icon-alt:active',
+    activeHeader: 'icon-alt_active',
   },
 });
