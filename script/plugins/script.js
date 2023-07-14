@@ -105,3 +105,36 @@ new Swiper('.swiper', {
 
 
 });
+
+
+// const getCart = async () => {
+//   await ymaps3.ready;
+
+//   // Создание карты
+//   const map = new ymaps3.YMap(document.getElementById('map'), {
+//     location: {
+//       center: [55.723151, 37.565021],
+//       zoom: 10,
+//     },
+//   });
+//   map.addChild(new ymaps3.YMapDefaultSchemeLayer());
+// };
+
+// getCart();
+
+ymaps.ready(init);
+
+function init() {
+  const myMap = new ymaps.Map('map', {
+    center: [55.723157, 37.565084],
+    zoom: 17,
+  });
+
+  const mark = new ymaps.Placemark([55.723157, 37.565084], {
+    hintContent: 'GAME OVER',
+    balloonContent: 'GAME OVER',
+  }, {
+  })
+
+  myMap.geoObjects.add(mark)
+}
