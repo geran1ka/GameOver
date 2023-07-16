@@ -207,7 +207,7 @@
               <fieldset class="form__box-time time">
                 <legend class="form__subtitle form__subtitle-time">Выбери дату и время</legend>
                 <div class="time__group-2">
-                <div class="time__group-1" >
+                <div class="time__group_date-time" >
                     <label class="form__label-type" for="data">
                       <input class="form__input form__input_data" type="text" name="date" id="data" required placeholder="Дата">
                     </label>
@@ -215,10 +215,12 @@
                       <input class="form__input form__input_time" type="text" onfocus="(this.type = 'time')" onblur="(this.type='text')" name="time" id="time" required placeholder="Время">
                     </label>
                 </div>
-              
+                <div class="time__group_count">
                   <label class="form__label-type" for="count">
                     <input class="form__input form__input_count" type="number" name="count" id="count" placeholder="Сколько человек" required>
                   </label>
+                </div>
+
                 </div>
 
                 <div class="time__group-3">

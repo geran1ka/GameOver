@@ -11,7 +11,7 @@
 
 .form__box-grid {
   display: grid;
-  grid-template-rows: 143px 307px 229px 1fr;
+  grid-template-rows: 143px 307px minmax(229px, 1fr) min-content;
   gap: 40px;
 }
 
@@ -155,18 +155,24 @@
   margin-bottom: 38px;
 }
 
-.time__group-1 {
+.time__group_date-time {
   max-width: 134px;
   width: 100%;
-  max-height: 52px;
   display: inline-flex; 
   gap: 32px;
+}
+
+.time__group_count,
+.time__group_date-time {
+  flex: 1 0 auto;
+  padding-top: 22px;
 }
 
 .time__group-2 {
   display: inline-flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 14px;
+  height: 100%;
   width: 100%;
   grid-area: count;
   align-self: flex-end;
@@ -195,7 +201,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  justify-content: space-between;
   flex-grow: 1;
   font-weight: 700;
   font-size: 14px;
@@ -291,7 +296,7 @@
   }
 
   .form__box-grid {
-    grid-template-rows: 108px 283px 216px 1fr;
+    grid-template-rows: 108px 283px minmax(216px, 1fr) min-content;
     gap: 50px;
   }
 
@@ -343,7 +348,6 @@
   }
 
   .form__btn {
-
     grid-column: -1 / -2;
     padding: 10px 2px;
     font-size: 18px;
@@ -358,7 +362,7 @@
   }
 
   .form__box-grid {
-    grid-template-rows: 96px 513px 313px 59px;
+    grid-template-rows: 96px 513px minmax(313px, 1fr) 59px;
     gap: 50px;
   }
 
@@ -408,9 +412,13 @@
     width: 100%;
   }
 
-  .time__group-1 {
+  .time__group_date-time {
     max-width: 280px;
     gap: 14px;
+  }
+
+  .time__group_count {
+    text-align: end;
   }
 
   .time__group-3 {
@@ -427,13 +435,11 @@
   .time__group-4 {
     align-items: flex-end;
   }
-
-
   
   .form__box-time {
     max-width: 688px;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 55px 162px;
+    grid-template-rows: 55px minmax(162px, 1fr);
     grid-template-areas: 
     "count count"
     "name contacts";
@@ -481,7 +487,7 @@
   }
 
   .form__box-grid {
-    grid-template-rows: 107px 607px 561px 64px;
+    grid-template-rows: 107px 607px minmax(561px, min-content) 64px;
     gap: 30px;
   }
 
@@ -544,7 +550,10 @@
     line-height: calc(18/16);
   }
 
-  .time__group-1 {
+  .time__group_date-time,
+  .time__group_count {
+    width: 100%;
+    padding-top: 0;
     gap: 12px;
   }
 
@@ -560,7 +569,7 @@
   .form__box-time {
     max-width: 688px;
     grid-template-columns: 1fr;
-    grid-template-rows: 119px 163px 1fr 1fr;
+    grid-template-rows: 119px repeat(2, minmax(163px, 206px));
     grid-template-areas:
     "count"
     "name" 

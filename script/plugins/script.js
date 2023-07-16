@@ -134,17 +134,11 @@ function init() {
 
 
 new AirDatepicker('.form__input_data', {
+  // inline: true,
   navTitles: {
-    days(dp) {
-      if (dp.selectedDates.length) {
-        const date = dp.selectedDates[0];
-        return `<small>
-              Вы выбрали  ${dp.formatDate(date, 'dd MMMM yyyy')}
-            </small>`;
-      }
-
-      return 'Выберите дату';
-    },
+    days: '<strong>MMMM</strong>',
   },
   autoClose: true,
+  weekends: [0],
+  prevHtml: '<svg><path d="M17,12 l -5,5 l 5,5"></path></svg>',
 });
