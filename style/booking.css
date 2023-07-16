@@ -156,16 +156,31 @@
 }
 
 .time__group_date-time {
+  position: relative;
   max-width: 134px;
   width: 100%;
   display: inline-flex; 
   gap: 32px;
+}
+.form__label-type {
+  position: relative;
 }
 
 .time__group_count,
 .time__group_date-time {
   flex: 1 0 auto;
   padding-top: 22px;
+}
+
+.form__input_data-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  top: 11px;
+  right: 18px;
+  pointer-events: none;
 }
 
 .time__group-2 {
