@@ -91,6 +91,7 @@ justValidate
           });
     });
 
+// reviews
 new Swiper('.swiper', {
 
   loop: true,
@@ -104,6 +105,8 @@ new Swiper('.swiper', {
   },
 });
 
+
+// footer карта
 ymaps.ready(init);
 
 function init() {
@@ -132,7 +135,7 @@ function init() {
   myMap.controls.remove('rulerControl'); // удаляет контроль правил
 }
 
-
+// input date
 new AirDatepicker('.form__input_data', {
   // inline: true,
   navTitles: {
@@ -153,4 +156,17 @@ new AirDatepicker('.form__input_data', {
   </svg>
   
 `,
+});
+
+// input time
+$('.form__input_time').timepicker({
+  timeFormat: 'HH:mm',
+  interval: 120,
+  minTime: '10:00',
+  maxTime: '18:00',
+  // defaultTime: 'now',
+  startTime: '10:00',
+  dynamic: false,
+  dropdown: true,
+  scrollbar: false,
 });

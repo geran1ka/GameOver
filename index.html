@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="script/plugins/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="script/plugins/datapicer/air-datepicker.css">
+    <link rel="stylesheet" href="script/plugins/timepicker/jquery.timepicker.min.css">
 
     <script src="script/plugins/datapicer/air-datepicker.js" defer></script>
     <script src="script/plugins/swiper/swiper-bundle.min.js" defer></script>
@@ -24,8 +25,9 @@
     <script src="script/plugins/inputmask/inputmask.min.js" defer></script>
     <script src="script/plugins/justValidate/just-validate.production.min.js" defer></script>
     <script src="script/plugins/axios/axios.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4004027-1ea6-4013-a011-d630ae3d9578&lang=ru_RU" defer></script>
+    <script src="script/plugins/timepicker/jquery.timepicker.min.js" defer></script>
     <script src="script/plugins/script.js" defer></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4004027-1ea6-4013-a011-d630ae3d9578&lang=ru_RU"></script>
     <script src="index.js" type="module"></script>
 
     <title>GAME OVER</title>
@@ -217,7 +219,12 @@
                       </button>
                     </label>
                     <label class="form__label-type" for="time">
-                      <input class="form__input form__input_time" type="text" onfocus="(this.type = 'time')" onblur="(this.type='text')" name="time" id="time" required placeholder="Время">
+                      <input class="form__input form__input_time" type="text" name="time" id="time" required placeholder="Время">
+                      <button class="form__input_data-btn">
+                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.5 15L1.40673 3.75L19.5933 3.75L10.5 15Z" fill="#211E1E"/>
+                        </svg>                          
+                      </button>
                     </label>
                 </div>
                 <div class="time__group_count">
@@ -483,6 +490,12 @@
         </div>
       </div> 
     </footer>
+
+    <div class="overlay">
+      <div class="modal">
+        <h2 class="modal__title"></h2>
+      </div>
+    </div>
 
     <script>
       document.addEventListener('click', event => {

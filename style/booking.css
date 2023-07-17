@@ -231,7 +231,7 @@
   background-color: var(--main-color, #ffffff);
   outline: none;
   border: 2px solid transparent;
-
+  cursor: pointer;
   transition: border-color 0.4s ease-in-out;
 }
 
