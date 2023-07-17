@@ -182,3 +182,13 @@ $('.form__input_time').timepicker({
   dropdown: true,
   scrollbar: false,
 });
+
+$('.faq__list').accordion({
+  active: true, // аккордеон закрыт
+  collapsible: true, // открыть закрыть аккордеон
+  heightStyle: 'content', // высота блока по контенту
+  icons: {
+    header: 'icon',
+    activeHeader: 'icon_active',
+  },
+});
