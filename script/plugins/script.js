@@ -1,4 +1,5 @@
 const bookingTitle = document.querySelector('.booking__title');
+const form = document.querySelector('.form');
 const fieldset = document.querySelector('.form__box-grid');
 const inputTel = document.querySelector('.form__input_tel');
 const telMask = new Inputmask('+7 (999)-999-99-99');
@@ -81,12 +82,23 @@ justValidate
             console.log('response: ', response);
             target.reset();
             fieldset.disabled = true;
+            const title = bookingTitle.textContent;
+            setTimeout(() => {
+              bookingTitle.textContent = title;
+              fieldset.disabled = true;
+            }, 3000);
+
             bookingTitle.textContent = `Спасибо Ваша завявка принята, номер заявки ${response.data.id}`;
           })
           .catch(err => {
             console.log('err: ', err);
             target.reset();
             fieldset.disabled = false;
+            const title = bookingTitle.textContent;
+            setTimeout(() => {
+              bookingTitle.textContent = title;
+              fieldset.disabled = true;
+            }, 3000);
             bookingTitle.textContent = `Что-то пошло не так, попробуйте позже`;
           });
     });
